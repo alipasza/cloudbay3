@@ -1,0 +1,14 @@
+fortrabbit.com
+
+SSH
+user:u-cloudbay
+host:ssh2.eu1.frbit.com
+passwd:1Y6+vXLBZO94cJdW2JMaQMMM
+
+MySQL
+host:cloudbay.mysql.eu1.frbit.com
+database:cloudbay
+user:cloudbay
+passwd:wzuOW6mQkrAH5Noo4rcIv6_H
+
+xxx

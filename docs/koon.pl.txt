@@ -1,0 +1,27 @@
+Your Account Details
+Your account is now active.
+Main Hosting Details
+Control panel username
+	koon_15953615
+Control panel password 	**********
+Control panel URL
+	cpanel.koon.pl
+MySQL username
+	koon_15953615
+MySQL password
+	**********
+MySQL hostname
+	sql213.koon.pl
+FTP username
+	koon_15953615
+FTP password
+	**********
+FTP host name 	ftp.koon.pl
+
+Your Website URL's
+Home page
+	http://cloudbay.koon.pl
+
+*****************
+MySQL DB Name 		MySQL User Name 	MySQL Password 			MySQL Host Name
+koon_15953615_mvc	koon_15953615		(Your cPanel Password)		sql213.koon.pl
