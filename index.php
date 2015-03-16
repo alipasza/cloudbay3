@@ -1,3 +1,4 @@
+//http://azure.microsoft.com/pl-pl/
 <?php
 
 //AutoLoader
