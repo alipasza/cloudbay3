@@ -151,7 +151,7 @@
                               <nav>
                                  <ul class="dev-navigation dev-navigation-b">
                                     <li class="nav-expander nav-expander">
-                                       <a class="trigger" href="#">Funkcje</a> 
+                                       <a class="trigger" href="#"><?php echo $this->ltext[Session::get("lang")]['header-services']; ?></a> 
                                        <div class="nav-expander-wrapper nav-expander-wrapper-b">
                                           <div class="nav-expander-div">
                                              <div>
@@ -346,13 +346,11 @@
                                           </div>
                                        </div>
                                     </li>
-                                    <li class="nav-expander"><a id="menu_pricing_link" href="/pl-pl/pricing/">Cennik</a></li>
-                                    <li class="nav-expander"><a id="menu_documentation_link" href="/pl-pl/documentation/">Dokumentacja</a> 
-                                    <li class="nav-expander"><a id="menu_downloads_link" href="/pl-pl/downloads/">Pliki do pobrania</a> 
-                                    <li class="nav-expander"><a id="menu_marketplace_link" href="/pl-pl/marketplace/">Portal Marketplace</a> 
+                                    <li class="nav-expander"><a id="menu_pricing_link" href="/pl-pl/pricing/"><?php echo $this->ltext[Session::get("lang")]['header-customers']; ?></a></li>
+                                    <li class="nav-expander"><a id="menu_documentation_link" href="/pl-pl/documentation/"><?php echo $this->ltext[Session::get("lang")]['header-community']; ?></a> 
+                                    <li class="nav-expander"><a id="menu_downloads_link" href="/pl-pl/downloads/">Download</a> 
                                     <li class="nav-expander"><a id="menu_blog_link" href="/blog/">Blog</a></li>
-                                    <li class="nav-expander">
-                                       <a class="trigger" href="#">Społeczność</a> 
+                                    <li class="nav-expander"><a class="trigger" href="#"><?php echo $this->ltext[Session::get("lang")]['header-training']; ?></a> 
                                        <div class="nav-expander-wrapper">
                                           <div class="nav-expander-div">
                                              <div>
@@ -379,7 +377,7 @@
                                        </div>
                                     </li>
                                     <li class="nav-expander">
-                                       <a class="trigger" id="menu_support_link" href="#">Pomoc techniczna</a> 
+                                       <a class="trigger" id="menu_support_link" href="#">Support</a> 
                                        <div class="nav-expander-wrapper">
                                           <div class="nav-expander-div">
                                              <div>
