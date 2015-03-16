@@ -1,9 +1,9 @@
 <?php
 //Views\header: 1-sza pozycja w menu gł w header
-$this->ltext['PL']['header-services'] = 'Witamy';
-$this->ltext['EN']['header-services'] = 'Welcome';
-$this->ltext['DE']['header-services'] = 'Willcommen';
-$this->ltext['RU']['header-services'] = 'Привет';
+$this->ltext['PL']['header-services'] = 'Usługi';
+$this->ltext['EN']['header-services'] = 'Services';
+$this->ltext['DE']['header-services'] = 'Dienstleistungen';
+$this->ltext['RU']['header-services'] = 'Yслуги';
 
 //Views\header: 2-ga pozycja 2 menu gł w header
 $this->ltext['PL']['header-customers'] = 'Klienci';
