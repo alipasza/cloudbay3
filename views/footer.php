@@ -4,13 +4,13 @@
                            <div class="footer-map">
                               <ul class="social">
                                  <li class="header">Bądź w kontakcie</li>
-                                 <li class="facebook"><a href="http://go.microsoft.com/fwlink/?LinkId=306390">Serwis Facebook</a></li>
-                                 <li class="twitter"><a href="http://go.microsoft.com/fwlink/?LinkID=306391">Serwis Twitter</a></li>
-                                 <li class="rss"><a href="http://azure.microsoft.com/blog/feed/">Źr&#243;dło RSS</a></li>
-                                 <li class="newsletter"><a href="http://go.microsoft.com/fwlink/?LinkId=306393">Biuletyn</a></li>
+                                 <li class="facebook"><a href="http://go.facebook.com/fwlink/?LinkId=zzz">Serwis Facebook</a></li>
+                                 <li class="twitter"><a href="http://go.twitter.com/fwlink/?LinkID=xxx">Serwis Twitter</a></li>
+                                 <li class="rss"><a href="http://go.rss.com/blog/feed/">Źr&#243;dło RSS</a></li>
+                                 <li class="newsletter"><a href="http://go.sendmail.com/fwlink/?LinkId=yyy">Send mail</a></li>
                               </ul>
                               <ul>
-                                 <li class="header"><a href="/pl-pl/">System Microsoft Azure</a></li>
+                                 <li class="header"><a href="/pl-pl/">cloudBay CRM</a></li>
                                  <li><a href="/pl-pl/services/">Usługi</a></li>
                                  <li><a href="/pl-pl/regions/">Regiony</a></li>
                                  <li><a href="/pl-pl/case-studies/">Analizy przypadku</a></li>
@@ -21,8 +21,8 @@
                                  <li><a href="/pl-pl/marketplace/">Portal Marketplace</a></li>
                               </ul>
                               <ul>
-                                 <li class="header"><a href="http://azure.microsoft.com/blog/">Społeczność</a></li>
-                                 <li><a href="http://azure.microsoft.com/blog/">Blogi</a></li>
+                                 <li class="header"><a href="http://cloudbay.com/blog/">Społeczność</a></li>
+                                 <li><a href="http://cloudbay.com/blog/">Blogi</a></li>
                                  <li><a href="/pl-pl/updates/">Aktualizacje usług</a></li>
                                  <li><a href="/pl-pl/support/forums/">Fora</a></li>
                                  <li><a href="/pl-pl/community/events/">Wydarzenia</a><br/><br/></li>
@@ -46,7 +46,7 @@
                            </div>
                            <div class="footer-bottom">
                               <ul>
-                                 <li class="hello-note">Pozdrowienia ze Seattle.</li>
+                                 <li class="hello-note">Wybierz język:.</li>
                                  <li>
                                     <div class="languages-selector">
                                        <div class="locale-selector">
@@ -101,6 +101,7 @@
                                        </div>
                                     </div>
                                  </li>
+                                 <li class="hello-note">Wybierz walutę:.</li>
                                  <li>
                                     <div class="currencies-selector">
                                        <div class="default-currency-selector">
@@ -153,14 +154,11 @@
                                  </li>
                               </ul>
                               <ul class="legal">
-                                 <li style="display:none" class="german-legal"><a href="http://www.microsoft.com/germany/siteservices/impressum/copyright.mspx?CM=Foot">Nutzungsbedingungen</a></li>
-                                 <li style="display:none" class="german-legal"><a href="http://www.microsoft.com/germany/siteservices/impressum/default.mspx">Impressum</a></li>
-                                 <li><a href="http://support.microsoft.com/contactus/?ws=mscom">Skontaktuj się z nami</a></li>
-                                 <li><a href="http://go.microsoft.com/fwlink/p/?linkid=222682">Znaki towarowe</a></li>
-                                 <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681">Prywatność i pliki cookie</a></li>
-                                 <li class="loc-hide"><a href="http://feedback.azure.com/">Opinia</a></li>
+                                 <li><a href="http://aboutus.com/contactus/?ws=mscom">About us</a></li>
+                                 <li></li>
+                                 <li><a href="http://go.terms.com/fwlink/p/?linkid=www">Terms and Privacy</a></li>
                               </ul>
-                              <div class="footer-copyright"> <a href="http://www.microsoft.com" class="logo-microsoft">Microsoft</a> <span>&copy; 2015 Microsoft</span> </div>
+                              <div class="footer-copyright"> <span>&copy; 2015 cloudBay</span> </div>
                            </div>
                         </div>
                      </footer>

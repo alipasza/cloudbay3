@@ -9,7 +9,7 @@
                                   <div class="wa-content wa-content-10up" background="url(<?php echo URL; ?>public/images/bg-home.jpg);">
                                     <div class="wa-homeSprite wa-homeSprite-banner">
                                        <div class="wa-banner">
-                                          <span>59% firm z rankingu Fortune 500 korzysta z systemu Windows Azure.</span> 
+                                          <span>Juz xx firm korzysta z cloudBay CRM.</span> 
                                           <p><a href="/pl-pl/case-studies" class="wa-arrowLink wa-arrowLink-light">Posłuchaj ich historii</a></p>
                                        </div>
                                     </div>
@@ -18,7 +18,7 @@
                                        <h3>Działaj szybciej</h3>
                                        <h3>Oszczędzaj pieniądze</h3>
                                        <h3>Integracja lokalnych aplikacji i danych</h3>
-                                       <p><a href="/pl-pl/overview/what-is-azure/" class="wa-button wa-button-alt wa-button-primary">Dlaczego warto wybrać system Azure?</a></p>
+                                       <p><a href="/pl-pl/overview/what-is-azure/" class="wa-button wa-button-alt wa-button-primary">Dlaczego warto wybrać system cloudBay?</a></p>
                                     </div>
                                  </div>
                               </section>
@@ -87,19 +87,19 @@
                            <div class="wa-spacer">
                               <h3>Rozpocznij</h3>
                               <a href="/pl-pl/get-started/" class="wa-homeSprite wa-homeSprite-getStarted"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb1.jpg" style="margin: 21px 0 0 9px;"/> </a> 
-                              <p>Obejrzyj trzyminutowe wideo przedstawiające, jak szybko rozpocząć pracę z systemem Azure.</p>
+                              <p>Obejrzyj trzyminutowe wideo przedstawiające, jak szybko rozpocząć pracę z systemem cloudBay.</p>
                               <p><a href="/pl-pl/get-started/" class="wa-arrowLink wa-arrowLink-light">Rozpocznij</a></p>
                            </div>
                            <div class="wa-spacer">
                               <h3>Bezpłatne seminaria internetowe</h3>
                               <a href="/pl-pl/overview/webinars/" class="wa-homeSprite wa-homeSprite-webinarTalks"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb2.jpg" style="margin: 21px 0 0 9px;"/> </a> 
-                              <p>Utwórz konto i oglądaj prezentacje online na żywo dotyczące najnowszych funkcji w systemie Azure.</p>
+                              <p>Utwórz konto i oglądaj prezentacje online na żywo dotyczące najnowszych funkcji w systemie cloudBay.</p>
                               <p><a href="/pl-pl/overview/webinars/" class="wa-arrowLink wa-arrowLink-light">Utw&#243;rz konto i weź udział</a></p>
                            </div>
                            <div class="wa-spacer">
                                <h3>Piątek z Azure</h3>
                               <a href="/pl-pl/documentation/videos/azure-friday/" class="wa-homeSprite wa-homeSprite-azureFridays"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb3.jpg" style="margin: 21px 0 0 9px;"/> </a> 
-                              <p>Obejrzyj serię cotygodniowych 10-minutowych wideo z udziałem Scotta Hanselmana.</p>
+                              <p>Obejrzyj serię cotygodniowych 10-minutowych wideo z udziałem Johna Waisenberga.</p>
                               <p><a href="/pl-pl/documentation/videos/azure-friday/" class="wa-arrowLink wa-arrowLink-light">Obejrzyj program z tego tygodnia</a></p>
                            </div>
                         </div>
@@ -126,7 +126,7 @@
                         <div class="wa-content wa-content-3up">
                            <div class="wa-spacer">
                               <a href="/pl-pl/services/websites/" class="wa-solutionHolder">
-                                 <h4>Witryny sieci Web + hosting sieci Web</h4>
+                                 <h4>Dostęp z całego świata</h4>
                                  <span class="wa-homeSprite wa-homeSprite-websites"></span> 
                                  <p>Wdrażanie i skalowanie nowoczesnych witryn sieci Web i aplikacji sieci Web w ciągu kilku sekund</p>
                                  <p><span class="wa-arrowLink">Dowiedz się więcej</span></p>
@@ -134,17 +134,17 @@
                            </div>
                            <div class="wa-spacer">
                               <a href="/pl-pl/services/virtual-machines/" class="wa-solutionHolder">
-                                 <h4>Maszyny wirtualne</h4>
+                                 <h4>Rozwiązania w chmurze</h4>
                                  <span class="wa-homeSprite wa-homeSprite-virtualMachines"></span> 
-                                 <p>Uruchamianie systemów Windows Server i Linux<br > w ciągu kilku minut</p>
+                                 <p>CRM działa w chmurze <bR> Microsoft Azure<br> i Google Cloud</p>
                                  <p><span class="wa-arrowLink">Dowiedz się więcej</span></p>
                               </a>
                            </div>
                            <div class="wa-spacer">
                               <a href="/pl-pl/services/sql-database/" class="wa-solutionHolder">
-                                 <h4>Baza danych SQL</h4>
+                                 <h4>Technologia</h4>
                                  <span class="wa-homeSprite wa-homeSprite-sqlDatabase"></span> 
-                                 <p>Zarządzana relacyjna baza danych SQL<br/>Baza danych jako usługa</p>
+                                 <p>Najnowocześnie rozwiązania: PHP MVC, jQuery, mySQL<br/>Możliwość wykorzystania in-memory database (Redis)</p>
                                  <p><span class="wa-arrowLink">Dowiedz się więcej</span></p>
                               </a>
                            </div>
@@ -160,7 +160,7 @@
                            </div>
                            <div class="wa-spacer">
                               <a href="/pl-pl/services/mobile-services/" class="wa-solutionHolder">
-                                 <h4>Zaplecza aplikacji mobilnych</h4>
+                                 <h4>Wsparcie dla aplikacji mobilnych</h4>
                                  <span class="wa-homeSprite wa-homeSprite-mobileBackends"></span> 
                                  <p>Tworzenie i hostowanie zaplecza dla dowolnej aplikacji mobilnej</p>
                                  <p><span class="wa-arrowLink">Dowiedz się więcej</span></p>
@@ -195,24 +195,24 @@
                         <div class="wa-content wa-content-10up">
                            <div class="wa-spacer"></div>
                            <div class="wa-spacer wa-spacer-3down">
-                              <h2>Klienci</h2>
-                              <p>Ludzie robią zdumiewające rzeczy, korzystając z systemu Azure. Oto, jak klienci korzystają z możliwości, elastyczności i skalowalności systemu Azure.</p>
+                              <h2>Nas klienci</h2>
+                              <p>Ludzie robią uzyskują zdumiewające efekty, korzystając z cloudBay. Oto, jak klienci korzystają z jego możliwości, elastyczności i skalowalności.</p>
                               <p><a href="/pl-pl/case-studies/" class="wa-arrowLink wa-arrowLink-light">Pokaż wszystkie analizy przypadku</a></p>
                            </div>
                            <div class="wa-spacer wa-spacer-6down">
                               <ul class="wa-imageCollection">
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=2797" class="wa-homeSprite wa-homeSprite-customer01"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=2797" class="wa-homeSprite wa-homeSprite-customer01"></a> </li>
                                  <li> <a href="/pl-pl/case-studies/customer-stories-harpercollins/" class="wa-homeSprite wa-homeSprite-customer02"></a> </li>
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=6573" class="wa-homeSprite wa-homeSprite-customer03"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=6573" class="wa-homeSprite wa-homeSprite-customer03"></a> </li>
                                  <li> <a href="http://channel9.msdn.com/Blogs/Windows-Azure/Windows-Azure-Case-Study-NBC-Sports/" class="wa-homeSprite wa-homeSprite-customer04"></a> </li>
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=5847" class="wa-homeSprite wa-homeSprite-customer05"></a> </li>
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=2501" class="wa-homeSprite wa-homeSprite-customer06"></a> </li>
-                                 <li> <a href="http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000003540" class="wa-homeSprite wa-homeSprite-customer07"></a> </li>
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=8874" class="wa-homeSprite wa-homeSprite-customer08"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=5847" class="wa-homeSprite wa-homeSprite-customer05"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=2501" class="wa-homeSprite wa-homeSprite-customer06"></a> </li>
+                                 <li> <a href="http://www.cloudBay.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000003540" class="wa-homeSprite wa-homeSprite-customer07"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=8874" class="wa-homeSprite wa-homeSprite-customer08"></a> </li>
                                  <li> <a href="/pl-pl/case-studies/customer-stories-easyjet/" class="wa-homeSprite wa-homeSprite-customer09"></a> </li>
-                                 <li> <a href="http://www.microsoft.com/casestudies/Microsoft-Excel-2010/City-of-Barcelona/City-Deploys-Big-Data-BI-Solution-to-Improve-Lives-and-Create-a-Smart-City-Template/710000003415" class="wa-homeSprite wa-homeSprite-customer10"></a> </li>
-                                 <li> <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=4911" class="wa-homeSprite wa-homeSprite-customer11"></a> </li>
-                                 <li> <a href="http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000004265" class="wa-homeSprite wa-homeSprite-customer12"></a> </li>
+                                 <li> <a href="http://www.cloudBay.com/casestudies/cloudBay-Excel-2010/City-of-Barcelona/City-Deploys-Big-Data-BI-Solution-to-Improve-Lives-and-Create-a-Smart-City-Template/710000003415" class="wa-homeSprite wa-homeSprite-customer10"></a> </li>
+                                 <li> <a href="https://customers.cloudBay.com/Pages/CustomerStory.aspx?recid=4911" class="wa-homeSprite wa-homeSprite-customer11"></a> </li>
+                                 <li> <a href="http://www.cloudBay.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000004265" class="wa-homeSprite wa-homeSprite-customer12"></a> </li>
                               </ul>
                            </div>
                         </div>
@@ -224,7 +224,7 @@
                            <div class="wa-spacer"> <span class="wa-homeSprite wa-homeSprite-azureCredit"></span> </div>
                            <div class="wa-spacer">
                               <h2>Chcesz zacząć?</h2>
-                              <h5>Utwórz konto i zyskaj <span class="stored-price" data-pricekey="monetaryCredit.freeTrial">$200</span> kredytów na korzystanie z systemu Azure. Pełny dostęp do wszystkich interesujących Cię usług.</h5>
+                              <h5>Utwórz konto i oszczędź 100$. Pełny dostęp do wszystkich interesujących Cię usług.</h5>
                               <p><a href="/pl-pl/pricing/free-trial/" class="wa-button wa-button-primary">Wypr&#243;buj bezpłatnie</a></p>
                               <p><a href="/pl-pl/pricing/purchase-options/" class="wa-arrowLink wa-arrowLink-light">Opcje zakupu</a></p>
                            </div>

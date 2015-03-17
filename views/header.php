@@ -1,43 +1,16 @@
-<!DOCTYPE html> <!--[if lt IE 7]> 
-<html class="no-js ie6 oldie pl-pl t-" lang="pl">
-   <![endif]--> <!--[if IE 7]>    
-   <html class="no-js ie7 oldie pl-pl t-" lang="pl">
-      <![endif]--> <!--[if IE 8]>    
-      <html class="no-js ie8 oldie pl-pl t-" lang="pl">
-         <![endif]--> <!--[if gt IE 8]><!--> 
+<!DOCTYPE html> 
 <html class="no-js pl-pl t-" lang="pl">
     <!--<![endif]--> 
     <head id="Head1">
         <!-- NUP --> 
         <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <meta name="msvalidate.01" content="3D522357F84D0700D2C4AD6A4113B4DF"/>
-        <meta name="google-site-verification" content="Aklnt0h0ownl9oYvNgYjmEERs8CXzq_BYNatfE7t_sM"/>
-        <meta name="ms.sitename" content="azure"/>
-        <meta name="ms.sitever" content="20150312-0517-797"/>
-        <meta name="ms.pltfrm" content="azure.microsoft.com"/>
-        <meta name="ms.sitesec" content=""/>
-        <meta name="ms.pagetype" content=""/>
-        <meta name="route" content="LE238"/>
-        <meta name="ctrl" content="SD100"/>
-        <meta name="ms.lang" content="pl"/>
-        <meta name="ms.loc" content="pl"/>
-        <meta name="ms.pgtmplt" content=""/>
-        <meta name="ms.prod" content="azure"/>
-        <meta name="ms.auth" content="false"/>
-        <meta name="ms.url" content="/pl-pl/"/>
-        <meta name="ms.query" content=""/>
-        <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="//acom.azurecomcdn.net/80C57D/cdn/images/cvt-b3519229cc107666b1026ec2f0017dbb858b8390/icon/apple-touch/76x76.png?t=popn"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="//acom.azurecomcdn.net/80C57D/cdn/images/cvt-15e514b00dcb2a56ee8689746e8dd4bb9988fc3b/icon/apple-touch/120x120.png?t=popn"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="//acom.azurecomcdn.net/80C57D/cdn/images/cvt-8f322e56718f1bd28616d03c3ddba1e6c6dfd745/icon/apple-touch/152x152.png?t=popn"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="//acom.azurecomcdn.net/80C57D/cdn/images/cvt-69df4fdde52e50b3879d47d9adf870c362476599/icon/apple-touch/180x180.png?t=popn"/>
+        <link href="<?php echo URL; ?>public/images/cloudbay-favicon.png" rel="icon" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/fonts/segoe-ui/west-european/normal/latest.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/fonts/segoe-ui/west-european/light/latest.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/fonts/segoe-ui/west-european/semibold/latest.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/fonts/segoe-ui/west-european/bold/latest.css"/>
-        <meta name="description" content="Microsoft Azure to otwarta i elastyczna platforma obliczeniowa w chmurze klasy korporacyjnej. Działaj szybciej, r&#243;b więcej i oszczędzaj pieniądze dzięki usługom IaaS i PaaS. Wypr&#243;buj BEZPŁATNIE."/>
-        <meta name="keywords" content="Azure, Microsoft Azure, przetwarzanie w chmurze, Microsoft Azure"/>
+        <meta name="description" content="CRM cloudBay"/>
+        <meta name="keywords" content="CRM cloudBay"/>
         <link rel="canonical" href="<?php echo URL; ?>pl-pl/"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/HomeCss_268844BE.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/NonEnglishCss_85EDD707.css"/>
@@ -92,7 +65,7 @@
                         n.requestRegion = "acom-prod-europenorth-01"
                     })(window)
         </script> 
-        <title>Microsoft Azure: platforma obliczeniowa w chmurze i usługi</title>
+        <title>cloudBay</title>
     </head>
     <body id="top" class=" page-" ng-app="acom">
         <form method="post" action="/pl-pl/" id="RunwayMasterForm">
