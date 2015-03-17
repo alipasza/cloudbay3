@@ -1,9 +1,12 @@
+<!-- http://azure.microsoft.com/pl-pl/ -->
 <!-- view/index/index.php -->
+
+                    <!-- slide menu -->
                      <div class="wa-carousel" data-control="carousel">
                         <ul class="slides">
                            <li>
                               <section class="wa-section wa-sectionHome wa-sectionHome-carousel1">
-                                 <div class="wa-content wa-content-10up">
+                                  <div class="wa-content wa-content-10up" background="url(<?php echo URL; ?>public/images/bg-home.jpg);">
                                     <div class="wa-homeSprite wa-homeSprite-banner">
                                        <div class="wa-banner">
                                           <span>59% firm z rankingu Fortune 500 korzysta z systemu Windows Azure.</span> 
@@ -57,6 +60,9 @@
                                        <h3>Azure Service Bus Event Hubs 101 with <br>Dan Rosanova</h3>
                                        <p><a href="/pl-pl/documentation/videos/azure-friday/" class="wa-button wa-button-alt wa-button-primary">Obejrzyj teraz</a></p>
                                     </div>
+                                    <div class="wa-spacer wa-spacer-2down">
+                                       <div class="wa-homeSprite wa-homeSprite-azureFridays"></div>
+                                    </div>                                    
                                  </div>
                               </section>
                            </li>
@@ -68,29 +74,31 @@
                            <li> <a href="#">3</a> </li>
                         </ul>
                      </div>
+                     <!-- wąska biała szybka -->
                      <section class="wa-section wa-sectionHome wa-sectionHome-tagline">
                         <div class="wa-content">
                            <a href="/pl-pl/pricing/free-trial/" class="wa-button wa-button-primary wa-button-primaryMega">Wypr&#243;buj bezpłatnie</a> 
                            <h3>Utw&#243;rz konto i zacznij wdrażać swoje pierwsze rozwiązanie w chmurze w niecałe 5 minut</h3>
                         </div>
                      </section>
+<!-- 1sza niebieska szyba -->
                      <section class="wa-section wa-sectionHome wa-sectionHome-getStarted">
                         <div class="wa-content wa-content-3up">
                            <div class="wa-spacer">
                               <h3>Rozpocznij</h3>
-                              <a href="/pl-pl/get-started/" class="wa-homeSprite wa-homeSprite-getStarted"></a> 
+                              <a href="/pl-pl/get-started/" class="wa-homeSprite wa-homeSprite-getStarted"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb1.jpg" style="margin: 21px 0 0 9px;"/> </a> 
                               <p>Obejrzyj trzyminutowe wideo przedstawiające, jak szybko rozpocząć pracę z systemem Azure.</p>
                               <p><a href="/pl-pl/get-started/" class="wa-arrowLink wa-arrowLink-light">Rozpocznij</a></p>
                            </div>
                            <div class="wa-spacer">
                               <h3>Bezpłatne seminaria internetowe</h3>
-                              <a href="/pl-pl/overview/webinars/" class="wa-homeSprite wa-homeSprite-webinarTalks"> <span class="title">Azure Weekly Demo</span> </a> 
+                              <a href="/pl-pl/overview/webinars/" class="wa-homeSprite wa-homeSprite-webinarTalks"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb2.jpg" style="margin: 21px 0 0 9px;"/> </a> 
                               <p>Utwórz konto i oglądaj prezentacje online na żywo dotyczące najnowszych funkcji w systemie Azure.</p>
                               <p><a href="/pl-pl/overview/webinars/" class="wa-arrowLink wa-arrowLink-light">Utw&#243;rz konto i weź udział</a></p>
                            </div>
                            <div class="wa-spacer">
-                              <h3>Piątek z Azure</h3>
-                              <a href="/pl-pl/documentation/videos/azure-friday/" class="wa-homeSprite wa-homeSprite-azureFridays"> <img alt="" src="//acom.azurecomcdn.net/80C57D/cdn/images/cvt-0db67267d2885e94b57b47b862c1d83510dfa484/page/home/azure-friday-thumb.jpg?t=popn" style="margin: 21px 0 0 9px;"/> </a> 
+                               <h3>Piątek z Azure</h3>
+                              <a href="/pl-pl/documentation/videos/azure-friday/" class="wa-homeSprite wa-homeSprite-azureFridays"> <img alt="" src="<?php echo URL; ?>public/images/azure-friday-thumb3.jpg" style="margin: 21px 0 0 9px;"/> </a> 
                               <p>Obejrzyj serię cotygodniowych 10-minutowych wideo z udziałem Scotta Hanselmana.</p>
                               <p><a href="/pl-pl/documentation/videos/azure-friday/" class="wa-arrowLink wa-arrowLink-light">Obejrzyj program z tego tygodnia</a></p>
                            </div>
@@ -110,6 +118,7 @@
                            <path filter="url(#drop-shadow)" d="M20.7,14.8c0.8-0.7,2-1.2,3.1-1.2c1.9,0,3.6,1.3,4.2,3c0.3-0.1,0.6-0.2,1-0.2c1.7,0,3,1.3,3,3 c0,1.7-1.3,3-3,3c0,0,0,0,0,0l0,0H2.1c-1.2,0-2.1-1-2.1-2.1c0-1.2,1-2.1,2.1-2.1c0,0,0,0,0.1,0C2.1,17.8,2,17.4,2,17 c0-2.4,2-4.4,4.4-4.4c1.1,0,2.2,0.4,3,1.2c0.7-2.5,2.9-4.3,5.6-4.3C18,9.5,20.5,11.8,20.7,14.8z"/>
                         </svg>
                      </section>
+<!-- biała szyba -->
                      <section class="wa-section wa-sectionHome wa-sectionHome-popularSolutions">
                         <div class="wa-content">
                            <h2>Popularne rozwiązania</h2>
@@ -181,6 +190,7 @@
                            <path filter="url(#drop-shadow)" d="M20.7,14.8c0.8-0.7,2-1.2,3.1-1.2c1.9,0,3.6,1.3,4.2,3c0.3-0.1,0.6-0.2,1-0.2c1.7,0,3,1.3,3,3 c0,1.7-1.3,3-3,3c0,0,0,0,0,0l0,0H2.1c-1.2,0-2.1-1-2.1-2.1c0-1.2,1-2.1,2.1-2.1c0,0,0,0,0.1,0C2.1,17.8,2,17.4,2,17 c0-2.4,2-4.4,4.4-4.4c1.1,0,2.2,0.4,3,1.2c0.7-2.5,2.9-4.3,5.6-4.3C18,9.5,20.5,11.8,20.7,14.8z"/>
                         </svg>
                      </section>
+                     <!-- zielona szyba -->
                      <section class="wa-section wa-sectionHome wa-sectionHome-customersB">
                         <div class="wa-content wa-content-10up">
                            <div class="wa-spacer"></div>
@@ -208,6 +218,7 @@
                         </div>
                         <span class="wa-homeSprite wa-homeSprite-building hide-shrink"></span> 
                      </section>
+                     <!-- niebieska szyba -->
                      <section class="wa-section wa-sectionGetStartedNext">
                         <div class="wa-content">
                            <div class="wa-spacer"> <span class="wa-homeSprite wa-homeSprite-azureCredit"></span> </div>

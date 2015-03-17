@@ -165,7 +165,11 @@
                         </div>
                      </footer>
                   </div>
-                  <script src="//acom.azurecomcdn.net/80C57D/cdn/Content/20150312-0517-797/Dynamic/HomeScripts_5DEA5F32.js" onerror="fx.disableCdn.apply(this,arguments)"></script> <script>(function (n) {
+                  
+                  <script src="<?php echo URL; ?>public/js/HomeScripts_5DEA5F32.js" onerror="fx.disableCdn.apply(this,arguments)">
+                  </script> 
+                  
+                  <script>(function (n) {
                      n.gTrackEvents = 1;
                      n.gTrackAnchor = 0;
                      n.gTrackForm = 0;
@@ -173,7 +177,9 @@
                      n.gDomain = "m.webtrends.com";
                      n.gDcsId = "dcsjwb9vb00000c932fd0rjc7_5p3t"
                      })(window)
-                  </script> <script src="//acom.azurecomcdn.net/80C57D/cdn/Content/20150312-0517-797/Dynamic/TaggingScripts_554499B4.js" onerror="fx.disableCdn.apply(this,arguments)"></script> <script type="text/javascript">$(document).ready(function () {
+                  </script> 
+                                  
+                  <script type="text/javascript">$(document).ready(function () {
                      $(".site-flag a.locale-link").off("click");
                      $(".site-flag a.locale-link").click(function (n) {
                          var u, i, t, e, f, r, o;
@@ -193,8 +199,14 @@
                          }
                      })
                      })
-                  </script> <script type="text/JavaScript">var varSegmentation=0,varClickTracking=1,varCustomerTracking=0,varAutoFirePV=1,Route="LE238",Ctrl="SD100";document.write("<script type='text/javascript' src='"+window.location.protocol+"//c.microsoft.com/ms.js'><\/script>")</script> 
-                  <noscript> <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/> </noscript>
+                  </script>
+                  
+                  <script type="text/JavaScript">var varSegmentation=0,varClickTracking=1,varCustomerTracking=0,varAutoFirePV=1,Route="LE238",Ctrl="SD100";document.write("<script type='text/javascript' src='"+window.location.protocol+"//c.microsoft.com/ms.js'><\/script>")
+                  </script> 
+                  
+                  <noscript> <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/> 
+                  </noscript>
+                  
                   <script>$(function () {
                      (function (n, t, i, r, u, f, e) {
                          n.GoogleAnalyticsObject = u;
@@ -214,6 +226,7 @@
                      Acom.EventManager.GoogleEventRegion()
                      })
                   </script> 
+                  
                </form>
             </body>
          </html>

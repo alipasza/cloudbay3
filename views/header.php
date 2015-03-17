@@ -41,6 +41,7 @@
         <link rel="canonical" href="<?php echo URL; ?>pl-pl/"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/HomeCss_268844BE.css"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/NonEnglishCss_85EDD707.css"/>
+        
         <script>(function (n, t, i, r, u) {
                 "use strict";
                 function f(t, i, r) {
@@ -66,50 +67,11 @@
                 n.fx[i] = n.fx[i] || e;
                 n.fx[u] = n.fx[u] || o
             })(this, "nocdn", "disableCdn", "", "navigateToErrorPage")
-        </script><script src="//acom.azurecomcdn.net/80C57D/cdn/Content/20150312-0517-797/Dynamic/HeaderScripts_B111C26F.js" onerror="fx.disableCdn.apply(this,arguments)"></script> <!-- Start Visual Website Optimizer Asynchronous Code --> <script>var _vis_opt_lib = "//acom.azurecomcdn.net/80C57D/cdn/scripts/20150312-0517-797/vanj.js", _vwo_code = function () {
-                var i = 2627, r = 2e3, u = 2500, f = !1, t = !1, n = document;
-                return{use_existing_jquery: function () {
-                        return f
-                    }, library_tolerance: function () {
-                        return u
-                    }, finish: function () {
-                        if (!t) {
-                            t = !0;
-                            var i = n.getElementById("_vis_opt_path_hides");
-                            i && i.parentNode.removeChild(i)
-                        }
-                    }, finished: function () {
-                        return t
-                    }, load: function (t) {
-                        var i = n.createElement("script");
-                        i.src = t;
-                        i.type = "text/javascript";
-                        i.innerText;
-                        i.onerror = function () {
-                            _vwo_code.finish()
-                        };
-                        n.getElementsByTagName("head")[0].appendChild(i)
-                    }, init: function () {
-                        settings_timer = setTimeout("_vwo_code.finish()", r);
-                        this.load("//dev.visualwebsiteoptimizer.com/j.php?a=" + i + "&u=" + encodeURIComponent(n.URL) + "&r=" + Math.random());
-                        var t = n.createElement("style"), u = "body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}", f = n.getElementsByTagName("head")[0];
-                        return t.setAttribute("id", "_vis_opt_path_hides"), t.setAttribute("type", "text/css"), t.styleSheet ? t.styleSheet.cssText = u : t.appendChild(n.createTextNode(u)), f.appendChild(t), settings_timer
-                    }}
-            }();
-            _vwo_settings_timer = _vwo_code.init()
-        </script> <!-- End Visual Website Optimizer Asynchronous Code --> <script type="text/javascript">function _kms(n) {
-                setTimeout(function () {
-                    var i = document, r = i.getElementsByTagName("script")[0], t = i.createElement("script");
-                    t.type = "text/javascript";
-                    t.async = !0;
-                    t.src = n;
-                    r.parentNode.insertBefore(t, r)
-                }, 1)
-            }
-            var _kmq = _kmq || [], _kmk = _kmk || "b955b8f9a9b87a54a7ba42e9e3642cc56456686e";
-            _kms("//i.kissmetrics.com/i.js");
-            _kms("//doug1izaerwt3.cloudfront.net/" + _kmk + ".1.js")
-        </script> <script>(function (n) {
+        </script>
+        <script src="<?php echo URL; ?>public/js/HeaderScripts_B111C26F.js" onerror="fx.disableCdn.apply(this,arguments)">
+        </script> 
+
+        <script>(function (n) {
                         "use strict";
                         n.Acom = n.Acom || {};
                         n.Acom.currentCulture = "pl-pl"
@@ -120,10 +82,13 @@
         <meta name="msapplication-task" content="name=View Pricing Calculator;action-uri=http://www.windowsazure.com/en-us/pricing/calculator/?jl=t;icon-uri=https://az83882.vo.msecnd.net/favicon.ico"/>
         <meta name="msapplication-task" content="name=Like Windows Azure;action-uri=https://www.facebook.com/windowsazure;icon-uri=https://az83882.vo.msecnd.net/css/images/jumplist-fb.ico"/>
         <meta name="msapplication-task" content="name=Tweet Windows Azure;action-uri=http://twitter.com/#!/windowsazure;icon-uri=https://az83882.vo.msecnd.net/css/images/jumplist-twitter.ico"/>
+        
         <script type="text/javascript">(function (n) {
                         n.requestIP = "193.27.6.28"
                     })(window)
-        </script> <script type="text/javascript">(function (n) {
+        </script> 
+        
+        <script type="text/javascript">(function (n) {
                         n.requestRegion = "acom-prod-europenorth-01"
                     })(window)
         </script> 
