@@ -10,38 +10,38 @@
                                  <li class="newsletter"><a href="http://go.sendmail.com/fwlink/?LinkId=yyy">Send mail</a></li>
                               </ul>
                               <ul>
-                                 <li class="header"><a href="/pl-pl/">cloudBay CRM</a></li>
-                                 <li><a href="/pl-pl/services/">Usługi</a></li>
-                                 <li><a href="/pl-pl/regions/">Regiony</a></li>
-                                 <li><a href="/pl-pl/case-studies/">Analizy przypadku</a></li>
-                                 <li><a href="/pl-pl/pricing/">Cennik</a></li>
-                                 <li><a href="/pl-pl/pricing/calculator/">Kalkulator</a></li>
-                                 <li><a href="/pl-pl/documentation/">Dokumentacja</a></li>
-                                 <li><a href="/pl-pl/downloads/?sdk=net">Pliki do pobrania</a></li>
-                                 <li><a href="/pl-pl/marketplace/">Portal Marketplace</a></li>
+                                 <li class="header"><a href="<?php echo URL; ?>">cloudBay CRM</a></li>
+                                 <li><a href="<?php echo URL; ?>services/">Usługi</a></li>
+                                 <li><a href="<?php echo URL; ?>regions/">Regiony</a></li>
+                                 <li><a href="<?php echo URL; ?>case-studies/">Analizy przypadku</a></li>
+                                 <li><a href="<?php echo URL; ?>pricing/">Cennik</a></li>
+                                 <li><a href="<?php echo URL; ?>pricing/calculator/">Kalkulator</a></li>
+                                 <li><a href="<?php echo URL; ?>documentation/">Dokumentacja</a></li>
+                                 <li><a href="<?php echo URL; ?>downloads/?sdk=net">Pliki do pobrania</a></li>
+                                 <li><a href="<?php echo URL; ?>marketplace/">Portal Marketplace</a></li>
                               </ul>
                               <ul>
-                                 <li class="header"><a href="http://cloudbay.com/blog/">Społeczność</a></li>
-                                 <li><a href="http://cloudbay.com/blog/">Blogi</a></li>
-                                 <li><a href="/pl-pl/updates/">Aktualizacje usług</a></li>
-                                 <li><a href="/pl-pl/support/forums/">Fora</a></li>
-                                 <li><a href="/pl-pl/community/events/">Wydarzenia</a><br/><br/></li>
+                                 <li class="header"><a href="<?php echo URL; ?>blog/">Społeczność</a></li>
+                                 <li><a href="<?php echo URL; ?>blog/">Blogi</a></li>
+                                 <li><a href="<?php echo URL; ?>updates/">Aktualizacje usług</a></li>
+                                 <li><a href="<?php echo URL; ?>support/forums/">Fora</a></li>
+                                 <li><a href="<?php echo URL; ?>community/events/">Wydarzenia</a><br/><br/></li>
                                  <li></li>
-                                 <li class="header"><a href="/pl-pl/support/options/">Pomoc techniczna</a></li>
-                                 <li><a href="/pl-pl/support/forums/">Fora</a></li>
-                                 <li><a href="http://status.azure.com">Pulpit nawigacyjny usług</a></li>
-                                 <li><a href="/pl-pl/support/options/">Pomoc techniczna</a></li>
+                                 <li class="header"><a href="<?php echo URL; ?>support/options/">Pomoc techniczna</a></li>
+                                 <li><a href="<?php echo URL; ?>support/forums/">Fora</a></li>
+                                 <li><a href="<?php echo URL; ?>dashboard">Pulpit nawigacyjny usług</a></li>
+                                 <li><a href="<?php echo URL; ?>support/options/">Pomoc techniczna</a></li>
                               </ul>
                               <ul>
-                                 <li class="header"><a href="https://account.windowsazure.com">Konto</a></li>
-                                 <li><a href="https://account.windowsazure.com/subscriptions/">Subskrypcje</a></li>
-                                 <li><a href="https://account.windowsazure.com/profile/">Profil</a></li>
-                                 <li><a href="/pl-pl/services/preview/">Funkcje do testowania</a></li>
-                                 <li><a href="https://manage.windowsazure.com">Portal zarządzania</a></li>
-                                 <li class="header trust-center"><a href="/pl-pl/support/trust-center/">Centrum zaufania</a></li>
-                                 <li><a href="/pl-pl/support/trust-center/security/">Zabezpieczenia</a></li>
-                                 <li><a href="/pl-pl/support/trust-center/privacy/">Ochrona prywatności</a></li>
-                                 <li><a href="/pl-pl/support/trust-center/compliance/">Zgodność</a></li>
+                                 <li class="header"><a href="<?php echo URL; ?>account/">Konto</a></li>
+                                 <li><a href="<?php echo URL; ?>subscriptions/">Subskrypcje</a></li>
+                                 <li><a href="<?php echo URL; ?>profile/">Profil</a></li>
+                                 <li><a href="<?php echo URL; ?>services/preview/">Funkcje do testowania</a></li>
+                                 <li><a href="<?php echo URL; ?>dashboard/">Portal zarządzania</a></li>
+                                 <li class="header trust-center"><a href="<?php echo URL; ?>support/trust-center/">Centrum zaufania</a></li>
+                                 <li><a href="<?php echo URL; ?>support/trust-center/security/">Zabezpieczenia</a></li>
+                                 <li><a href="<?php echo URL; ?>support/trust-center/privacy/">Ochrona prywatności</a></li>
+                                 <li><a href="<?php echo URL; ?>support/trust-center/compliance/">Zgodność</a></li>
                               </ul>
                            </div>
                            <div class="footer-bottom">
@@ -154,9 +154,9 @@
                                  </li>
                               </ul>
                               <ul class="legal">
-                                 <li><a href="http://aboutus.com/contactus/?ws=mscom">About us</a></li>
+                                 <li><a href="<?php echo URL; ?>contactus/">About us</a></li>
                                  <li></li>
-                                 <li><a href="http://go.terms.com/fwlink/p/?linkid=www">Terms and Privacy</a></li>
+                                 <li><a href="<?php echo URL; ?>terms/">Terms and Privacy</a></li>
                               </ul>
                               <div class="footer-copyright"> <span>&copy; 2015 cloudBay</span> </div>
                            </div>
@@ -201,9 +201,9 @@
                   
                   <script type="text/JavaScript">var varSegmentation=0,varClickTracking=1,varCustomerTracking=0,varAutoFirePV=1,Route="LE238",Ctrl="SD100";document.write("<script type='text/javascript' src='"+window.location.protocol+"//c.microsoft.com/ms.js'><\/script>")
                   </script> 
-                  
+                  <!--
                   <noscript> <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/> 
-                  </noscript>
+                  </noscript> -->
                   
                   <script>$(function () {
                      (function (n, t, i, r, u, f, e) {

@@ -1,38 +1,16 @@
-<!-- view/index/index.php -->
-<div id="title-bar" class="">
-    <div class="container container-fluid">
-        <div class="col-md-12">
-            <h1>Page Not Found</h1>
-        </div>
+<!-- view/error/index.php -->
+<link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/UxFxErrorCss_FCD00A07.css">
+
+<section class="wa-section wa-sectionHome wa-sectionHome-getStarted" style="background-image: url(<?php echo URL; ?>public/images/ErrorBackground.png);">
+
+    <div class="wa-content">      
+        <div class="error-page">
+         <div class="error-page-content">
+            <h1>This page doesn't exist</h1>
+            <div class="error-page-help">This URI is intended to be loaded as an iFrame by the Portal Framework.</div>
+         </div>
+         <img class="error-page-cloud1" src="<?php echo URL; ?>public/images/cloud_drop.svg"> <img class="error-page-cloud2" src="<?php echo URL; ?>public/images/cloud_drop.svg"> <img class="error-page-cloud3" src="<?php echo URL; ?>public/images/cloud_drop.svg"> 
+      </div>
     </div>
-</div>
-
-<div class="container container-fluid ">
-    <div class="col-md-12">
-
-    </div>
-</div>
-
-<div class="container container-fluid ">
-    <div class="col-md-12">
-    </div>
-</div>
-
-<div class="container container-fluid">
-
-    <div class="spacer-60"></div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <img src="<?php echo URL; ?>public/images/coffee.png" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-            <h1><?php echo $msg; ?></h1>
-            <p>
-                Head over to <a href="<?php echo URL; ?>index">CloudBay</a> and you may find what you were looking for.
-            </p>
-        </div>
-    </div>
-</div>
-
+</section>
 

@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    background: #babcbe url(ErrorBackground.png) top left repeat
+}
+img {
+    border: 0
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+ul li {
+    margin-bottom: 24px;
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px
+}
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff
+}
+ul li a span {
+    margin-right: 20px;
+    vertical-align: middle
+}
+ul li a img {
+    vertical-align: middle;
+    position: absolute;
+    padding-top: 7px;
+    left: 160px
+}
+h1 {
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 13px
+}
+.error-page {
+    margin: 110px 0 0 80px;
+    position: relative
+}
+.error-page-content {
+    position: absolute;
+    width: 310px
+}
+.error-page-image {
+    position: absolute;
+    top: 0;
+    left: 320px
+}
+.error-page-cloud1 {
+    position: absolute;
+    top: 160px;
+    left: 480px;
+    width: 200px
+}
+.error-page-cloud2 {
+    position: absolute;
+    top: 400px;
+    left: 240px;
+    width: 140px
+}
+.error-page-cloud3 {
+    position: absolute;
+    top: 600px;
+    left: 960px;
+    width: 100px
+}
+.error-page-help {
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px
+}
+.error-page-messagedetails {
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 21px
+}
+.error-body {
+    position: absolute;
+    top: 750px;
+    left: 16px;
+    right: 16px;
+    color: #fff
+}
+.unsupported-page-wrapper {
+    padding: 20px 20px 45px;
+    background: #272c31 url(../Images/MsPortalFx/UnsupportedPreviewBg.png) top left repeat
+}
+.unsupported-page-wrapper .unsupported-page-content:before,
+.unsupported-page-wrapper .unsupported-page-content:after {
+    content: " ";
+    display: table
+}
+.unsupported-page-wrapper .unsupported-page-content:after {
+    clear: both
+}
+.unsupported-page-wrapper .unsupported-page-content {
+    position: relative;
+    max-width: 700px;
+    min-width: 190px;
+    margin: 0 auto;
+    background-color: #0aa7e3;
+    padding: 50px 20px 40px;
+    *zoom: 1
+}
+.unsupported-page-wrapper .unsupported-page-content a {
+    color: #fff;
+    text-decoration: none
+}
+.unsupported-page-wrapper .unsupported-page-content a img {
+    vertical-align: middle;
+    margin: -5px 0 0 7px;
+    height: 25px;
+    width: 25px
+}
+.unsupported-page-wrapper .unsupported-page-content h1 {
+    margin-top: 14px;
+    font-size: 32px;
+    line-height: 41px;
+    max-width: 90%
+}
+.unsupported-page-wrapper .unsupported-page-content p {
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 21px;
+    font-family: wf_segoe-ui_light, "Segoe UI Light", "Segoe WP Light", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: 400
+}
+.unsupported-page-wrapper .unsupported-page-content .preview {
+    width: 105px;
+    height: 91px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.unsupported-page-wrapper .unsupported-page-content .logo {
+    margin-left: -10px;
+    margin-top: -20px
+}
+.unsupported-page-wrapper .unsupported-page-content .see-it-in-action {
+    float: left;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: #08bbf1
+}
+.unsupported-page-wrapper .unsupported-page-content .see-it-in-action:hover {
+    background-color: #069fcc
+}
+.unsupported-page-wrapper .unsupported-page-content .supported-browsers {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    bottom: -40px;
+    color: #c5efff
+}
+.unsupported-page-wrapper .unsupported-page-content .supported-browsers:hover {
+    color: #80dcff
+}
+.unsupported-page-wrapper .unsupported-page-content .supported-browsers:hover img {
+    opacity: .7
+}
+.unsupported-page-wrapper .unsupported-page-content .supported-browsers img {
+    display: none
+}
+@media all and (min-width: 850px) {
+    body.unsupported-page-wrapper {
+        padding: 75px 15px 50px
+    }
+    body.unsupported-page-wrapper .unsupported-page-content {
+        padding: 50px 50px 40px
+    }
+    body.unsupported-page-wrapper .unsupported-page-content h1 {
+        font-size: 71px;
+        line-height: 67px;
+        margin-bottom: 40px;
+        width: 65%
+    }
+    body.unsupported-page-wrapper .unsupported-page-content p {
+        width: 75%
+    }
+    body.unsupported-page-wrapper .unsupported-page-content .supported-browsers {
+        position: relative;
+        float: right;
+        bottom: 0;
+        margin-top: 12px
+    }
+    body.unsupported-page-wrapper .unsupported-page-content .supported-browsers img {
+        display: inline
+    }
+}
