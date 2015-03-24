@@ -7,7 +7,7 @@
         <div class="error-page">
          <div class="error-page-content">
             <h1>This page doesn't exist</h1>
-            <div class="error-page-help">This URI is intended to be loaded as an iFrame by the Portal Framework.</div>
+            <div class="error-page-help">Try again or call to adminstrator for help !</div>
          </div>
          <img class="error-page-cloud1" src="<?php echo URL; ?>public/images/cloud_drop.svg"> <img class="error-page-cloud2" src="<?php echo URL; ?>public/images/cloud_drop.svg"> <img class="error-page-cloud3" src="<?php echo URL; ?>public/images/cloud_drop.svg"> 
       </div>

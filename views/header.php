@@ -82,7 +82,7 @@
                             </li>
                         </ul>
                         <!--<a class="logo" href="/pl-pl/">System cloudBay</a> -->
-                        <a class="wa-heading1"><span style:color="#00ABEC">cloudBay</span></a>
+                        <a class="wa-heading1" href="<?php echo URL; ?>"><span style:color="#00ABEC">cloudBay</span></a>
 
                         <a class="wa-button wa-button-freeTrial" id="A1" onclick="dcsSetVar('WT.z_iLinks', 'Free Trial Arrow', 'WT.z_iLinks_actionoffer', 'inav-Try', 'WT.z_iLinks_targetcampaign', 'src-gtnav');" href="<?php echo URL; ?>pricing/free-trial/"><span>Bezpłatna wersja pr&#243;bna</span></a> 
                         <div class="site-navigation">

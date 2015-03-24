@@ -4,10 +4,10 @@
                            <div class="footer-map">
                               <ul class="social">
                                  <li class="header">Bądź w kontakcie</li>
-                                 <li class="facebook"><a href="http://go.facebook.com/fwlink/?LinkId=zzz">Serwis Facebook</a></li>
-                                 <li class="twitter"><a href="http://go.twitter.com/fwlink/?LinkID=xxx">Serwis Twitter</a></li>
-                                 <li class="rss"><a href="http://go.rss.com/blog/feed/">Źr&#243;dło RSS</a></li>
-                                 <li class="newsletter"><a href="http://go.sendmail.com/fwlink/?LinkId=yyy">Send mail</a></li>
+                                 <li class="facebook"><a href="https://pl-pl.facebook.com/">Serwis Facebook</a></li>
+                                 <li class="twitter"><a href="https://twitter.com/?lang=pl">Serwis Twitter</a></li>
+                                 <li class="rss"><a href="http://www.tvn24.pl/rss.html">Źr&#243;dło RSS</a></li>
+                                 <li class="newsletter"><a href="http://www.sendmail.com/sm/open_source/">Send mail</a></li>
                               </ul>
                               <ul>
                                  <li class="header"><a href="<?php echo URL; ?>">cloudBay CRM</a></li>
