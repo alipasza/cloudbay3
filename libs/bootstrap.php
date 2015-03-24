@@ -13,17 +13,15 @@ class bootstrap {
         if (strpos($url[0], '.php') > 0) {
             $url[0] = substr($url[0], 0, strpos($url[0], '.php'));
         }
-echo 'aaa';
+
         if (empty($url[0])) {
-echo 'bbbb';
+
             require 'controllers/index.php';
-            
-			echo 'cccc';
-			$controller = new Index();
+            $controller = new Index();
             $controller->index();
             return false;
         }
-echo 'zzz';
+
         $file = 'controllers/' . $url[0] . '.php';
         if (file_exists($file) && $url[0] != 'error') {
             require $file;
