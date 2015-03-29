@@ -1,3 +1,5 @@
+<!-- mvc3/views/footer.php -->
+
 <!-- Footer -->
                      <footer data-tag-area="footer" data-tag-group="footer">
                         <div class="wa-content">

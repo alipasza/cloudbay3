@@ -32,6 +32,19 @@ class Dashboard extends Controller {
             require 'libs/cache/bottom-cache.php';
         }
     }
+    
+        public function index3() {
+
+        if (isdebug) {
+
+            $this->view->render('dashboard/index3', 'page-dashboard2');
+        } else {
+
+            require 'libs/cache/top-cache.php';
+            $this->view->render('dashboard/index3', 'page-dashboard2');
+            require 'libs/cache/bottom-cache.php';
+        }
+    }
 }
 
 ?>

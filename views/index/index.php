@@ -1,4 +1,4 @@
-<!-- view/index/index.php -->
+<!-- mvc3/views/index/index.php -->
                     <!-- slide menu -->
                      <div class="wa-carousel" data-control="carousel">
                         <ul class="slides">
@@ -16,7 +16,7 @@
                                        <h3>Działaj szybciej</h3>
                                        <h3>Oszczędzaj pieniądze</h3>
                                        <h3>Integracja lokalnych aplikacji i danych</h3>
-                                       <p><a href="<?php echo URL; ?>dashboard/index2" class="wa-button wa-button-alt wa-button-primary">Dlaczego warto wybrać system cloudBay?</a></p>
+                                       <p><a href="<?php echo URL; ?>dashboard/index3" class="wa-button wa-button-alt wa-button-primary">Dlaczego warto wybrać system cloudBay?</a></p>
                                     </div>
                                  </div>
                               </section>
@@ -75,7 +75,7 @@
                      <!-- wąska biała szybka -->
                      <section class="wa-section wa-sectionHome wa-sectionHome-tagline">
                         <div class="wa-content">
-                           <a href="<?php echo URL; ?>dashboard" class="wa-button wa-button-primary wa-button-primaryMega">Wypróbuj bezpłatnie</a> 
+                           <a href="<?php echo URL; ?>login" class="wa-button wa-button-primary wa-button-primaryMega">Wypróbuj bezpłatnie</a> 
                            <h3>Utw&#243;rz konto i zacznij wdrażać swoje pierwsze rozwiązanie w chmurze w niecałe 5 minut</h3>
                         </div>
                      </section>

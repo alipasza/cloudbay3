@@ -1,3 +1,4 @@
+<!-- mvc3/views/header.php -->
 <!DOCTYPE html> 
 <html class="no-js pl-pl t-" lang="pl">
     <!--<![endif]--> 
@@ -13,6 +14,7 @@
         <meta name="keywords" content="CRM cloudBay"/>
         <link rel="canonical" href="<?php echo URL; ?>pl-pl/"/>
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/HomeCss_268844BE.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/CoreCss.css"/>-->
         <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/NonEnglishCss_85EDD707.css"/>
         
         <script>(function (n, t, i, r, u) {
@@ -68,7 +70,6 @@
         <title>cloudBay</title>
     </head>
     <body id="top" class=" page-" ng-app="acom">
-        <form method="post" action="/pl-pl/" id="RunwayMasterForm">
             <div class="wa-container" data-tag-area="content" data-tag-group="body">
                 <header data-tag-area="header" data-tag-group="header">
                     <div class="wa-content">

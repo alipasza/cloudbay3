@@ -1443,7 +1443,8 @@ p+.wa-button {
     color: #505050;
     outline: none;
     padding: 8px 1%;
-    width: 98%
+    width: 30%;
+    margin-bottom: 20px;
 }
 .wa-text input[type="text"]::-ms-clear {
     display: none
@@ -4360,7 +4361,7 @@ h3 .wa-icon-xs {
 .wa-sectionHome {
     background-color: #3e3d4d;
     border-top: 0!important;
-    min-height: 680px
+    min-height: 350px
 }
 .wa-sectionHome-carousel {
     min-height: 0

@@ -1,3 +1,4 @@
+<!-- mvc3/controllers/index.php -->
 <?php
 
 class Index extends Controller {
@@ -10,21 +11,24 @@ class Index extends Controller {
     public function index() {
 
         if (isset($_GET["lang"])) {
-            Session::set("lang",$_GET["lang"]);
+            Session::set("lang", $_GET["lang"]);
+        } else {
+            Session::set("lang", "EN");
         }
-        else {
-            Session::set("lang","EN");
+
+        if (isdebug) {
+
+            $this->view->render('index/index', 'page-index');
+        } else {
+            require 'libs/cache/top-cache.php';
+            $this->view->render('index/index', 'page-index');
+            require 'libs/cache/bottom-cache.php';
         }
-        
-		if ( isdebug ) {
-			
-			$this->view->render('index/index', 'page-index');
-		} else {
-			require 'libs/cache/top-cache.php';
-			$this->view->render('index/index', 'page-index');
-			require 'libs/cache/bottom-cache.php';
-			
-		}
+    }
+
+    public function login() {
+
+        $this->view->render('index/login', 'page-index-action-login');
     }
 
     public function aboutus() {
