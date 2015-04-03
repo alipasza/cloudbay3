@@ -32,8 +32,8 @@ class Dashboard extends Controller {
             require 'libs/cache/bottom-cache.php';
         }
     }
-    
-        public function index3() {
+
+    public function index3() {
 
         if (isdebug) {
 
@@ -45,6 +45,20 @@ class Dashboard extends Controller {
             require 'libs/cache/bottom-cache.php';
         }
     }
+
+    public function index4() {
+
+        if (isdebug) {
+
+            $this->view->render('dashboard/index4', 'page-dashboard2');
+        } else {
+
+            require 'libs/cache/top-cache.php';
+            $this->view->render('dashboard/index4', 'page-dashboard2');
+            require 'libs/cache/bottom-cache.php';
+        }
+    }
+
 }
 
 ?>

@@ -765,11 +765,11 @@ header nav .dev-navigation .nav-expander-div>div>ul>li>a.current {
     color: #00abec
 }
 header nav .dev-navigation .nav-expander-div>div>ul>li.nav-has-submenu>a {
-    background-image: url(../../../css/cvt-9a7e4ecfadedbada1ddaa3101811957b9a5712e6/images/arrows/site-arrow-sm-wht-seethru.png)
+    background-image: url(../images/site-arrow-sm-wht-seethru.png)
 }
 header nav .dev-navigation .nav-expander-div>div>ul>li.nav-has-submenu>a:hover,
 header nav .dev-navigation .nav-expander-div>div>ul>li.nav-has-submenu>a.active {
-    background-image: url(../../../css/cvt-ab4893397ccb56bb2c93e24205f641598932373a/images/arrows/site-arrow-sm-wht.png)
+    background-image: url(../images/arrows/site-arrow-sm-wht.png)
 }
 header nav .dev-navigation .nav-submenu {
     display: none;
@@ -1453,7 +1453,7 @@ p+.wa-button {
     position: relative
 }
 .wa-textFilter input[type="text"] {
-    background-image: url("../../../css/cvt-d420dc333261524d42489845d190b56f37e1cd56/images/filter-search-spyglass.png");
+    background-image: url("../images/filter-search-spyglass.png");
     background-position: 98.5% 50%;
     background-repeat: no-repeat;
     background-size: 2.5%
@@ -1486,7 +1486,7 @@ p+.wa-button {
     height: 100%;
     width: 35px;
     border: none;
-    background: url("../../../css/cvt-d420dc333261524d42489845d190b56f37e1cd56/images/filter-search-spyglass.png");
+    background: url("../images/filter-search-spyglass.png");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: 50% 50%;
@@ -3864,7 +3864,7 @@ h3 .wa-icon-xs {
 .wa-container {
     background-color: #fff;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 50px;
     width: 1600px
 }
 .wa-container header .header-freetrial {
@@ -4131,7 +4131,7 @@ h3 .wa-icon-xs {
     }
 }
 .wa-homeSprite {
-    background-image: url(../../public/images/home-v2.png);
+    background-image: url(../images/home-v2.png);
     background-repeat: no-repeat;
     display: inline-block;
     height: 1px;
@@ -4308,7 +4308,7 @@ h3 .wa-icon-xs {
     margin-top: 30px
 }
 .wa-sectionHome-carousel1 {
-    background-image: url(../../../css/cvt-2a6210fdebd4a286fc4d98343eccf6978f03c31a/images/home-v2-servers.jpg)
+    background-image: url(../images/home-v2-servers.jpg)
 }
 .wa-sectionHome-carousel1 .wa-homeSprite-banner {
     position: absolute;
@@ -4334,7 +4334,7 @@ h3 .wa-icon-xs {
     padding: 75px 0
 }
 .wa-sectionHome-carousel4 {
-    background-image: url(../../../css/cvt-210012a7168a120347f1c3554e42df944ee8397e/images/home-v2-azure-friday.jpg)
+    background-image: url(../images/home-v2-azure-friday.jpg)
 }
 .wa-imageCollection {
     list-style-type: none;
@@ -4753,7 +4753,7 @@ h3 .wa-icon-xs {
 }
 .wa-section-apps {
     background-color: #3e3d4d;
-    background-image: url(../../../css/cvt-928d178f40fc20a61733e9865ff68a3e50c81585/images/section/apps.png);
+    background-image: url(../images/apps.png);
     background-position: 50% 50%;
     background-repeat: no-repeat
 }
@@ -4766,7 +4766,7 @@ h3 .wa-icon-xs {
 }
 .wa-section-azureVsAws {
     background-color: #eee;
-    background-image: url(../../../css/cvt-7d3932b6e3495d59681022170b218cd283640705/images/section/azure-vs-aws.png);
+    background-image: url(../images/azure-vs-aws.png);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     min-height: 130px
@@ -4908,7 +4908,7 @@ a.site-boxcta {
     font-weight: 100;
     line-height: normal;
     padding: 8px 0 10px 20px;
-    background: url(../../../css/cvt-c2503c870e85a42bc0650ddab95891bb9f177599/images/arrows/home-welcome-arrowwhite.png) 95% center no-repeat;
+    background: url(../images/home-welcome-arrowwhite.png) 95% center no-repeat;
     background-color: #a5ce00
 }
 a.site-arrowboxcta:hover,
@@ -5181,7 +5181,7 @@ section img {
 }
 .aside .dev-help {
     clear: both;
-    background: url(../../../css/cvt-7e40c43f614ad5762170c2a1ebea6cc35c4dcda2/images/page-develop-overview-help-bubble.png) 0 5px no-repeat transparent;
+    background: url(../images/page-develop-overview-help-bubble.png) 0 5px no-repeat transparent;
     padding-left: 48px
 }
 .aside .dev-help a {
@@ -5236,7 +5236,7 @@ a.bas-feature-manage {
     display: none
 }
 a.bas-feature-learn {
-    background: url(../../../css/cvt-ddb3d836fe60527ccb4f3b89e7060d62df9ca572/images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
+    background: url(../images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
     color: #505050;
     font-size: 16px;
     padding-right: 10px;
@@ -5395,7 +5395,7 @@ a.bas-feature-try-it-now:hover {
     position: relative;
     width: 270px;
     text-align: center;
-    background: url(../../../css/cvt-e2f3d905e19f34125fc5aa1ca0604681793e0935/images/page-develop-net-video-thumb.png) 0 0 no-repeat transparent;
+    background: url(../images/page-develop-net-video-thumb.png) 0 0 no-repeat transparent;
     display: block
 }
 .dev-onpage-video-clear {
@@ -5444,10 +5444,10 @@ a.bas-feature-try-it-now:hover {
     width: 27px;
     height: 27px;
     text-indent: -999em;
-    background: transparent url(../../../css/cvt-7f614505f46fa9d7b43144837d1eeeacdade9290/images/icons/small/icon-video-play.png) left top no-repeat
+    background: transparent url(../images/icon-video-play.png) left top no-repeat
 }
 .dev-onpage-video-clear .dev-onpage-video-wrapper .dev-onpage-video:hover .icon {
-    background: transparent url(../../../css/cvt-8eabd4df65a94904c8f1a4c866113894f667e734/images/icons/small/icon-video-play-hover.png) left top no-repeat
+    background: transparent url(../images/icon-video-play-hover.png) left top no-repeat
 }
 .dev-callout-new {
     font-size: 10px;
@@ -5582,7 +5582,7 @@ a.bas-feature-try-it-now:hover {
     padding: 0
 }
 .dev-center-hero-wrapper .dev-center-hero-aside .selector-os li {
-    background: url("../../../css/cvt-5a2f1748ce66b5e7b2f68be33f9e78c28dc4e07c/images/buy-configure-toggle.png") no-repeat scroll 0 -22px transparent;
+    background: url("../images/buy-configure-toggle.png") no-repeat scroll 0 -22px transparent;
     cursor: pointer;
     margin-bottom: 3px
 }
@@ -5623,7 +5623,7 @@ a.bas-feature-try-it-now:hover {
     margin-left: 0
 }
 .site-center-content .content-blocks-three>div {
-    background: transparent url(../../../css/cvt-7f299216e9360388c04e455375a59396db936798/images/icons/compute.png) top left no-repeat;
+    background: transparent url(../images/compute.png) top left no-repeat;
     width: 30%
 }
 .site-center-content .content-blocks-three>div>a {
@@ -5633,26 +5633,26 @@ a.bas-feature-try-it-now:hover {
     font-size: 0
 }
 .site-center-content .content-blocks-three .c2 {
-    background: transparent url(../../../css/cvt-0dba54002ab6aed7b871871c539ffebfc9f1aeae/images/scenario-feature-sprite.png) -1219px 0 no-repeat
+    background: transparent url(../images/scenario-feature-sprite.png) -1219px 0 no-repeat
 }
 .site-center-content .content-blocks-three .c3 {
-    background-image: url(../../../css/cvt-4b3c73185beace8bb22326a3341ea0245b83c5ca/images/icons/virtmachine.png);
+    background-image: url(../images/virtmachine.png);
     background-position: 0 10px
 }
 .site-center-content .content-blocks-three .c4 {
-    background-image: url(../../../css/cvt-67d2dad850202fe4264cf8e091de47396805409f/images/icons/users.png)
+    background-image: url(../images/users.png)
 }
 .site-center-content .content-blocks-three .c5 {
-    background-image: url(../../../css/cvt-d0d625ff3d420a5c01b8c9769485f314af37f13b/images/icons/push.png)
+    background-image: url(../images/push.png)
 }
 .site-center-content .content-blocks-three .c7 {
-    background: url("../../../css/cvt-4274dca41ea65ef323e866970c4c57814d1328e1/images/icons/web.png") no-repeat scroll left -4px transparent
+    background: url("../images/web.png") no-repeat scroll left -4px transparent
 }
 .site-center-content .content-blocks-three .c8 {
-    background: transparent url(../../../css/cvt-0dba54002ab6aed7b871871c539ffebfc9f1aeae/images/scenario-feature-sprite.png) -1011px -5px no-repeat
+    background: transparent url(../images/scenario-feature-sprite.png) -1011px -5px no-repeat
 }
 .site-center-content .content-blocks-three .c9 {
-    background: transparent url(../../../css/cvt-0dba54002ab6aed7b871871c539ffebfc9f1aeae/images/scenario-feature-sprite.png) -1219px 0 no-repeat
+    background: transparent url(../images/scenario-feature-sprite.png) -1219px 0 no-repeat
 }
 .site-center-content .content-blocks-three .cno {
     background: none
@@ -5767,23 +5767,23 @@ a.bas-feature-try-it-now:hover {
     margin: 7px 0 0
 }
 .dev-center-hero-wrapper .site-arrowboxcta {
-    background: #a5ce00 url(../../../css/cvt-84b834568f5b080643c45f80d172c9fef802797e/images/arrows/white-20px-r.png) 90% center no-repeat;
+    background: #a5ce00 url(../images/white-20px-r.png) 90% center no-repeat;
     font-size: 22px
 }
 .node1slide {
-    background: transparent url("../../../css/cvt-d4c0bf69530b7ef7bbb482a27ac00dc2b83623d1/images/page-develop-node-slideshow-node-dark.png") left top no-repeat;
+    background: transparent url("../images/page-develop-node-slideshow-node-dark.png") left top no-repeat;
     cursor: pointer
 }
 .node2slide {
-    background: transparent url("../../../css/cvt-0f3a6e316feac2d1c8fe413e1dad303fd7619f0d/images/page-develop-node-slideshow-sql.png") left top no-repeat;
+    background: transparent url("../images/page-develop-node-slideshow-sql.png") left top no-repeat;
     cursor: pointer
 }
 .node3slide {
-    background: transparent url("../../../css/cvt-60de831f58fcb511593882007d00a1f6caacbc9b/images/page-develop-node-slideshow-c9.png") left top no-repeat;
+    background: transparent url("../images/page-develop-node-slideshow-c9.png") left top no-repeat;
     cursor: pointer
 }
 .node4slide {
-    background: transparent url("../../../css/cvt-e881d182af2607e8beea7b16b73d6b702186859b/images/page-develop-node-slideshow-git.png") left top no-repeat
+    background: transparent url("../images/page-develop-node-slideshow-git.png") left top no-repeat
 }
 .dev-center-hero-wrapper .node1slide ul {
     padding: 0 20px;
@@ -5812,7 +5812,7 @@ a.bas-feature-try-it-now:hover {
     font-weight: bold;
     display: inline-block;
     padding-right: 22px;
-    background: transparent url('../../../css/cvt-8aaa23bea5628a90a0a6412a5492b3ab4d7b5bec/images/arrows/white-15px-r.png') right 3px no-repeat
+    background: transparent url('../images/white-15px-r.png') right 3px no-repeat
 }
 .node2slide p {
     margin-top: 0
@@ -5858,7 +5858,7 @@ a.bas-feature-try-it-now:hover {
     top: 0;
     right: 0;
     text-indent: -999em;
-    background: transparent url('../../../css/cvt-a132c5deefff2120d19361e2bcd1fc993566b5b9/images/page-develop-nodejs-github.png') left top no-repeat
+    background: transparent url('../images/page-develop-nodejs-github.png') left top no-repeat
 }
 .net1slide h1,
 .net1slide p,
@@ -6039,7 +6039,7 @@ a.bas-feature-try-it-now:hover {
     height: 20px;
     top: 0;
     left: 0;
-    background: url(../../../css/cvt-3199ee795c9b304ad835b0f64740217653daf640/images/icons/small/plus-minus-sprite.png) 0 0 no-repeat
+    background: url(../images/plus-minus-sprite.png) 0 0 no-repeat
 }
 .faq-page .question.active .plus {
     background-position: 0 -20px
@@ -6080,7 +6080,7 @@ a.bas-feature-try-it-now:hover {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url(../../../css/cvt-3199ee795c9b304ad835b0f64740217653daf640/images/icons/small/plus-minus-sprite.png) 0 0 no-repeat
+    background: url(../images/plus-minus-sprite.png) 0 0 no-repeat
 }
 .faq-page .faq-question-expander li a:hover {
     cursor: pointer
@@ -6111,7 +6111,7 @@ a.bas-feature-try-it-now:hover {
     position: absolute;
     left: 72px;
     top: 41px;
-    background: transparent url(../../../css/cvt-7a26b31c61881960299086fee1da20c6cdb2a9ae/images/scenarios-video.png) left top no-repeat;
+    background: transparent url(../images/scenarios-video.png) left top no-repeat;
     display: block;
     width: 38px;
     height: 38px;
@@ -6135,7 +6135,7 @@ a.bas-feature-try-it-now:hover {
     margin: 12px;
     width: 180px;
     height: 120px;
-    background: transparent url(../../../css/cvt-7a26b31c61881960299086fee1da20c6cdb2a9ae/images/scenarios-video.png) top center no-repeat;
+    background: transparent url(../images/scenarios-video.png) top center no-repeat;
     display: block;
     position: relative
 }
@@ -6172,7 +6172,7 @@ a.bas-feature-try-it-now:hover {
     right: -30px;
     width: 23px;
     height: 23px;
-    background: url(../../../css/cvt-8fda92e025b10ef346be5ad4b21c11ab0f0919fb/images/icons/small/close.png) 0 0 no-repeat
+    background: url(../images/close.png) 0 0 no-repeat
 }
 .pricing-details-page h1 {
     margin-bottom: 8px
@@ -6325,7 +6325,7 @@ section#content-container {
     visibility: visible!important
 }
 .hero.azure-standard.cloud {
-    background: #0070b8 url(../../../css/cvt-0e2e8aa6966ec60c1505946b6a5ec8dd1cdf33cc/images/cloud-hero.png) bottom right no-repeat;
+    background: #0070b8 url(../images/cloud-hero.png) bottom right no-repeat;
     padding-top: 55px;
     padding-bottom: 55px
 }
@@ -6399,23 +6399,23 @@ section#content-container {
     opacity: .7
 }
 .trianglelink.white {
-    background: url(../../../css/cvt-ddb3d836fe60527ccb4f3b89e7060d62df9ca572/images/trianglelink-sprite.png) no-repeat scroll right 5px transparent;
+    background: url(../images/trianglelink-sprite.png) no-repeat scroll right 5px transparent;
     color: #fff
 }
 .trianglelink.grey {
-    background: url(../../../css/cvt-ddb3d836fe60527ccb4f3b89e7060d62df9ca572/images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
+    background: url(../images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
     color: #505050
 }
 .trianglelink.left.grey {
-    background: url(../../../css/cvt-ddb3d836fe60527ccb4f3b89e7060d62df9ca572/images/trianglelink-sprite.png) no-repeat scroll right -69px transparent;
+    background: url(../images/trianglelink-sprite.png) no-repeat scroll right -69px transparent;
     color: #505050
 }
 .trianglelink.right.grey {
-    background: url(../../../css/cvt-ddb3d836fe60527ccb4f3b89e7060d62df9ca572/images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
+    background: url(../images/trianglelink-sprite.png) no-repeat scroll right -20px transparent;
     color: #505050
 }
 .arrowlink {
-    background: url(../../../css/cvt-30bbbdeabfd8eb4ad9c9caa39e97027a4cdd67c5/images/arrows/arrowlink-sprite.png) no-repeat scroll right 0 transparent;
+    background: url(../images/arrowlink-sprite.png) no-repeat scroll right 0 transparent;
     font-size: 20px;
     color: #505050;
     padding: 0 40px 5px 0;
@@ -6449,7 +6449,7 @@ section#content-container {
 a.arrowbtn {
     display: inline-block;
     color: #fff;
-    background: url(../../../css/cvt-b7a62ed0b77396366cced2b6d73d72915865b855/images/arrows/arrowbtn-white.png) no-repeat scroll right 10px transparent;
+    background: url(../images/arrowbtn-white.png) no-repeat scroll right 10px transparent;
     font-size: 30px;
     font-weight: 100;
     line-height: normal;
@@ -6650,7 +6650,7 @@ strong>sup.preview.normal-font {
     float: right;
     width: 344px;
     height: 188px;
-    background: url(../../../css/cvt-39f1ea31bde96881caeb7cba919624b1e40bc06c/images/page-overview-enterprise-it-vid-thumb.png) 0 0 no-repeat;
+    background: url(../images/page-overview-enterprise-it-vid-thumb.png) 0 0 no-repeat;
     margin: 20px 0;
     position: relative
 }
@@ -6664,7 +6664,7 @@ strong>sup.preview.normal-font {
     height: 27px;
     top: 80px;
     left: 158px;
-    background: url(../../../css/cvt-25902c910320cc6ab834e36aac05f87127176a76/images/arrows/playbutton-white-hover-27px.png) 0 0 no-repeat
+    background: url(../images/playbutton-white-hover-27px.png) 0 0 no-repeat
 }
 .page-overview-enterprise-it .page-body-sections .section-float-left {
     width: 530px
@@ -6678,10 +6678,10 @@ strong>sup.preview.normal-font {
     display: block
 }
 .page-overview-enterprise-it .section.s3 .case-study-thumb {
-    background: 0 0 url(../../../css/cvt-4f67d43f22575a619cef2a297495b012f68a5f15/images/page-case-studies-telenor-main.png) no-repeat
+    background: 0 0 url(../images/page-case-studies-telenor-main.png) no-repeat
 }
 .page-overview-enterprise-it .section.s5 .case-study-thumb {
-    background: 0 0 url(../../../css/cvt-8275bcd3ab8f1ef7665ad0c8556861e4b3371694/images/case-study-thumb-radioshack.png) no-repeat
+    background: 0 0 url(../images/case-study-thumb-radioshack.png) no-repeat
 }
 .page-overview-enterprise-it .section h2 {
     font-size: 36px
@@ -6700,10 +6700,10 @@ strong>sup.preview.normal-font {
     margin-top: 0
 }
 .page-overview-application-hosting .hero.dark-overlay {
-    background-image: url(../../../css/cvt-928b1f35e088d53905b95e8ceb31d1fca1e4d325/images/page-app-hosting-hero.jpg)
+    background-image: url(../images/page-app-hosting-hero.jpg)
 }
 .page-overview-application-hosting .dark-bg {
-    background-image: url(../../../css/cvt-4638d85ed208a4f0d18965761c1191a374044e7e/images/page-solutions-hero-illustration.png);
+    background-image: url(../images/page-solutions-hero-illustration.png);
     background-position: 90% center;
     background-repeat: no-repeat
 }
@@ -6720,24 +6720,24 @@ strong>sup.preview.normal-font {
     position: relative
 }
 .page-overview-application-hosting .case-study-thumb.threem {
-    background: 0 0 url(../../../css/cvt-20e050e071b9d0ef0d6fa97d1ad9e46dbbbcc22f/images/case-study-thumb-3m.png) no-repeat
+    background: 0 0 url(../images/case-study-thumb-3m.png) no-repeat
 }
 .page-overview-application-hosting .case-study-thumb.airstrike {
-    background: 0 0 url(../../../css/cvt-955fcedf31a2e6b9cbda8138d7611e5c03b445a0/images/case-study-thumb-airstrike.png) no-repeat
+    background: 0 0 url(../images/case-study-thumb-airstrike.png) no-repeat
 }
 .page-overview-application-hosting .case-study-thumb.emotive {
-    background: 0 0 url(../../../css/cvt-f4d8eeb4f6a82d7123d4ed5c8867056a85beb092/images/case-study-thumb-emotive.png) no-repeat
+    background: 0 0 url(../images/case-study-thumb-emotive.png) no-repeat
 }
 .page-overview-application-hosting .case-study-thumb.murally {
-    background: 0 0 url(../../../css/cvt-08cb4e1953f00b04be10c3dc0b0109f442d784d0/images/case-study-thumb-murally.png) no-repeat;
+    background: 0 0 url(../images/case-study-thumb-murally.png) no-repeat;
     margin-top: 50px
 }
 .page-overview-application-hosting .case-study-thumb.nbc {
-    background: 0 0 url(../../../css/cvt-fbd5cf82c5b65671d062d937a213b4e0bb20ca9c/images/case-study-thumb-nbcsports.png) no-repeat;
+    background: 0 0 url(../images/case-study-thumb-nbcsports.png) no-repeat;
     margin-top: 110px
 }
 .page-overview-application-hosting .case-study-thumb.talktalk {
-    background: 0 0 url(../../../css/cvt-5d4227a3b7201658cf4c6f2cf787269a952a80b5/images/case-study-thumb-talktalk.png) no-repeat;
+    background: 0 0 url(../images/case-study-thumb-talktalk.png) no-repeat;
     margin-top: 50px
 }
 .page-overview-application-hosting .play-btn {
@@ -6746,7 +6746,7 @@ strong>sup.preview.normal-font {
     right: 12px;
     width: 27px;
     height: 27px;
-    background: url(../../../css/cvt-921fe5165c43c34bac3321298d5b37a39a7f8d5d/images/arrows/playbutton-white-27px.png) 0 0 no-repeat;
+    background: url(../images/playbutton-white-27px.png) 0 0 no-repeat;
     text-indent: -999em
 }
 .page-overview-application-hosting .section h2 {
@@ -6820,7 +6820,7 @@ strong>sup.preview.normal-font {
     margin-bottom: 5px
 }
 .site-flag-lang .content .arrow {
-    background: url(../../../css/cvt-2ddaa283db8a05943856365fcfb832565b4514ce/images/site-flag-arrowlb.png) 0 0 no-repeat transparent;
+    background: url(../images/site-flag-arrowlb.png) 0 0 no-repeat transparent;
     bottom: -10px;
     width: 11px;
     height: 10px;
@@ -6833,7 +6833,7 @@ strong>sup.preview.normal-font {
     min-height: 90px
 }
 .hero.azure-standard.cloud.newsletter {
-    background-image: url(../../../css/cvt-050c7debf6f47ad259e1a1f36002456a2102889b/images/cloud-hero-newsletter.png);
+    background-image: url(../images/cloud-hero-newsletter.png);
     padding-right: 350px
 }
 section .wa-subsection-left {
@@ -6900,16 +6900,16 @@ section .wa-subsection-left {
     display: block
 }
 .page-pricing-freetrial-b .slideshow-secondary .s-0 {
-    background: url(../../../images/cvt-f10a9fc084d5c908e487a43f117152bd4cbf8976/page/free-trial/slide-bg-manage.png) right bottom no-repeat
+    background: url(../images/slide-bg-manage.png) right bottom no-repeat
 }
 .page-pricing-freetrial-b .slideshow-secondary .s-1 {
-    background: url(../../../images/cvt-95b3c7089a8e956f51ea99df1e2db7958bedb1c2/page/free-trial/slide-bg-vm.png) right bottom no-repeat
+    background: url(../images/slide-bg-vm.png) right bottom no-repeat
 }
 .page-pricing-freetrial-b .slideshow-secondary .s-2 {
-    background: url(../../../images/cvt-32c6f7f4a32367706727618c26cae8b920b544ab/page/free-trial/slide-bg-websites.png) right bottom no-repeat
+    background: url(../images/slide-bg-websites.png) right bottom no-repeat
 }
 .page-pricing-freetrial-b .slideshow-secondary .s-3 {
-    background: url(../../../images/cvt-ef6d1fde0e15c58d3b796bf0fce08fa8e6e0ebff/page/free-trial/slide-bg-sql.png) right bottom no-repeat
+    background: url(../images/slide-bg-sql.png) right bottom no-repeat
 }
 .page-pricing-freetrial-b .s-ctrl {
     right: 130px

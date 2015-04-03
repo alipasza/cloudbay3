@@ -1,0 +1,151 @@
+﻿html, body
+{
+    margin: 0;
+    padding: 0;
+}
+.outer
+{
+    font-family: "Segoe UI" , "Helvetica" , Garuda, Arial, sans-serif;
+    height: 398px;
+    position: relative;
+    width: 473px;
+}
+.live-background
+{
+    background: url(images/azure_login_live_new.png) 0px 0 no-repeat;
+    color: #fff;
+}
+.org-background
+{
+    background: url(images/azure_login_orgid.png) -40px 0 no-repeat;
+    color: #444;
+}
+.inner-container
+{
+    position: absolute;
+    padding-left: 30px;
+    width: 440px;
+}
+.inner-org
+{
+    bottom: 15px;
+}
+.live-text p
+{
+    font-family: "Segoe UI Light", "Segoe UI" , "Helvetica" , Garuda, Arial, sans-serif;
+    font-size: 45px;
+    text-align: left;
+    height: 12px;
+    margin: 44px 0 30px 0;
+}
+.org-text p
+{
+    font-size: 27px;
+    text-align: center;
+    height: 40px;
+    width: 395px;
+    text-transform: lowercase;
+}
+.header
+{
+    height: 40px;
+    padding-top: 30px;
+}
+.signup-link-container
+{
+    width: 440px;
+    position: absolute;
+    bottom: 1px;
+    margin: 0 0 15px 15px;
+}
+.header-org
+{
+    height: 40px;
+    padding-top: 30px;
+    width: 865px;
+    margin: 0 auto;
+}
+.fr-fr .live-text p
+{
+    font-size: 40px;
+}
+.it-it .live-text p
+{
+    font-size: 40px;
+}
+
+/* Styles for the latest live id cobranding */
+.liveId-container {
+    position: relative;
+    padding: 20px;
+    height: 440px;
+    color: #fff;
+}
+.liveId-background-vsonline {
+    background: url(images/Live-Id-SignIn-Screen-VSOnline.PNG) 0 0 no-repeat;
+    height: 490px;
+    width: 475px;
+}
+.liveId-background {
+    background: url(images/Live-Id-SignIn-ScreenBG.JPG) 0 0 no-repeat;
+    height: 490px;
+    width: 475px;
+}
+.liveId-background-azuportal {
+    background: url(images/Live-Id-SignIn-ScreenBG-Portal.JPG) 0 0 no-repeat;
+    height: 490px;
+    width: 475px;
+}
+.brand-title-container p {
+    font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","HelveticaNeueLight","HelveticaNeue-Light","Helvetica","Tahoma","Verdana","Arial","sans-serif";
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+}
+.liveId-title-container p {
+    font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","HelveticaNeueLight","HelveticaNeue-Light","Helvetica","Tahoma","Verdana","Arial","sans-serif";
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 110px;
+}
+.liveId-signup-link-container {
+    margin-top: 32px;
+    overflow: hidden;
+}
+.liveId-signup-link-container a {
+    font-family: "wf_SegoeUIRegular","wf_SegoeUI","Segoe UI Regular","Segoe WP Regular","Segoe UI","Segoe","Segoe WP","HelveticaNeueLight","HelveticaNeue-Light","Helvetica","Tahoma","Verdana","Arial","sans-serif";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color:#fff;
+}
+.liveId-signup-link-container a:hover, .liveId-signup-link-container a:active {
+    color: #333366;
+}
+.liveId-signup-link-container a span:hover, .liveId-signup-link-container a span:active {
+    opacity: 0.7;
+}
+.liveId-signup-link-container a span.triangle-arrow {
+    background: url(images/CircleArrow25x25.png) no-repeat scroll right 5px transparent;
+    display: inline-block;
+    height: 30px;
+    width: 27px;
+    margin-top: -5px;
+    float: left;
+    margin-right: 10px;
+}
+.signup-link{
+    margin-top: 15px;
+}
+.signup-links-spacing {
+    margin-bottom: 10px;
+}
+
+/*overrides for localization*/
+.de-de .liveId-title-container p {
+    font-size: 38px;
+}
+.tr-tr .liveId-title-container p {    
+    margin-top: 56px;
+}

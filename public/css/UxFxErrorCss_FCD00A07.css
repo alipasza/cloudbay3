@@ -4,7 +4,7 @@ body {
     color: #fff;
     font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     font-weight: 400;
-    background: #babcbe url(ErrorBackground.png) top left repeat
+    background: #505050 url(ErrorBackground.png) top left repeat
 }
 img {
     border: 0

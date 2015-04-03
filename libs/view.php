@@ -7,7 +7,6 @@ class View {
     function __construct() {
         //require 'config/lang/multilingual.php';
         //$curl = 1;
-
         //$ltext[1]['services'] = "Welcome to my site. blah blah blah";
         //$ltext[1]['customers'] = "Please enter your username and password to login";
         //echo 'x' . $ltext[1]['services'];
@@ -31,9 +30,21 @@ class View {
             $name = substr($name, 0, strpos($name, '.php'));
         }
 
-        require 'views/header.php';
-        require 'views/' . $name . '.php';
-        require 'views/footer.php';
+        if (debug) {
+
+            require 'views/header.php';
+            require 'views/' . $name . '.php';
+            require 'views/footer.php';
+        } else {
+
+            require 'libs/cache/top-cache.php'; //keszuj pocz.
+
+            require 'views/header.php';
+            require 'views/' . $name . '.php';
+            require 'views/footer.php';
+
+            require 'libs/cache/bottom-cache.php'; //keszuj kon.
+        }
     }
 
     public function validateText($str, &$retValue, $minLenStr = 0, $maxLenStr = 128) {

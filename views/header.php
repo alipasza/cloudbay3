@@ -70,13 +70,14 @@
         <title>cloudBay</title>
     </head>
     <body id="top" class=" page-" ng-app="acom">
+        <form method="post" action="/en-us/" id="RunwayMasterForm">
             <div class="wa-container" data-tag-area="content" data-tag-group="body">
                 <header data-tag-area="header" data-tag-group="header">
                     <div class="wa-content">
                         <ul class="site-login">
-                            <li class="phone"><a href="<?php echo URL; ?>overview/sales-number/"><span class="geophone-label">Sprzedaż</span> <span data-control="geophone"></span> <span class="wa-header-tooltip">Find a <span>local sales</span> number</span></a></li>
-                            <li> <a href="<?php echo URL; ?>account/">Moje konto</a> </li>
-                            <li> <a href="<?php echo URL; ?>portal/">Portal</a> </li>
+                            <li class="phone"><a href="<?php echo URL; ?>dashboard/index4"><span class="geophone-label">Sprzedaż</span> <span data-control="geophone"></span> <span class="wa-header-tooltip">Find a <span>local sales</span> number</span></a></li>
+                            <li> <a href="<?php echo URL; ?>dashboard/index2">Moje konto</a> </li>
+                            <li> <a href="<?php echo URL; ?>dashboard/index3">Portal</a> </li>
                             <li class="search">
                                 <div class="wa-text wa-text-light wa-textSearch" data-control="textbox"> <input type="text" id="MainSearchBox" placeholder="Wyszukaj" onkeypress="return checkForEnterKey(event, 'MainSearchBox');"> <button type="button" id="header-search-button" class="search-button" title='Wyszukaj' onclick="doSearch('MainSearchBox');
                                          return false;"></button> </div>
@@ -85,17 +86,17 @@
                         <!--<a class="logo" href="/pl-pl/">System cloudBay</a> -->
                         <a class="wa-heading1" href="<?php echo URL; ?>"><span style:color="#00ABEC">cloudBay</span></a>
 
-                        <a class="wa-button wa-button-freeTrial" id="A1" onclick="dcsSetVar('WT.z_iLinks', 'Free Trial Arrow', 'WT.z_iLinks_actionoffer', 'inav-Try', 'WT.z_iLinks_targetcampaign', 'src-gtnav');" href="<?php echo URL; ?>pricing/free-trial/"><span>Bezpłatna wersja pr&#243;bna</span></a> 
+                        <a class="wa-button wa-button-freeTrial" id="A1" onclick="dcsSetVar('WT.z_iLinks', 'Free Trial Arrow', 'WT.z_iLinks_actionoffer', 'inav-Try', 'WT.z_iLinks_targetcampaign', 'src-gtnav');" href="<?php echo URL; ?>dashboard/index2"><span>Bezpłatna wersja pr&#243;bna</span></a> 
                         <div class="site-navigation">
                             <nav>
                                 <ul class="dev-navigation dev-navigation-b">
-                                    <li class="nav-expander"><a id="menu_pricing_link" href="<?php echo URL; ?>pricing/"><?php echo $this->ltext[Session::get("lang")]['header-services']; ?></a></li>
-                                    <li class="nav-expander"><a id="menu_pricing_link" href="<?php echo URL; ?>pricing/"><?php echo $this->ltext[Session::get("lang")]['header-customers']; ?></a></li>
-                                    <li class="nav-expander"><a id="menu_documentation_link" href="<?php echo URL; ?>documentation/"><?php echo $this->ltext[Session::get("lang")]['header-community']; ?></a>                                     
-                                    <li class="nav-expander"><a id="menu_downloads_link" href="<?php echo URL; ?>downloads/">Download</a> 
-                                    <li class="nav-expander"><a id="menu_blog_link" href="<?php echo URL; ?>blog/">Blog</a></li>
-                                    <li class="nav-expander"><a id="menu_aa"        href="<?php echo URL; ?>training/"><?php echo $this->ltext[Session::get("lang")]['header-training']; ?></a></li>
-                                    <li class="nav-expander"><a id="menu_bb" href="<?php echo URL; ?>support/">Spport</a></li>
+                                    <li class="nav-expander"><a id="menu_pricing_link" href="<?php echo URL; ?>dashboard/index3"><?php echo $this->ltext[Session::get("lang")]['header-services']; ?></a></li>
+                                    <li class="nav-expander"><a id="menu_pricing_link" href="<?php echo URL; ?>dashboard/index"><?php echo $this->ltext[Session::get("lang")]['header-customers']; ?></a></li>
+                                    <li class="nav-expander"><a id="menu_documentation_link" href="<?php echo URL; ?>dashboard/index2"><?php echo $this->ltext[Session::get("lang")]['header-community']; ?></a>                                     
+                                    <li class="nav-expander"><a id="menu_downloads_link" href="<?php echo URL; ?>dashboard/index">Download</a> 
+                                    <li class="nav-expander"><a id="menu_blog_link" href="<?php echo URL; ?>dashboard/index3">Blog</a></li>
+                                    <li class="nav-expander"><a id="menu_aa"        href="<?php echo URL; ?>dashboard/index2"><?php echo $this->ltext[Session::get("lang")]['header-training']; ?></a></li>
+                                    <li class="nav-expander"><a id="menu_bb" href="<?php echo URL; ?>dashboard/index3">Spport</a></li>
                                 </ul>
                             </nav>
                         </div>

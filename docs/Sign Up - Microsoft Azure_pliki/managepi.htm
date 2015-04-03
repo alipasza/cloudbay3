@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<noscript>
+    <meta http-equiv="REFRESH" content="0;URL='/PCSV2/Default/liverps/Error/DefinedError?errorCode=9032'" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=10"><title>Usługa gromadzenia informacji o płatnościach</title>
+    <link href="managepi_data/style_002.css" rel="stylesheet" type="text/css">
+    <link href="managepi_data/style.css" rel="stylesheet" type="text/css">
+    <link href="managepi_data/style_003.css" rel="stylesheet" type="text/css">
+
+</head>
+<body tabindex="-1">
+    <div id="mainContent">
+        
+<script type="text/javascript">
+setTimeout("document.location=unescape('%2fPCSv2%2fazurev2%2fliverps%2fPCS%2fSessionExpire%3fmkt%3dpl-PL%26lmkt%3dpl-PL%26rx%3dhttps%253a%252f%252faccount.windowsazure.com%252fsignup%252fPcsCancel%26entryurl%3dhttps%253a%252f%252fbusbuy.live.com%253a443%252fPCSV2%252fazurev2%252fliverps%252fpcs%252fmanagepi%253fru%253dhttps%25253a%25252f%25252faccount.windowsazure.com%25252fsignup%25252fPcsReturn%2526rx%253dhttps%25253a%25252f%25252faccount.windowsazure.com%25252fsignup%25252fPcsCancel%2526listener%253d%2526usertype%253dBusiness%2526lmkt%253dpl-PL%2526oem%253dAzureBilling%2526mkt%253dpl-PL%2526locale%253dpl-PL%2526pitype%253d73729%2526viewmode%253d0%2526accountid%253d1YYjRAAAAAAAAAAA%2526adcs%253d1%2526ctprpsauth%253d1%2526wa%253dwsignin1.0');", 1680000);
+</script>
+
+<form novalidate="novalidate" action="/PCSV2/azurev2/liverps/PCS/DoNext?mkt=pl-PL&amp;lmkt=pl-PL" id="PCSBodyForm" method="post">    <div style="display: block;" id="PageContainer" class="page-container hidden">
+        <div class="page-content">
+            <div class="error-sys-top hidden" id="cc_expiredmsg">Karta kredytowa utraciła ważność. Wybierz datę ważności w przyszłości.</div>
+            <div class="error-sys-top hidden" id="ToUpdateIE">Wersja używanej przeglądarki jest nieaktualna. Zaktualizuj przeglądarkę do nowszej wersji.</div>
+            <div id="selectCountryDiv">
+                
+            </div>
+            <div id="ChoosePITitle" class="title1 font-section-title">
+    <img id="ChoosePIArrowImage" src="managepi_data/arrow-expanded.png">
+    <h3 id="lblChoosePaymentMethod" class="accessibilityread" role="heading" title="Wybierz metodę płatności">Wybierz metodę płatności</h3>
+    
+</div>
+
+    <div id="PIList" class="payment-method">
+        <h4 class="title">Metoda płatności</h4>
+        <div id="ChoosePIInfo" class="ChoosePIInfo">
+            <div>
+                <select tabindex="1" class="item valid" id="SelectPIDropdown">
+                    
+                        <option selected="selected" category="new" cardtype="cc" subtype="cc" value="$newcc">Nowa karta kredytowa</option>
+                </select>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+<input id="pcs_spiid" name="pcs_spiid" value="$newcc" type="hidden">    <input id="DropDownListTempStored" value="" type="hidden">
+<script src="managepi_data/jquery-1.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var MAPSUI = {
+        DefaultPIID: "$fvo",
+
+        ChangeItem: function () {
+            var $this = $('#SelectPIDropdown');
+            var selectedOption = $this.find('option:selected');
+            PCS.PITypeDropdownClick(selectedOption.attr('category'), selectedOption.attr('cardtype'), selectedOption.attr('subtype'), selectedOption.val());
+        },
+        PageReady: function () {
+            MAPSUI.OnloadPage();
+
+            var $this = $("#SelectPIDropdown option:selected");
+            if (typeof ($this) != 'undefined' && $this.length > 0) {
+                var cardtype = $this.attr('cardtype');
+                var subtype = $this.attr('subtype');
+                //call back: prefill page and init the error inputs
+                if (PCS.RequestForm != undefined && PCS.RequestForm != null) {
+                    PCS.Views.prefillPage(null, cardtype, PCS.RequestForm, subtype);
+
+                    //set input hint
+                    InputHint.HintInit(INPUT_HINT_LIST);
+                    //set input validate result error
+                    ValidateResult.ValidateResultInit(INPUT_INVOLVEDELEMENT_LIST);
+                }
+            }
+
+        },
+        OnloadPage: function () {
+            $('#SelectPIDropdown').live('change', this.ChangeItem);
+            $("#SelectPIDropdown option[value='" + this.DefaultPIID + "']").attr('selected', true);
+            $('#SelectPIDropdown').trigger('change');
+        }
+    };
+</script>
+            <div class="clear">
+            </div>
+<div style="display: block;" id="PIDetailTitle" class="title2 font-section-title">
+    
+        
+    
+
+</div>
+            <div id="PIInfo" class="card-info">
+                <div id="pi-card">
+      
+
+ 
+               
+                <div id="newcc">
+        <div class="info-left">
+            
+<div class="cell width-cell" id=""><h4 id="lblCreditCardNumber">Numer karty kredytowej</h4>
+<div class="content">
+    <div class="relative">
+        <input tabindex="2" maxlength="16" autocomplete="off" class="input1 width-input" id="creditCardNumber" name="creditCardNumber" title="Numer karty kredytowej" type="text">
+            <div style="display: block;" class="hint width-input accessibilityread" id="lblCreditCardNumberHint" role="tooltip">- Wprowadź bez kresek i spacji -</div>
+    </div>
+</div>
+
+</div>
+            <div class="cell width-full ">
+               <h4>Kod CVV&nbsp;&nbsp;<span title="Numer CVV („numer weryfikacyjny karty”) to 3-cyfrowy numer podany za numerem karty na rewersie kart kredytowych bądź debetowych VISA®, MasterCard® i Discover®. Na kartach kredytowych bądź debetowych American Express® numer ten jest 4-cyfrowy i znajduje się na awersie karty po prawej stronie, powyżej jej numeru."><a tabindex="-1" href="#" id="WhatsThis" class="font-link1 link"><img src="managepi_data/cvv-help.png" style="margin-bottom: -3px;" alt="Numer CVV („numer weryfikacyjny karty”) to 3-cyfrowy numer podany za numerem karty na rewersie kart kredytowych bądź debetowych VISA®, MasterCard® i Discover®. Na kartach kredytowych bądź debetowych American Express® numer ten jest 4-cyfrowy i znajduje się na awersie karty po prawej stronie, powyżej jej numeru."></a></span><div style="margin-left: 0px;" class="tooltip" id="tooltip">
+    <div class="tooltip-left">
+        <img src="managepi_data/CVV_transparent_ocp.png" alt="Kod CVV">
+    </div>
+    <div class="tooltip-right">
+        <div class="halfHeight">
+            <li class="toolTipTextTop" id="lblCreditCardToolTipOne">
+                3-cyfrowy kod weryfikacyjny
+            </li>
+        </div>
+        <div class="halfHeight">
+            <li class="toolTipTextBottom" id="lblCreditCardToolTipTwo">
+                4-cyfrowy kod weryfikacyjny
+            </li>
+        </div>
+    </div>
+</div>
+</h4>
+                <div class="content">
+                    <div><input tabindex="6" maxlength="4" autocomplete="off" class="input1 width-input-cvv" id="cvm" name="cvm" title="Kod CVV" type="text">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="info-right">
+            <div class="emptyDiv">
+                &nbsp;
+            </div>
+            <div class="merge-title">
+             <div class="cell width-cell-creditcardtype">
+             <h4 id="lblCreditCardType">Typ karty</h4>
+             </div>
+             <div class="cell width-cell-expirationdate marg-rig-expirationdate">
+             <h4 id="lblCreditCardExpirationDate">Data wygaśnięcia</h4>
+            </div>
+            </div>
+            <div class="cell width-cell-creditcardtype">
+                <div class="content">
+                    <div><select tabindex="3" class="width-input-creditcardtype" id="creditCardType" name="creditCardType" title="Typ karty"><option selected="selected" value="VISA">Visa</option>
+<option value="MC">MasterCard</option>
+<option value="AMEX">American Express</option>
+</select></div>
+                </div>
+            </div>
+            <div class="cell width-cell-expirationdate marg-rig-expirationdate">
+                <div class="content">
+                    <div class="relative">
+                        <div id="MonthAndYear">
+                            <select tabindex="4" class="width-input-expirationdateMM" id="creditCardExpireMonth" name="creditCardExpireMonth" title="Miesiąc"><option selected="selected" value="">MM</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+                            <span class="space-span width-space-expirationdate"></span>
+                            <select tabindex="5" class="width-input-expirationdateYY" id="creditCardExpireYear" name="creditCardExpireYear" title="Rok"><option selected="selected" value="">RRRR</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+<option value="2028">2028</option>
+<option value="2029">2029</option>
+<option value="2030">2030</option>
+<option value="2031">2031</option>
+<option value="2032">2032</option>
+<option value="2033">2033</option>
+<option value="2034">2034</option>
+<option value="2035">2035</option>
+</select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<div class="cell width-cell" id="creditCardHolderNameDiv"><h4 id="lblCreditCardHolderName">Imię i nazwisko na karcie</h4>
+<div class="content">
+    <div>
+        <input tabindex="7" maxlength="64" autocomplete="off" class="input1 width-input" id="creditCardHolderName" name="creditCardHolderName" title="Imię i nazwisko na karcie" type="text">
+    </div>
+</div>
+
+</div>
+            
+
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div></div>
+                <div id="pi-addr">
+                 <div id="edaddr">
+    <h3 class="title-address font-sub-title accessibilityread" id="lblBillingAddress" tabindex="-1">Adres na fakturze</h3>
+        <div class="info-left">
+                <div class="cell width-cell">
+        
+<h4 id="lblBillingAddressLine1">1. wiersz adresu</h4>
+<div class="content">
+    <div>
+        <input tabindex="10" maxlength="35" autocomplete="off" class="input1 width-input" id="billingAddress1" name="billingAddress1" title="1. wiersz adresu" type="text">
+    </div>
+</div>
+
+
+    </div>
+
+                <div class="cell width-full">
+        
+<h4 id="lblBillingAddress2">2. wiersz adresu</h4>
+<div class="content">
+    <div class="relative">
+        <input tabindex="11" maxlength="35" autocomplete="off" class="input1 width-input" id="billingAddress2" name="billingAddress2" title="2. wiersz adresu" type="text">
+            <div class="hint width-input accessibilityread" id="lblBillingAddress2Hint" role="tooltip">- Opcjonalne -</div>
+    </div>
+</div>
+
+
+    </div>
+
+                <div class="cell marg-rig-cell-half width-state width-cell-half">
+        
+<h4 id="lblBillingState">Województwo</h4>
+<div class="content">
+    <div>
+        <input tabindex="13" maxlength="64" autocomplete="off" class="input1 width-input-half" id="billingState" name="billingState" title="Województwo" type="text">
+    </div>
+</div>
+
+
+    </div>
+
+                <div class="cell width-zipcode width-cell-half">
+        <h4 id="lblBillingZipCode">Kod pocztowy</h4>
+        <div class="content">
+            <div class="relative">
+                <input tabindex="14" maxlength="6" autocomplete="off" class="input1 width-input-zipcode" id="billingZipcode" name="billingZipcode" title="Kod pocztowy" type="text">
+                <div class="hint width-input-zipcode accessibilityread" id="lblBillingZipCodeHint" role="tooltip">
+                    - Przykład: 02-222 -
+                </div>
+            </div>
+        </div>
+    </div>    
+
+            <div class="clear">
+            </div>
+            
+            <div class="clear">
+            </div>
+        </div>
+        <div class="info-right">
+                <div class="cell width-full">
+        <h4 id="lblBillingPhone">Numer telefonu</h4>
+        <div class="content" id="phonenumberRTL">
+            <div class="relative">
+                <input tabindex="8" maxlength="6" autocomplete="off" class="input1 width-phone2-prefix-ext inputRTL" id="billingPhonePrefix" name="billingPhonePrefix" title="-  Kier. -" type="text"><span class="space-span width-space-phone"> <label>-</label></span><input tabindex="9" maxlength="25" autocomplete="off" class="input1 width-phone2-number inputRTL" id="billingPhoneNumber" name="billingPhoneNumber" title="- Numer telefonu -" type="text">
+                <div class="hint width-phone2-prefix-ext" forid="billingPhonePrefix" id="lblBillingPhonePrefixHint">-  Kier. -</div>
+                <div class="hint width-phone2-number left-phone2-number" forid="billingPhoneNumber" id="lblBillingPhoneNumberHint">- Numer telefonu -</div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="cell width-cell">
+        
+<h4 id="lblBillingCity">Miejscowość</h4>
+<div class="content">
+    <div>
+        <input tabindex="12" maxlength="26" autocomplete="off" class="input1 width-input" id="billingCity" name="billingCity" title="Miejscowość" type="text">
+    </div>
+</div>
+
+
+    </div> 
+
+            
+            <div class="clear">
+            </div>
+        </div>
+    <div class="clear">
+    </div>
+</div></div>
+                <div id="pi-sepa">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            
+                <div style="display: none;" id="PIInfoReview">
+                    <div style="display: none;" id="DDReview" class="hidden review">
+<h3 class="font-sub-title title-review">Przejrzyj i podpisz umowę</h3>
+<div>Logując się na swoim koncie usługi Windows Live i klikając poniżej przycisk <b>Dalej</b>, potwierdzasz zaakceptowanie <a class="font-link1" href="https://cashbackaccount.bing.com/CashBack/Tou.aspx" target="_blank">Umowy autoryzacji</a>.</div>
+</div>
+                    <div style="display: none;" id="PPReview" class="hidden review">
+<h3 class="font-sub-title title-review">Przejrzyj i podpisz umowę</h3>
+    <div><p>Pobieramy Twój adres e-mail usługi PayPal, aby możliwe było 
+przetworzenie płatności w ramach usługi PayPal. Zachowujemy kopię tych 
+informacji, aby umożliwić usłudze PayPal realizację Twoich wypłat. Aby 
+dowiedzieć się więcej na temat wykorzystywania i ochrony danych 
+osobowych, kliknij poniższe łącze prowadzące do zasad zachowania 
+poufności informacji.</p></div>
+</div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="page-foot" id="pagefooter">
+            <div class="clear">
+            </div>
+                   <div id="piNote">
+</div><input id="cancelURL" name="cancelURL" value="/PCSV2/azurev2/liverps/pcs/DoCancel" type="hidden">
+
+       
+       <div class="clear"></div>
+       <div class="privacy accessibilityread" id="lblPrivacy" role="tooltip">
+Firma Microsoft pomaga chronić prywatność użytkowników. Aby uzyskać więcej informacji, patrz nasze <a class="font-link1" href="http://go.microsoft.com/fwlink/?LinkId=248681" id="privacyString" target="_blank">zasady dotyczące zachowania poufności informacji i plików cookie</a>.</div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>    
+<div id="dataValidate" style="display: none;">
+        <div class="label middle" id="addressFriendlyNameSimpleValidator">
+            <span id="addressFriendlyNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="addressFriendlyNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="creditCardTypeSimpleValidator">
+            <span id="creditCardTypePatternMsg">Nieprawidłowy typ karty kredytowej.</span>
+            <span id="creditCardTypePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="creditCardNumberSimpleValidator">
+            <span id="creditCardNumberPatternMsg">Nieprawidłowy numer karty kredytowej.</span>
+            <span id="creditCardNumberPatternValue">^[0-9]{13,16}$</span>
+        </div>
+        <div class="label middle" id="creditCardExpireMonthSimpleValidator">
+            <span id="creditCardExpireMonthPatternMsg">Ten miesiąc wygaśnięcia jest nieprawidłowy.</span>
+            <span id="creditCardExpireMonthPatternValue">^((0?[1-9])|(1[0-2]))$</span>
+        </div>
+        <div class="label middle" id="creditCardExpireYearSimpleValidator">
+            <span id="creditCardExpireYearPatternMsg">Ten rok wygaśnięcia jest nieprawidłowy.</span>
+            <span id="creditCardExpireYearPatternValue">^[0-9]{4}$</span>
+        </div>
+        <div class="label middle" id="cvmSimpleValidator">
+            <span id="cvmPatternMsg">Nieprawidłowy kod weryfikacyjny.</span>
+            <span id="cvmPatternValue">^[0-9]{3,4}$</span>
+        </div>
+        <div class="label middle" id="directDebitNumberSimpleValidator">
+            <span id="directDebitNumberPatternMsg">Nieprawidłowy numer konta.</span>
+            <span id="directDebitNumberPatternValue">^[0-9A-Za-z\-]{4,17}$</span>
+        </div>
+        <div class="label middle" id="directDebitNumberConfirmSimpleValidator">
+            <span id="directDebitNumberConfirmPatternMsg">Nieprawidłowe potwierdzenie numeru konta.</span>
+            <span id="directDebitNumberConfirmPatternValue">^[0-9]{4,17}$</span>
+        </div>
+        <div class="label middle" id="directDebitBranchCodeSimpleValidator">
+            <span id="directDebitBranchCodePatternMsg">Nieprawidłowy numer rozliczeniowy.</span>
+            <span id="directDebitBranchCodePatternValue">^[0-9]{6}$</span>
+        </div>
+        <div class="label middle" id="directDebitBankCodeSimpleValidator">
+            <span id="directDebitBankCodePatternMsg">Nieprawidłowy kod banku.</span>
+            <span id="directDebitBankCodePatternValue">^[0-9]{9}$</span>
+        </div>
+        <div class="label middle" id="payPalFirstNameSimpleValidator">
+            <span id="payPalFirstNamePatternMsg">Nieprawidłowe imię.</span>
+            <span id="payPalFirstNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="payPalLastNameSimpleValidator">
+            <span id="payPalLastNamePatternMsg">Nieprawidłowe nazwisko.</span>
+            <span id="payPalLastNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="payPalEmailSimpleValidator">
+            <span id="payPalEmailPatternMsg">Nieprawidłowy adres e-mail usługi PayPal.</span>
+            <span id="payPalEmailPatternValue">^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$</span>
+        </div>
+        <div class="label middle" id="amazonFPSEmailSimpleValidator">
+            <span id="amazonFPSEmailPatternMsg"></span>
+            <span id="amazonFPSEmailPatternValue">^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$</span>
+        </div>
+        <div class="label middle" id="FirstNameSimpleValidator">
+            <span id="FirstNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="FirstNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="FirstNamePronunciationSimpleValidator">
+            <span id="FirstNamePronunciationPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="FirstNamePronunciationPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="LastNameSimpleValidator">
+            <span id="LastNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="LastNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="LastNamePronunciationSimpleValidator">
+            <span id="LastNamePronunciationPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="LastNamePronunciationPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="CompanyNameSimpleValidator">
+            <span id="CompanyNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="CompanyNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="VATIDSimpleValidator">
+            <span id="VATIDPatternMsg">Nieprawidłowy identyfikator VAT firmy.</span>
+            <span id="VATIDPatternValue">.*</span>
+        </div>
+        <div class="label middle" id="CommunicationEmailSimpleValidator">
+            <span id="CommunicationEmailPatternMsg">Nieprawidłowy adres e-mail.</span>
+            <span id="CommunicationEmailPatternValue">^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$</span>
+        </div>
+        <div class="label middle" id="billingAddress1SimpleValidator">
+            <span id="billingAddress1PatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="billingAddress1PatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="billingAddress2SimpleValidator">
+            <span id="billingAddress2PatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="billingAddress2PatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="billingAddress3SimpleValidator">
+            <span id="billingAddress3PatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="billingAddress3PatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="billingCitySimpleValidator">
+            <span id="billingCityPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="billingCityPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="shippingCitySimpleValidator">
+            <span id="shippingCityPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="shippingCityPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="billingDistrictSimpleValidator">
+            <span id="billingDistrictPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="billingDistrictPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="billingZipcodeSimpleValidator">
+            <span id="billingZipcodePatternMsg">Nieprawidłowy kod pocztowy.</span>
+            <span id="billingZipcodePatternValue">^[0-9]{2}-[0-9]{3}$|^[0-9]{5}$</span>
+        </div>
+        <div class="label middle" id="shippingZipcodeSimpleValidator">
+            <span id="shippingZipcodePatternMsg">Nieprawidłowy kod pocztowy.</span>
+            <span id="shippingZipcodePatternValue">^[0-9]{2}-[0-9]{3}$|^[0-9]{5}$</span>
+        </div>
+        <div class="label middle" id="billingPhonePrefixSimpleValidator">
+            <span id="billingPhonePrefixPatternMsg">Nieprawidłowy numer kierunkowy.</span>
+            <span id="billingPhonePrefixPatternValue">^[0-9]{0,6}$</span>
+        </div>
+        <div class="label middle" id="shippingPhonePrefixSimpleValidator">
+            <span id="shippingPhonePrefixPatternMsg">Nieprawidłowy numer kierunkowy.</span>
+            <span id="shippingPhonePrefixPatternValue">^[0-9]{0,6}$</span>
+        </div>
+        <div class="label middle" id="billingPhoneNumberSimpleValidator">
+            <span id="billingPhoneNumberPatternMsg">Nieprawidłowy numer telefonu.</span>
+            <span id="billingPhoneNumberPatternValue">^[0-9\.\,\-\s]{0,25}$</span>
+        </div>
+        <div class="label middle" id="shippingPhoneNumberSimpleValidator">
+            <span id="shippingPhoneNumberPatternMsg">Nieprawidłowy numer telefonu.</span>
+            <span id="shippingPhoneNumberPatternValue">^[0-9\.\,\-\s]{0,25}$</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerFirstNameSimpleValidator">
+            <span id="inicisPayBuyerFirstNamePatternMsg">Nieprawidłowe imię.</span>
+            <span id="inicisPayBuyerFirstNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerLastNameSimpleValidator">
+            <span id="inicisPayBuyerLastNamePatternMsg">Nieprawidłowe nazwisko.</span>
+            <span id="inicisPayBuyerLastNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="inicisPayDescriptionSimpleValidator">
+            <span id="inicisPayDescriptionPatternMsg">Nieprawidłowy opis.</span>
+            <span id="inicisPayDescriptionPatternValue">.*</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerTelephonePhonePrefixSimpleValidator">
+            <span id="inicisPayBuyerTelephonePhonePrefixPatternMsg">Nieprawidłowy numer kierunkowy.</span>
+            <span id="inicisPayBuyerTelephonePhonePrefixPatternValue">^([0-9]{2,3})?$</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerTelephonePhoneNumberSimpleValidator">
+            <span id="inicisPayBuyerTelephonePhoneNumberPatternMsg">Nieprawidłowy numer telefonu.</span>
+            <span id="inicisPayBuyerTelephonePhoneNumberPatternValue">^(([0-9]{3,4}-[0-9]{4})|[0-9]{7,8})?$</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerTelephonePhoneExtensionSimpleValidator">
+            <span id="inicisPayBuyerTelephonePhoneExtensionPatternMsg">Nieprawidłowy numer wewnętrzny.</span>
+            <span id="inicisPayBuyerTelephonePhoneExtensionPatternValue">^([0-9]{2,4})?$</span>
+        </div>
+        <div class="label middle" id="inicisPayBuyerEMailSimpleValidator">
+            <span id="inicisPayBuyerEMailPatternMsg">Nieprawidłowy adres e-mail.</span>
+            <span id="inicisPayBuyerEMailPatternValue">^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$</span>
+        </div>
+        <div class="label middle" id="bankAccountPayHolderNameSimpleValidator">
+            <span id="bankAccountPayHolderNamePatternMsg">Nieprawidłowa nazwa konta.</span>
+            <span id="bankAccountPayHolderNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="bankAccountPayNumberSimpleValidator">
+            <span id="bankAccountPayNumberPatternMsg">Nieprawidłowy numer konta.</span>
+            <span id="bankAccountPayNumberPatternValue">^[a-zA-Z0-9]{26}$</span>
+        </div>
+        <div class="label middle" id="bankAccountPayNumberConfirmSimpleValidator">
+            <span id="bankAccountPayNumberConfirmPatternMsg">Nieprawidłowe potwierdzenie numeru konta.</span>
+            <span id="bankAccountPayNumberConfirmPatternValue">^[a-zA-Z0-9]{26}$</span>
+        </div>
+        <div class="label middle" id="bankAccountPayBankNameSimpleValidator">
+            <span id="bankAccountPayBankNamePatternMsg">Nieprawidłowa nazwa banku.</span>
+            <span id="bankAccountPayBankNamePatternValue">.*</span>
+        </div>
+        <div class="label middle" id="bankAccountPayBankCitySimpleValidator">
+            <span id="bankAccountPayBankCityPatternMsg">Nieprawidłowa miejscowość banku.</span>
+            <span id="bankAccountPayBankCityPatternValue">.*</span>
+        </div>
+        <div class="label middle" id="billingCurrencySimpleValidator">
+            <span id="billingCurrencyPatternMsg">Nieprawidłowa waluta konta.</span>
+            <span id="billingCurrencyPatternValue">.*</span>
+        </div>
+        <div class="label middle" id="billingEmailSimpleValidator">
+            <span id="billingEmailPatternMsg">Nieprawidłowy adres e-mail konta.</span>
+            <span id="billingEmailPatternValue">^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$</span>
+        </div>
+        <div class="label middle" id="bankAccountPaySWIFTCodeSimpleValidator">
+            <span id="bankAccountPaySWIFTCodePatternMsg">Nieprawidłowy kod SWIFT banku.</span>
+            <span id="bankAccountPaySWIFTCodePatternValue">^[a-zA-Z0-9]{8}$|^[a-zA-Z0-9]{11}$</span>
+        </div>
+        <div class="label middle" id="PicvAmountSimpleValidator">
+            <span id="PicvAmountPatternMsg">Nieprawidłowa wartość.</span>
+            <span id="PicvAmountPatternValue">^[0-9]+([\.\,][0-9]+)?$|^[\.\,][0-9]+$</span>
+        </div>
+        <div class="label middle" id="PicvCodeSimpleValidator">
+            <span id="PicvCodePatternMsg">Wprowadzona wartość jest nieprawidłowa. Powinien to być 3-cyfrowy numer.</span>
+            <span id="PicvCodePatternValue">^[0-9]{3}$</span>
+        </div>
+        <div class="label middle" id="CountryCodeSimpleValidator">
+            <span id="CountryCodePatternMsg">Nieprawidłowy kod kraju/regionu.</span>
+            <span id="CountryCodePatternValue">^[0-9]+$</span>
+        </div>
+        <div class="label middle" id="PhoneNumberSimpleValidator">
+            <span id="PhoneNumberPatternMsg">Nieprawidłowy numer telefonu.</span>
+            <span id="PhoneNumberPatternValue">^[0-9]+$</span>
+        </div>
+        <div class="label middle" id="VerificationCodeSimpleValidator">
+            <span id="VerificationCodePatternMsg">Nieprawidłowy kod weryfikacyjny.</span>
+            <span id="VerificationCodePatternValue">^[0-9]+$</span>
+        </div>
+        <div class="label middle" id="ssnSimpleValidator">
+            <span id="ssnPatternMsg">Nieprawidłowy numer PESEL.</span>
+            <span id="ssnPatternValue">^([0-9]{9})$|([0-9]{3}-[0-9]{2}-[0-9]{4})$</span>
+        </div>
+        <div class="label middle" id="SSNFirstNameSimpleValidator">
+            <span id="SSNFirstNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="SSNFirstNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="SSNLastNameSimpleValidator">
+            <span id="SSNLastNamePatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="SSNLastNamePatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="commentsSimpleValidator">
+            <span id="commentsPatternMsg">Zawiera nieprawidłowe znaki.</span>
+            <span id="commentsPatternValue">^[\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]*$</span>
+        </div>
+        <div class="label middle" id="optionalTaxIDSimpleValidator">
+            <span id="optionalTaxIDPatternMsg"></span>
+            <span id="optionalTaxIDPatternValue">.*</span>
+        </div>
+        <div class="label middle" id="yearOfBirthdaySimpleValidator">
+            <span id="yearOfBirthdayPatternMsg">Nieprawidłowa data urodzenia.</span>
+            <span id="yearOfBirthdayPatternValue">^19[0-9][0-9]|20[0-9][0-9]$</span>
+        </div>
+</div>
+<input name="__RequestVerificationToken" value="wQuHzmpc/0QMECNzkaOrDnL5tWn4tq3JjHlEyfqxuidRKH0xmgS1jDzbkH8XJVSxkqyk/Fuds8TgelWrI9BlnY+wtx8QbGvGAI+jC91IaBCtEQ4TQd6lKctseTb+/68hRQb8wknQixYKmTUmjEe+faN+Hf6Lyvdeb0p20loEgaVnidkv" type="hidden">    <input id="HasChangeOnUI" name="HasChangeOnUI" value="false" type="hidden">  
+    <input id="selected-pi-type" name="pcs_spitp" value="cc" type="hidden">
+    <input id="selected-pi-subtype" name="pcs_spisubtype" value="cc" type="hidden">
+    <input id="NeedHandleAccountIDAndPIID" name="NeedHandleAccountIDAndPIID" value="False" type="hidden">
+    <input id="piid" name="piid" value="$fvo" type="hidden">
+    <input id="sessionGuid" name="sessionGuid" value="" type="hidden">
+<input id="isSEPA" name="isSEPA" value="False" type="hidden">    <input id="selected-pi-category" value="new" type="hidden">  
+    <input id="payinaccountemail" value="janusz.bialek@gazeta.pl" type="hidden"> 
+</form><script type="text/javascript">
+//<![CDATA[
+if (!window.mvcClientValidationMetadata) { window.mvcClientValidationMetadata = []; }
+window.mvcClientValidationMetadata.push({"Fields":[],"FormId":"PCSBodyForm","ReplaceValidationSummary":false});
+//]]>
+</script><div id="FingerPrintInframe"><iframe src="managepi_data/tags.htm" tabindex="-1" style="border:0px" ;="" height="0" width="0"></iframe></div>
+
+<div id="ShadeDiv"></div>
+<div id="LoadingDiv" class="loading_center"></div>
+<div id="HiddenHtml" class="hidden">
+    <div id="loading_animation"><img src="managepi_data/loading.gif" alt=""></div>
+    
+    <span id="loading_text">Nie zamykaj okna, dopóki ten krok nie zostanie zakończony…</span>
+</div>
+<script src="managepi_data/jquery-1.js" type="text/javascript"></script><script src="managepi_data/jquery.js" type="text/javascript"></script><script src="managepi_data/PCS_005.js" type="text/javascript"></script><script src="managepi_data/PCS_004.js" type="text/javascript"></script><script src="managepi_data/PCSv2.js" type="text/javascript"></script><script src="managepi_data/PCS.js" type="text/javascript"></script><script src="managepi_data/PCS_002.js" type="text/javascript"></script><script src="managepi_data/PCS_003.js" type="text/javascript"></script><script type="text/javascript">
+var PARTNER_DOMAINS = [];
+PARTNER_DOMAINS.push("^https://account\.windowsazure\.com$");
+PARTNER_DOMAINS.push("^https://account\.windowsazure\.com:443$");
+PARTNER_DOMAINS.push("^https://account-v2\.windowsazure\.com$");
+PARTNER_DOMAINS.push("^https://account-v2\.windowsazure\.com:443$");
+</script>
+
+
+<div id="additionalCss"></div>
+<script type="text/javascript">
+    var POST_MESSAGE_MODEL_JSON_PAGE_RENDERED = unescape("%7b%22method%22%3a%22pcs_onpagerenderednotify%22%2c%22accountid%22%3a%221YYjRAAAAAAAAAAA%22%2c%22backuppiid%22%3a%22%22%2c%22piid%22%3a%22%24fvo%22%2c%22authrespfor3ds%22%3a%22%22%2c%22listenerurl%22%3a%22%22%2c%22height%22%3a%22500%22%2c%22errorcode%22%3a%22%22%2c%22errormsg%22%3a%22%22%2c%22redirecturl%22%3a%22%22%2c%22returnvalue%22%3a%22%22%2c%22host%22%3a%22%22%2c%22entryurl%22%3a%22https%3a%2f%2fbusbuy.live.com%3a443%2fPCSV2%2fazurev2%2fliverps%2fpcs%2fmanagepi%3fru%3dhttps%253a%252f%252faccount.windowsazure.com%252fsignup%252fPcsReturn%26rx%3dhttps%253a%252f%252faccount.windowsazure.com%252fsignup%252fPcsCancel%26listener%3d%26usertype%3dBusiness%26lmkt%3dpl-PL%26oem%3dAzureBilling%26mkt%3dpl-PL%26locale%3dpl-PL%26pitype%3d73729%26viewmode%3d0%26accountid%3d1YYjRAAAAAAAAAAA%26adcs%3d1%26ctprpsauth%3d1%26wa%3dwsignin1.0%22%2c%22delegate%22%3a%22%22%2c%22ispostmessage%22%3a%22True%22%2c%22comments%22%3a%22%22%2c%22formdata%22%3a%22%22%7d");
+    var DynamicCSSJSON2Win10 = unescape("");
+</script>
+<script type="text/javascript">
+var ORDERED_TAB_INDEX_ID_LIST = [];
+ORDERED_TAB_INDEX_ID_LIST.push("creditCardNumber");
+ORDERED_TAB_INDEX_ID_LIST.push("creditCardType");
+ORDERED_TAB_INDEX_ID_LIST.push("creditCardExpireMonth");
+ORDERED_TAB_INDEX_ID_LIST.push("creditCardExpireYear");
+ORDERED_TAB_INDEX_ID_LIST.push("cvm");
+ORDERED_TAB_INDEX_ID_LIST.push("creditCardHolderName");
+ORDERED_TAB_INDEX_ID_LIST.push("billingPhonePrefix");
+ORDERED_TAB_INDEX_ID_LIST.push("billingPhoneNumber");
+ORDERED_TAB_INDEX_ID_LIST.push("billingAddress1");
+ORDERED_TAB_INDEX_ID_LIST.push("billingAddress2");
+ORDERED_TAB_INDEX_ID_LIST.push("billingAddress3");
+ORDERED_TAB_INDEX_ID_LIST.push("billingCity");
+ORDERED_TAB_INDEX_ID_LIST.push("billingState");
+ORDERED_TAB_INDEX_ID_LIST.push("billingDistrict");
+ORDERED_TAB_INDEX_ID_LIST.push("billingZipcode");
+</script>
+<script type="text/javascript">
+var DISABLE_TAB_INDEX_ID_LIST = [];
+DISABLE_TAB_INDEX_ID_LIST.push("WhatsThis");
+</script>
+
+<script type="text/javascript">
+var STORED_VALUE_ISENOUGH = true;
+
+var POST_MESSAGE_MODEL_JSON = unescape("%7b%22method%22%3a%22pcs_onheightchange%22%2c%22accountid%22%3a%221YYjRAAAAAAAAAAA%22%2c%22backuppiid%22%3a%22%22%2c%22piid%22%3a%22%24fvo%22%2c%22authrespfor3ds%22%3a%22%22%2c%22listenerurl%22%3a%22%22%2c%22height%22%3a%22500%22%2c%22errorcode%22%3a%22%22%2c%22errormsg%22%3a%22%22%2c%22redirecturl%22%3a%22%22%2c%22returnvalue%22%3a%22%22%2c%22host%22%3a%22%22%2c%22entryurl%22%3a%22https%3a%2f%2fbusbuy.live.com%3a443%2fPCSV2%2fazurev2%2fliverps%2fpcs%2fmanagepi%3fru%3dhttps%253a%252f%252faccount.windowsazure.com%252fsignup%252fPcsReturn%26rx%3dhttps%253a%252f%252faccount.windowsazure.com%252fsignup%252fPcsCancel%26listener%3d%26usertype%3dBusiness%26lmkt%3dpl-PL%26oem%3dAzureBilling%26mkt%3dpl-PL%26locale%3dpl-PL%26pitype%3d73729%26viewmode%3d0%26accountid%3d1YYjRAAAAAAAAAAA%26adcs%3d1%26ctprpsauth%3d1%26wa%3dwsignin1.0%22%2c%22delegate%22%3a%22%22%2c%22ispostmessage%22%3a%22true%22%2c%22comments%22%3a%22%22%2c%22formdata%22%3a%22%22%7d");
+var POST_MESSAGE_MODEL_SUBMITING_JSON = unescape("");
+var LOADING_GIF_LOCATION = unescape("center");
+var STEP2_TITLE_ADD_Dynamic= unescape("false");
+var NEED_PI_EXTRA_FOR_PAYOUT = true;
+var NEED_PI_EXTRA_FOR_PAYIN = false;
+var HasPayinAccount = true;
+var bapTypeChecking = unescape("Rachunek bieżący");
+var bapTypeSavings = unescape("Rachunek oszczędnościowy");
+var bapTypeResident = unescape("Rezydent");
+var bapTypeNonResident = unescape("Nierezydent");
+var CREDIT_CARD_TYPE_DISPLAY_MODE = "dropdownlist";
+var CREDIT_CARD_TYPE_IMAGELIST_DISPLAY_TYPE = "gray";
+var BOOL_SUPPORT_ACCESSIBILITY = false;
+var CREDIT_CARD_TYPE_DISPLAY_MODE_FOR_EDIT = "text";
+var NeedSelectCountry = false;
+var Entry_Url = "https://busbuy.live.com:443/PCSV2/azurev2/liverps/pcs/managepi?ru=https%3a%2f%2faccount.windowsazure.com%2fsignup%2fPcsReturn&rx=https%3a%2f%2faccount.windowsazure.com%2fsignup%2fPcsCancel&listener=&usertype=Business&lmkt=pl-PL&oem=AzureBilling&mkt=pl-PL&locale=pl-PL&pitype=73729&viewmode=0&accountid=1YYjRAAAAAAAAAAA&adcs=1&ctprpsauth=1&wa=wsignin1.0";
+var CVVFaile = unescape("Weryfikacja nie powiodła się");
+var ACCOUNT_ID = "1YYjRAAAAAAAAAAA";
+var NeedPostMessageSubmit= false;
+var isLinkPostMessage = false;
+var isDynamicCSS2Win10 =false;
+
+var PARTNER="azurev2";
+//for customized dropdownlist style
+var isUsedCustomizedDropdownlist = (typeof (PARTNER) != "undefined") && (PARTNER == "bam" || PARTNER == "bam-msa" || PARTNER == "cmat");
+var SHOW_SUBMIT_CONFIRMATION = false;
+var isConfirmed = false;
+ViewMode.ModeType = unescape("0");
+var isNoPermission = false;
+var piuserType="Business";
+var needShowCPFAndCNPJAndCCM="ShowAll";
+var noInformation = unescape("Brak informacji");
+var useHint = true;
+var useBillingStateHint = false;
+var paginationConfig = [];
+var isSEPA = false;
+var isACH = false;
+var notUseDeadPageForInicisPay=true;
+var PCSSuspiciousCCBinRange = unescape("[3456][0-9]{13,15}");
+//group validation method ValidateLocationAddress is dynamic 
+var isDynamicGroup = false;
+
+function DisplayErrDetail() {
+var element = document.getElementById("ErrorDetails");
+element.style.display = (element.style.display == "block" ? "none" : "block"); 
+PageHeightChangeNotice();
+}
+
+var INPUT_HINT_LIST = new Array();
+if (useHint)
+{
+    INPUT_HINT_LIST[0] = 'creditCardNumber';
+    INPUT_HINT_LIST[1] = 'billingPhoneNumber';
+    INPUT_HINT_LIST[2] = 'billingAddress2';
+    INPUT_HINT_LIST[3] = 'billingZipcode';
+    INPUT_HINT_LIST[4] = 'bankAccountPayBankCode';
+    INPUT_HINT_LIST[5] = 'bankAccountPayHolderName';
+    INPUT_HINT_LIST[6] = 'directDebitBankCode';
+    INPUT_HINT_LIST[7] = 'directDebitHolderName';
+    INPUT_HINT_LIST[8] = 'inicisPayDescription';
+    INPUT_HINT_LIST[9] = 'billingPhonePrefix';
+    INPUT_HINT_LIST[10] = 'bankAccountPayBankCode';
+    INPUT_HINT_LIST[11] = 'bankAccountPayNumber';
+    INPUT_HINT_LIST[12] = 'bankAccountPayHolderName';
+    INPUT_HINT_LIST[13] = 'bankAccountPayBankName';
+    INPUT_HINT_LIST[14] = 'bankAccountPayBankCity';
+    INPUT_HINT_LIST[15] = 'bapBranchLocationAddress1';
+    INPUT_HINT_LIST[16] = 'bapBranchLocationAddress2';
+    INPUT_HINT_LIST[17] = 'bapBranchLocationAddress3';
+    INPUT_HINT_LIST[18] = 'bankAccountPayBranchCode';
+    INPUT_HINT_LIST[19] = 'bankAccountPayBeneCorreAccount';
+    INPUT_HINT_LIST[20] = 'CompanyName';
+    INPUT_HINT_LIST[21] = 'invoicePONumber';
+    INPUT_HINT_LIST[22] = 'VATID';
+    INPUT_HINT_LIST[23] = 'billingAddress3';
+    INPUT_HINT_LIST[24] = 'CCM';
+    INPUT_HINT_LIST[25] = 'CNPJ';
+    INPUT_HINT_LIST[26] = 'PrepaidCardNumber';
+    INPUT_HINT_LIST[27] = 'addressFriendlyName';
+    INPUT_HINT_LIST[28] = 'billingDistrict';
+    INPUT_HINT_LIST[29] = 'bankAccountPayNumberConfirm';
+    INPUT_HINT_LIST[30] = 'bankAccountPaySWIFTCode';
+    INPUT_HINT_LIST[31] = 'bankAccountPayBeneficiaryKPP';
+    INPUT_HINT_LIST[32] = 'bankAccountPayTaxID';
+    INPUT_HINT_LIST[33] = 'CPF';
+    INPUT_HINT_LIST[34] = 'billingCity';
+    INPUT_HINT_LIST[35] = 'yearOfBirthday';
+    INPUT_HINT_LIST[36] = 'optionalTaxID';
+    INPUT_HINT_LIST[37] = 'inicisPayBuyerEMail';
+    INPUT_HINT_LIST[38] = 'inicisPayBuyerTelephonePhonePrefix';
+    INPUT_HINT_LIST[39] = 'inicisPayBuyerTelephonePhoneNumber';
+    INPUT_HINT_LIST[40] = 'billingAddress1';
+
+    if (useBillingStateHint)
+    {
+      INPUT_HINT_LIST[41] = 'billingState';
+    }
+    
+}
+else
+{
+    $('.hint').css('display', 'none');
+    $('.relative').removeClass('relative');
+}
+// Remove place holder no matter the partner needs hint or not.
+// on IE10, placeholder impact accessibility and the text label doesn't read.
+// 
+$('input[placeholder]').removeAttr('placeholder');
+
+var INPUT_INVOLVEDELEMENT_LIST = new Array();
+
+var SUPPORTED_CREDITCARD_TYPE = new Array();
+SUPPORTED_CREDITCARD_TYPE[0] = 'VISA';SUPPORTED_CREDITCARD_TYPE[1] = 'MC';SUPPORTED_CREDITCARD_TYPE[2] = 'AMEX';
+var INPUT_FORBIDDEN_PASTE_LIST = new Array();
+INPUT_FORBIDDEN_PASTE_LIST[0] = "#payPalEmailConfirm";
+
+$(document).ready(function () {
+
+    //bind click event to hyper link
+    if (isLinkPostMessage) {
+        PCS.PostMessage.NotifyOnLink();
+    }
+
+    //check IE version
+    if ( $.browser.msie ) {
+        if($.browser.version <= 6.0 )
+        {
+            $("#ToUpdateIE").removeClass('hidden');
+        }else
+        {
+            $("#ToUpdateIE").addClass('hidden');
+        }
+    }
+    //PCS View config
+    PCS.Cards = new Object();
+    PCS.Cards.cc = [];
+    PCS.Cards.dd = [];
+    PCS.Cards.pp = [];
+    PCS.Cards.pppi = [];
+    PCS.Cards.inicis = [];
+    PCS.Cards.aiv = [];
+    PCS.Cards.bap = [];
+    PCS.Cards.sv = [];
+    PCS.Cards.lwp = [];
+        //PCS account View config
+    PCS.Accounts = new Object();
+    PCS.Accounts.account = [];
+    PCS.Profile = {
+'billingAddress1':'','billingAddress2':'','billingAddress3':'','billingState':'','billingCity':'','billingDistrict':'','billingZipcode':'','billingPhonePrefix':'','billingPhoneNumber':'','isunicodebillingAddress1':'','isunicodebillingAddress2':'','isunicodebillingAddress3':'','isunicodebillingCity':'','isunicodebillingDistrict':'','isunicodebillingState':'','FirstName':'Janusz','FirstNamePronunciation':'','LastName':'Bialek','LastNamePronunciation':'','CompanyName':'Janusz','CompanyNamePronunciation':'','billingEmail':'janusz.bialek\x40gazeta.pl','nationality':'','dayOfBirthday':'','monthOfBirthday':'','yearOfBirthday':'','taxID':'','optionalTaxID':''
+}
+PCS.DefaultSelectedPIId = unescape('%24fvo');
+PCS.Cards.cc.NeedAddressInfo = true;
+PCS.Cards.dd.NeedAddressInfo = true;
+PCS.Cards.pp.NeedAddressInfo = true;
+PCS.Cards.pppi.NeedAddressInfo = true;
+PCS.Cards.aiv.NeedAddressInfo = true;
+PCS.Cards.inicis.NeedAddressInfo = true;
+PCS.Cards.bap.NeedAddressInfo = true;
+PCS.Cards.sv.NeedAddressInfo = true;
+PCS.Cards.lwp.NeedAddressInfo = true;
+PCS.Cards.sv[''] = {
+'piFriendlyName':'','storedvaluebalance':'0.0','FirstName':'Janusz','FirstNamePronunciation':'','LastName':'Bialek','LastNamePronunciation':'','CompanyName':'Janusz','CompanyNamePronunciation':'','billingEmail':'janusz.bialek\x40gazeta.pl'
+}
+
+
+    //for "Your Infomation" of SEPA 
+    if(isSEPA)
+    {
+        PCS.YourInfoProfile = {
+'name':'Janusz'
+}
+
+    }
+    // redirect to RI if RI is specified
+    CheckParentUrl(unescape(""));
+    
+    //custom element data validate, the rules, messages and function set in the validate.xml
+    $('#piFriendlyName').attr('maxlength', '64');$('#addressFriendlyName').attr('maxlength', '64');$('#creditCardNumber').attr('maxlength', '16');$('#creditCardHolderName').attr('maxlength', '64');$('#cvm').attr('maxlength', '4');$('#directDebitHolderName').attr('maxlength', '22');$('#directDebitNumber').attr('maxlength', '17');$('#directDebitNumberConfirm').attr('maxlength', '17');$('#directDebitBranchCode').attr('maxlength', '6');$('#directDebitBankCode').attr('maxlength', '9');$('#payPalFirstName').attr('maxlength', '20');$('#payPalLastName').attr('maxlength', '40');$('#payPalEmail').attr('maxlength', '127');$('#payPalEmailConfirm').attr('maxlength', '127');$('#billingAgreementDescription').attr('maxlength', '127');$('#amazonFPSEmail').attr('maxlength', '64');$('#amazonFPSEmailConfirm').attr('maxlength', '64');$('#FirstName').attr('maxlength', '20');$('#FirstNamePronunciation').attr('maxlength', '64');$('#LastName').attr('maxlength', '39');$('#LastNamePronunciation').attr('maxlength', '64');$('#CompanyName').attr('maxlength', '64');$('#VATID').attr('maxlength', '64');$('#CommunicationEmail').attr('maxlength', '129');$('#CommunicationEmailConfirm').attr('maxlength', '129');$('#billingAddress1').attr('maxlength', '35');$('#billingAddress2').attr('maxlength', '35');$('#billingAddress3').attr('maxlength', '35');$('#billingCity').attr('maxlength', '26');$('#shippingCity').attr('maxlength', '26');$('#billingState').attr('maxlength', '64');$('#shippingState').attr('maxlength', '64');$('#billingZipcode').attr('maxlength', '6');$('#shippingZipcode').attr('maxlength', '6');$('#billingPhonePrefix').attr('maxlength', '6');$('#shippingPhonePrefix').attr('maxlength', '6');$('#billingPhoneNumber').attr('maxlength', '25');$('#shippingPhoneNumber').attr('maxlength', '25');$('#inicisPayBuyerFirstName').attr('maxlength', '30');$('#inicisPayBuyerLastName').attr('maxlength', '30');$('#inicisPayDescription').attr('maxlength', '64');$('#inicisPayBuyerTelephonePhonePrefix').attr('maxlength', '3');$('#inicisPayBuyerTelephonePhoneNumber').attr('maxlength', '9');$('#inicisPayBuyerTelephonePhoneExtension').attr('maxlength', '4');$('#inicisPayBuyerEMail').attr('maxlength', '60');$('#bankAccountPayHolderName').attr('maxlength', '64');$('#bankAccountPayNumber').attr('maxlength', '26');$('#bankAccountPayNumberConfirm').attr('maxlength', '26');$('#bankAccountPayBankName').attr('maxlength', '35');$('#bankAccountPayBankCity').attr('maxlength', '35');$('#billingEmail').attr('maxlength', '129');$('#bankAccountPaySWIFTCode').attr('maxlength', '11');$('#invoicePONumber').attr('maxlength', '30');$('#invoiceHolderName').attr('maxlength', '64');$('#ssn').attr('maxlength', '11');$('#SSNFirstName').attr('maxlength', '20');$('#SSNLastName').attr('maxlength', '39');$('#comments').attr('maxlength', '300');$('#optionalTaxID').attr('maxlength', '18');$('#yearOfBirthday').attr('maxlength', '4');$('#signAndAuthCity').attr('maxlength', '26');
+    // finger print
+    PCS.generateFingerPrintScript('jscj80qv', '7ebd43e8-cd22-4bc3-b2a2-2ebafa16bce9');
+    $('#PCSBodyForm').validate({   
+        //ignore the hidden elements
+        ignore: ":hidden",
+        groups:{
+            //group validation method ValidateLocationAddress is dynamic 
+IsCreditCardExpire:'creditCardExpireMonth creditCardExpireYear',IsBirthday:'monthOfBirthday dayOfBirthday yearOfBirthday'        },
+        wrapper:"p",
+        errorPlacement: function (error, element) {
+        if (error != null) {
+           error.insertAfter(element.parent("div"));
+           PageHeightChangeNotice();
+           }
+        },
+        submitHandler:function(form){
+
+            setFieldChangedFlag("HasChangeOnUI");
+            if (!prepareNewInicis()){
+                return false;
+            }
+
+            if(!CheckSubscriptionAgreement()){
+                return false;
+            }
+
+            if(isACH && !CheckACHAuthAgreement())
+            {
+                return false;
+            }
+
+            if(PCS.PageManager) {
+                if(PCS.PageManager.hasNext()) {
+                    PCS.PageManager.next();
+                    return false;
+                }
+            }
+
+            if (SHOW_SUBMIT_CONFIRMATION) {
+                if (isConfirmed) {
+                    submitForm(form);
+                } else {
+                    showSubmitConfirmation(form, false);
+                }
+            } else {
+                submitForm(form);
+            }
+        },
+
+        rules: {
+piFriendlyName:{required:true,maxlength: 64,NonCCNumberSuspicious: ""},addressFriendlyName:{required:true,maxlength: 64,pattern: $("#addressFriendlyNamePatternValue").text(),NonCCNumberSuspicious: ""},creditCardType:{required:true,pattern: $("#creditCardTypePatternValue").text()},obtType:{required:true},creditCardNumber:{required:true,minlength: 13,maxlength: 16,pattern: $("#creditCardNumberPatternValue").text(),IsNumberMatchedCardType: "#creditCardType"},creditCardHolderName:{required:true,maxlength: 64,NonCCNumberSuspicious: ""},creditCardExpireMonth:{required:true,pattern: $("#creditCardExpireMonthPatternValue").text(),IsCreditCardExpire: "#creditCardExpireMonth"},creditCardExpireYear:{required:true,pattern: $("#creditCardExpireYearPatternValue").text(),IsCreditCardExpire: "#creditCardExpireYear"},cvm:{required:true,minlength: 3,maxlength: 4,pattern: $("#cvmPatternValue").text(),CVVCheck: "#creditCardType,#selected-pi-subtype"},directDebitHolderName:{required:true,minlength: 1,maxlength: 22},directDebitNumber:{required:true,minlength: 4,maxlength: 17,pattern: $("#directDebitNumberPatternValue").text()},directDebitNumberConfirm:{required:true,minlength: 4,maxlength: 17,pattern: $("#directDebitNumberConfirmPatternValue").text(),equalTo: "#directDebitNumber"},directDebitBranchCode:{required:true,minlength: 6,maxlength: 6,pattern: $("#directDebitBranchCodePatternValue").text()},directDebitBankCode:{required:true,minlength: 9,maxlength: 9,pattern: $("#directDebitBankCodePatternValue").text()},payPalFirstName:{required:true,maxlength: 20,pattern: $("#payPalFirstNamePatternValue").text()},payPalLastName:{required:true,maxlength: 40,pattern: $("#payPalLastNamePatternValue").text()},payPalEmail:{required:true,minlength: 6,maxlength: 127,pattern: $("#payPalEmailPatternValue").text()},payPalEmailConfirm:{required:true,maxlength: 127,equalTo: "#payPalEmail"},billingAgreementDescription:{required:true,maxlength: 127},amazonFPSEmail:{required:true,maxlength: 64,pattern: $("#amazonFPSEmailPatternValue").text()},amazonFPSEmailConfirm:{required:true,maxlength: 64},FirstName:{required:true,maxlength: 20,pattern: $("#FirstNamePatternValue").text(),NonCCNumberSuspicious: ""},FirstNamePronunciation:{required:true,maxlength: 64,pattern: $("#FirstNamePronunciationPatternValue").text(),NonCCNumberSuspicious: ""},LastName:{required:true,maxlength: 39,pattern: $("#LastNamePatternValue").text(),NonCCNumberSuspicious: ""},LastNamePronunciation:{required:true,maxlength: 64,pattern: $("#LastNamePronunciationPatternValue").text(),NonCCNumberSuspicious: ""},CompanyName:{maxlength: 64,pattern: $("#CompanyNamePatternValue").text(),NonCCNumberSuspicious: ""},CompanyNamePronunciation:{NonCCNumberSuspicious: ""},VATID:{maxlength: 64,pattern: $("#VATIDPatternValue").text()},CommunicationEmail:{required:true,minlength: 6,maxlength: 129,pattern: $("#CommunicationEmailPatternValue").text()},CommunicationEmailConfirm:{required:true,minlength: 6,maxlength: 129},billingAddress1:{required:true,maxlength: 35,pattern: $("#billingAddress1PatternValue").text(),NonCCNumberSuspicious: '^[3456][0-9]{13,15}$'},billingAddress2:{maxlength: 35,pattern: $("#billingAddress2PatternValue").text(),NonCCNumberSuspicious: '^[3456][0-9]{13,15}$'},billingAddress3:{maxlength: 35,pattern: $("#billingAddress3PatternValue").text(),NonCCNumberSuspicious: '^[3456][0-9]{13,15}$'},billingCity:{required:true,maxlength: 26,pattern: $("#billingCityPatternValue").text(),NonCCNumberSuspicious: ""},shippingCity:{required:true,maxlength: 26,pattern: $("#shippingCityPatternValue").text(),NonCCNumberSuspicious: ""},billingState:{maxlength: 64,NonCCNumberSuspicious: '^[3456][0-9]{13,15}$'},shippingState:{maxlength: 64},billingDistrict:{pattern: $("#billingDistrictPatternValue").text(),NonCCNumberSuspicious: "",NonCCNumberSuspicious: '^[3456][0-9]{13,15}$'},billingZipcode:{required:true,minlength: 5,maxlength: 6,pattern: $("#billingZipcodePatternValue").text()},shippingZipcode:{required:true,minlength: 5,maxlength: 6,pattern: $("#shippingZipcodePatternValue").text()},billingPhonePrefix:{maxlength: 6,pattern: $("#billingPhonePrefixPatternValue").text()},shippingPhonePrefix:{maxlength: 6,pattern: $("#shippingPhonePrefixPatternValue").text()},billingPhoneNumber:{maxlength: 25,pattern: $("#billingPhoneNumberPatternValue").text()},shippingPhoneNumber:{maxlength: 25,pattern: $("#shippingPhoneNumberPatternValue").text()},taxID:{},inicisPayBuyerFirstName:{required:true,minlength: 1,maxlength: 30,pattern: $("#inicisPayBuyerFirstNamePatternValue").text()},inicisPayBuyerLastName:{required:true,minlength: 1,maxlength: 30,pattern: $("#inicisPayBuyerLastNamePatternValue").text()},inicisPayDescription:{required:true,minlength: 1,maxlength: 64,pattern: $("#inicisPayDescriptionPatternValue").text()},inicisPayBuyerTelephonePhonePrefix:{maxlength: 3,pattern: $("#inicisPayBuyerTelephonePhonePrefixPatternValue").text()},inicisPayBuyerTelephonePhoneNumber:{maxlength: 9,pattern: $("#inicisPayBuyerTelephonePhoneNumberPatternValue").text()},inicisPayBuyerTelephonePhoneExtension:{maxlength: 4,pattern: $("#inicisPayBuyerTelephonePhoneExtensionPatternValue").text()},inicisPayBuyerEMail:{maxlength: 60,pattern: $("#inicisPayBuyerEMailPatternValue").text()},bankAccountPayHolderName:{required:true,minlength: 1,maxlength: 64,pattern: $("#bankAccountPayHolderNamePatternValue").text()},bankAccountPayNumber:{required:true,minlength: 26,maxlength: 26,pattern: $("#bankAccountPayNumberPatternValue").text()},bankAccountPayNumberConfirm:{required:true,minlength: 26,maxlength: 26,pattern: $("#bankAccountPayNumberConfirmPatternValue").text(),equalTo: "#bankAccountPayNumber"},bankAccountPayBranchCode:{},bankAccountPayBankCode:{},bankAccountPayCheckDigit:{},bankAccountPayBankName:{required:true,minlength: 1,maxlength: 35,pattern: $("#bankAccountPayBankNamePatternValue").text()},bankAccountPayBankCity:{maxlength: 35,pattern: $("#bankAccountPayBankCityPatternValue").text()},bapBranchLocationAddress1:{},existingBranchLocationAddress1:{},bapBranchLocationAddress2:{},existingBranchLocationAddress2:{},bapBranchLocationAddress3:{},existingBranchLocationAddress3:{},billingCurrency:{pattern: $("#billingCurrencyPatternValue").text()},billingEmail:{required:true,maxlength: 129,pattern: $("#billingEmailPatternValue").text()},bankAccountPaySWIFTCode:{required:true,minlength: 8,maxlength: 11,pattern: $("#bankAccountPaySWIFTCodePatternValue").text()},PrepaidCardNumber:{PrepaidCardNumbersCheck: ""},invoicePONumber:{maxlength: 30},invoiceHolderName:{required:true,maxlength: 64},PicvAmount:{pattern: $("#PicvAmountPatternValue").text(),PICVCheck: ""},PicvCode:{pattern: $("#PicvCodePatternValue").text(),PICVCheck: ""},CountryCode:{required:true,pattern: $("#CountryCodePatternValue").text()},PhoneNumber:{required:true,pattern: $("#PhoneNumberPatternValue").text()},VerificationCode:{required:true,pattern: $("#VerificationCodePatternValue").text()},ssn:{required:true,minlength: 9,maxlength: 11,pattern: $("#ssnPatternValue").text()},SSNFirstName:{required:true,maxlength: 20,pattern: $("#SSNFirstNamePatternValue").text(),NonCCNumberSuspicious: ""},SSNLastName:{required:true,maxlength: 39,pattern: $("#SSNLastNamePatternValue").text(),NonCCNumberSuspicious: ""},inicisInfo:{required:true},comments:{required:true,maxlength: 300,pattern: $("#commentsPatternValue").text()},optionalTaxID:{maxlength: 18,pattern: $("#optionalTaxIDPatternValue").text()},nationality:{required:true},monthOfBirthday:{required:true,IsBirthday: "#birthdayMonth"},dayOfBirthday:{required:true,IsBirthday: "#birthdayDay"},yearOfBirthday:{required:true,minlength: 4,maxlength: 4,pattern: $("#yearOfBirthdayPatternValue").text(),IsBirthday: "#birthdayYear"},SEPABankName:{required:true},signature:{required:true,equalTo: "#directDebitHolderName"},signAndAuthCity:{required:true,maxlength: 26},signatureDate:{required:true}},
+messages: {
+piFriendlyName:{required:unescape("Przyjazna nazwa instrumentu płatniczego jest wymagana."),maxlength:unescape("Przyjazna nazwa instrumentu płatniczego jest zbyt długa."),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},addressFriendlyName:{required:unescape("Przyjazna nazwa jest wymagana."),maxlength:unescape("Przyjazna nazwa jest zbyt długa."),pattern:$("#addressFriendlyNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},creditCardType:{required:unescape("Typ karty kredytowej jest wymagany."),pattern:$("#creditCardTypePatternMsg").text()},obtType:{required:unescape("Aby wykonać przelew bankowy w trybie online, należy podać nazwę banku. Wybierz odpowiednią nazwę.")},creditCardNumber:{required:unescape("Numer karty kredytowej jest wymagany."),minlength:unescape("Numer karty kredytowej jest zbyt krótki."),maxlength:unescape("Numer karty kredytowej jest zbyt długi."),pattern:$("#creditCardNumberPatternMsg").text(),IsNumberMatchedCardType:unescape("Numer karty kredytowej i jej typ nie pasują do siebie.")},creditCardHolderName:{required:unescape("Imię i nazwisko na karcie są wymagane."),maxlength:unescape("Imię i nazwisko na karcie są zbyt długie."),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},creditCardExpireMonth:{required:unescape("Data ważności jest wymagana."),pattern:$("#creditCardExpireMonthPatternMsg").text(),IsCreditCardExpire:unescape("Nieprawidłowa data ważności.")},creditCardExpireYear:{required:unescape("Data ważności jest wymagana."),pattern:$("#creditCardExpireYearPatternMsg").text(),IsCreditCardExpire:unescape("Nieprawidłowa data ważności.")},cvm:{required:unescape("Kod weryfikacyjny jest wymagany."),minlength:unescape("Kod weryfikacyjny jest zbyt krótki."),maxlength:unescape("Kod weryfikacyjny jest zbyt długi."),pattern:$("#cvmPatternMsg").text(),CVVCheck:unescape("Numer CVV nie pasuje do typu karty kredytowej.")},directDebitHolderName:{required:unescape("Nazwa konta jest wymagana."),minlength:unescape("Nazwa konta jest zbyt krótka."),maxlength:unescape("Nazwa konta jest zbyt długa")},directDebitNumber:{required:unescape("Numer konta jest wymagany."),minlength:unescape("Numer konta jest zbyt krótki."),maxlength:unescape("Numer konta jest zbyt długi"),pattern:$("#directDebitNumberPatternMsg").text()},directDebitNumberConfirm:{required:unescape("Potwierdzenie numeru konta jest wymagane."),minlength:unescape("Numer konta potwierdzenia jest zbyt krótki."),maxlength:unescape("Numer konta potwierdzenia jest zbyt długi."),pattern:$("#directDebitNumberConfirmPatternMsg").text(),equalTo:unescape("Musisz wprowadzić taki sam numer, jak numer konta, który potwierdzasz.")},directDebitBranchCode:{required:unescape("Numer rozliczeniowy jest wymagany."),minlength:unescape("Numer rozliczeniowy jest zbyt krótki."),maxlength:unescape("Numer rozliczeniowy jest zbyt długi."),pattern:$("#directDebitBranchCodePatternMsg").text()},directDebitBankCode:{required:unescape("Kod banku jest wymagany."),minlength:unescape("Kod banku jest zbyt krótki."),maxlength:unescape("Kod banku jest zbyt długi."),pattern:$("#directDebitBankCodePatternMsg").text()},payPalFirstName:{required:unescape("Imię jest wymagane."),maxlength:unescape("Imię jest zbyt długie."),pattern:$("#payPalFirstNamePatternMsg").text()},payPalLastName:{required:unescape("Nazwisko jest wymagane."),maxlength:unescape("Nazwisko jest zbyt długie."),pattern:$("#payPalLastNamePatternMsg").text()},payPalEmail:{required:unescape("Adres e-mail usługi PayPal jest wymagany."),minlength:unescape("Adres e-mail usługi PayPal jest zbyt krótki."),maxlength:unescape("Adres e-mail usługi PayPal jest zbyt długi."),pattern:$("#payPalEmailPatternMsg").text()},payPalEmailConfirm:{required:unescape("Potwierdzenie adresu e-mail usługi PayPal jest wymagane."),maxlength:unescape("Potwierdzenie adresu e-mail usługi PayPal jest zbyt długie."),equalTo:unescape("Musisz wprowadzić taki sam adres e-mail usługi PayPal, jak adres, który potwierdzasz.")},billingAgreementDescription:{required:unescape("Opis jest wymagany."),maxlength:unescape("Opis jest zbyt długi.")},amazonFPSEmail:{required:unescape(""),maxlength:unescape(""),pattern:$("#amazonFPSEmailPatternMsg").text()},amazonFPSEmailConfirm:{required:unescape(""),maxlength:unescape("")},FirstName:{required:unescape("Imię jest wymagane."),maxlength:unescape("Imię jest zbyt długie."),pattern:$("#FirstNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},FirstNamePronunciation:{required:unescape("Wymowa imienia jest wymagana."),maxlength:unescape("Wymowa imienia jest zbyt długa."),pattern:$("#FirstNamePronunciationPatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},LastName:{required:unescape("Nazwisko jest wymagane."),maxlength:unescape("Nazwisko jest zbyt długie."),pattern:$("#LastNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},LastNamePronunciation:{required:unescape("Wymowa nazwiska jest wymagana."),maxlength:unescape("Wymowa nazwiska jest zbyt długa."),pattern:$("#LastNamePronunciationPatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},CompanyName:{maxlength:unescape("Nazwa firmy jest zbyt długa."),pattern:$("#CompanyNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},CompanyNamePronunciation:{NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},VATID:{maxlength:unescape("Identyfikator VAT firmy jest zbyt długi."),pattern:$("#VATIDPatternMsg").text()},CommunicationEmail:{required:unescape("Adres e-mail jest wymagany."),minlength:unescape("Adres e-mail jest zbyt krótki."),maxlength:unescape("Adres e-mail jest zbyt długi."),pattern:$("#CommunicationEmailPatternMsg").text()},CommunicationEmailConfirm:{required:unescape("Adres e-mail potwierdzenia jest wymagany."),minlength:unescape("Adres e-mail potwierdzenia jest zbyt krótki."),maxlength:unescape("")},billingAddress1:{required:unescape("1. wiersz adresu jest wymagany."),maxlength:unescape("1. wiersz adresu jest zbyt długi."),pattern:$("#billingAddress1PatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},billingAddress2:{maxlength:unescape("2. wiersz adresu jest zbyt długi."),pattern:$("#billingAddress2PatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},billingAddress3:{maxlength:unescape("3. wiersz adresu jest zbyt długi."),pattern:$("#billingAddress3PatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},billingCity:{required:unescape("Nazwa miejscowości jest wymagana."),maxlength:unescape("Nazwa miejscowości jest zbyt długa."),pattern:$("#billingCityPatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},shippingCity:{required:unescape("Nazwa miejscowości jest wymagana."),maxlength:unescape("Nazwa miejscowości jest zbyt długa."),pattern:$("#shippingCityPatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},billingState:{maxlength:unescape("Nazwa województwa jest zbyt długa."),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},shippingState:{maxlength:unescape("Nazwa województwa jest zbyt długa.")},billingDistrict:{pattern:$("#billingDistrictPatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje."),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},billingZipcode:{required:unescape("Kod pocztowy jest wymagany."),minlength:unescape("Kod pocztowy jest zbyt krótki."),maxlength:unescape("Kod pocztowy jest zbyt długi."),pattern:$("#billingZipcodePatternMsg").text()},shippingZipcode:{required:unescape("Kod pocztowy jest wymagany."),minlength:unescape("Kod pocztowy jest zbyt krótki."),maxlength:unescape("Kod pocztowy jest zbyt długi."),pattern:$("#shippingZipcodePatternMsg").text()},billingPhonePrefix:{maxlength:unescape("Numer kierunkowy jest zbyt długi."),pattern:$("#billingPhonePrefixPatternMsg").text()},shippingPhonePrefix:{maxlength:unescape("Numer kierunkowy jest zbyt długi."),pattern:$("#shippingPhonePrefixPatternMsg").text()},billingPhoneNumber:{maxlength:unescape("Numer telefonu jest zbyt długi."),pattern:$("#billingPhoneNumberPatternMsg").text()},shippingPhoneNumber:{maxlength:unescape("Numer telefonu jest zbyt długi."),pattern:$("#shippingPhoneNumberPatternMsg").text()},taxID:{},inicisPayBuyerFirstName:{required:unescape("Imię jest wymagane."),minlength:unescape(""),maxlength:unescape("Imię jest zbyt długie."),pattern:$("#inicisPayBuyerFirstNamePatternMsg").text()},inicisPayBuyerLastName:{required:unescape("Nazwisko jest wymagane."),minlength:unescape(""),maxlength:unescape("Nazwisko jest zbyt długie."),pattern:$("#inicisPayBuyerLastNamePatternMsg").text()},inicisPayDescription:{required:unescape("Opis jest wymagany."),minlength:unescape("Opis jest zbyt krótki."),maxlength:unescape("Opis jest zbyt długi."),pattern:$("#inicisPayDescriptionPatternMsg").text()},inicisPayBuyerTelephonePhonePrefix:{maxlength:unescape("Numer kierunkowy jest zbyt długi."),pattern:$("#inicisPayBuyerTelephonePhonePrefixPatternMsg").text()},inicisPayBuyerTelephonePhoneNumber:{maxlength:unescape("Numer telefonu jest zbyt długi."),pattern:$("#inicisPayBuyerTelephonePhoneNumberPatternMsg").text()},inicisPayBuyerTelephonePhoneExtension:{maxlength:unescape("Numer wewnętrzny jest zbyt długi."),pattern:$("#inicisPayBuyerTelephonePhoneExtensionPatternMsg").text()},inicisPayBuyerEMail:{maxlength:unescape("Adres e-mail jest zbyt długi."),pattern:$("#inicisPayBuyerEMailPatternMsg").text()},bankAccountPayHolderName:{required:unescape("Nazwa konta jest wymagana."),minlength:unescape("Nazwa konta jest zbyt krótka."),maxlength:unescape("Nazwa konta jest zbyt długa"),pattern:$("#bankAccountPayHolderNamePatternMsg").text()},bankAccountPayNumber:{required:unescape("Numer konta jest wymagany."),minlength:unescape("Numer konta jest zbyt krótki."),maxlength:unescape("Numer konta jest zbyt długi"),pattern:$("#bankAccountPayNumberPatternMsg").text()},bankAccountPayNumberConfirm:{required:unescape("Potwierdzenie numeru konta jest wymagane."),minlength:unescape("Numer konta potwierdzenia jest zbyt krótki."),maxlength:unescape("Numer konta potwierdzenia jest zbyt długi."),pattern:$("#bankAccountPayNumberConfirmPatternMsg").text(),equalTo:unescape("Musisz wprowadzić taki sam numer, jak numer konta, który potwierdzasz.")},bankAccountPayBranchCode:{},bankAccountPayBankCode:{},bankAccountPayCheckDigit:{},bankAccountPayBankName:{required:unescape("Nazwa banku jest wymagana."),minlength:unescape("Nazwa banku jest zbyt krótka."),maxlength:unescape("Nazwa banku jest zbyt długa."),pattern:$("#bankAccountPayBankNamePatternMsg").text()},bankAccountPayBankCity:{maxlength:unescape("Miejscowość banku jest zbyt długa."),pattern:$("#bankAccountPayBankCityPatternMsg").text()},bapBranchLocationAddress1:{},existingBranchLocationAddress1:{},bapBranchLocationAddress2:{},existingBranchLocationAddress2:{},bapBranchLocationAddress3:{},existingBranchLocationAddress3:{},billingCurrency:{pattern:$("#billingCurrencyPatternMsg").text()},billingEmail:{required:unescape("Adres e-mail konta jest wymagany."),maxlength:unescape("Adres e-mail konta jest zbyt długi."),pattern:$("#billingEmailPatternMsg").text()},bankAccountPaySWIFTCode:{required:unescape("Kod SWIFT banku jest wymagany."),minlength:unescape("Kod SWIFT banku jest zbyt krótki."),maxlength:unescape("Kod SWIFT banku jest zbyt długi."),pattern:$("#bankAccountPaySWIFTCodePatternMsg").text()},PrepaidCardNumber:{PrepaidCardNumbersCheck:unescape("Musisz wprowadzić kod karty podarunkowej firmy Microsoft składający się z 25 znaków.")},invoicePONumber:{maxlength:unescape("Numer ZZ na fakturze jest zbyt długi.")},invoiceHolderName:{required:unescape("Wymagana jest nazwa adresata."),maxlength:unescape("Nazwa adresata jest za długa.")},PicvAmount:{pattern:$("#PicvAmountPatternMsg").text(),PICVCheck:unescape("Należy wypełnić co najmniej jedno z dwóch pól.")},PicvCode:{pattern:$("#PicvCodePatternMsg").text(),PICVCheck:unescape("Należy wypełnić co najmniej jedno z dwóch pól.")},CountryCode:{required:unescape("Kod kraju/regionu jest wymagany."),pattern:$("#CountryCodePatternMsg").text()},PhoneNumber:{required:unescape("Numer telefonu jest wymagany."),pattern:$("#PhoneNumberPatternMsg").text()},VerificationCode:{required:unescape("Kod weryfikacyjny jest wymagany."),pattern:$("#VerificationCodePatternMsg").text()},ssn:{required:unescape("Numer PESEL jest wymagany."),minlength:unescape("Numer PESEL jest zbyt krótki."),maxlength:unescape("Numer PESEL jest zbyt długi."),pattern:$("#ssnPatternMsg").text()},SSNFirstName:{required:unescape("Imię jest wymagane."),maxlength:unescape("Imię jest zbyt długie."),pattern:$("#SSNFirstNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},SSNLastName:{required:unescape("Nazwisko jest wymagane."),maxlength:unescape("Nazwisko jest zbyt długie."),pattern:$("#SSNLastNamePatternMsg").text(),NonCCNumberSuspicious:unescape("Wprowadź prawidłowe informacje.")},inicisInfo:{required:unescape("Card/Phone Number is required.")},comments:{required:unescape("Komentarz jest wymagany."),maxlength:unescape("Komentarz jest zbyt długi."),pattern:$("#commentsPatternMsg").text()},optionalTaxID:{maxlength:unescape("NIP jest zbyt długi."),pattern:$("#optionalTaxIDPatternMsg").text()},nationality:{required:unescape("Narodowość jest wymagana.")},monthOfBirthday:{required:unescape("Data urodzenia jest wymagana."),IsBirthday:unescape("Nieprawidłowa data urodzenia.")},dayOfBirthday:{required:unescape("Data urodzenia jest wymagana."),IsBirthday:unescape("Nieprawidłowa data urodzenia.")},yearOfBirthday:{required:unescape("Data urodzenia jest wymagana."),minlength:unescape("Rok urodzenia jest zbyt krótki."),maxlength:unescape("Rok urodzenia jest zbyt długi."),pattern:$("#yearOfBirthdayPatternMsg").text(),IsBirthday:unescape("Nieprawidłowa data urodzenia.")},SEPABankName:{required:unescape("Nazwa banku jest wymagana.")},signature:{required:unescape("Podpis jest wymagany."),equalTo:unescape("Imię i nazwisko w podpisie są inne niż imię i nazwisko właściciela konta.")},signAndAuthCity:{required:unescape("Należy podać miejscowość składania podpisu."),maxlength:unescape("")},signatureDate:{required:unescape("Data podpisu jest wymagana.")}}
+
+    });
+
+    // Data Modifications
+    
+
+    //Stored Value
+    $("#newsv .payment-type input").live('change', function () {    
+        $("#btnSave").attr("disabled", !STORED_VALUE_ISENOUGH);
+        $("#newsv > div[class='hidden']").hide();
+        if ($(this).is(":checked")){
+            $("#" + this.id + "_div").show();
+            $("#pcs_svstype").val(this.id);
+        }
+        PageHeightChangeNotice();
+    });
+
+    var prepaidCardNumberOldValue = "";
+    $("#PrepaidCardNumber").live('paste keyup focusout', function (e) {
+        //formate user input like this: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX      
+        if (e) {
+            e = e;
+        } else {
+            e = window.event;
+        } 
+        if(e.which) {
+            var keycode = e.which;
+        } else {
+            var keycode = e.keyCode;
+        }
+          
+        var oString = $.trim($(this).val().toUpperCase());
+        var needValidation = false;
+        if(oString.length)
+        {
+            var newString = ParseChar(oString);
+            var formated = AutoFormat(newString);
+            if(e.type == "keyup")
+            { 
+              //ctrl keycode is 17, e.metaKey for Mac 
+                var ctrlDown = e.ctrlKey || e.metaKey; 
+              var ctrlKey = 17, vKey = 86, cKey = 67;                 
+        
+              if(keycode >= 48 && !(ctrlDown && (keycode == cKey || keycode == vKey))){
+                    $(this).val(formated);
+                    needValidation = true;
+                }
+            }else
+            {
+                 $(this).val(formated);
+                 needValidation = true;
+            }
+        }
+        //validate user input
+        //client validate fail, show the client error message and doesn's show the text of prepaid_validation_message
+        if(!$("#PCSBodyForm").validate().element(this))
+        {
+            $('#prepaid_validation_message').hide();
+            return;
+        } 
+
+        var inputLength = $.trim($(this).val()).length;    
+        if (inputLength != 29 || prepaidCardNumberOldValue == $(this).val()) {
+            $('#prepaid_validation_message').show();
+            return;
+        }
+         
+        if(needValidation)
+        {
+            $('#prepaid_validation_message').show();
+            $('#prepaid_validation_message').html('<span class="font-gray1">' + unescape("trwa weryfikowanie...") +'</span>');
+            // start posting form
+            $.post('/PCSV2/azurev2/liverps/pcs/ValidateToken', $('#PrepaidCardNumber').serialize(), function (data) {
+                $('#prepaid_validation_message').html(data);
+            });
+            prepaidCardNumberOldValue = $(this).val();
+        }
+    });
+    
+    //auto change user input to upper case
+    $(".upperCase").live('focusout', function (e) {
+        var oString = $.trim($(this).val());
+        if(oString.length)
+        {
+            $(this).val(oString.toUpperCase());
+        }
+    });
+
+    //fill address info
+    if(PCS.RequestForm != undefined && PCS.RequestForm != null){
+        PCS.FillAccountInfo(PCS.RequestForm);
+    }else{
+        PCS.FillAccountInfo(PCS.Profile);
+    }
+
+    //Set forbidden paste
+    ForbiddenInputPaste(INPUT_FORBIDDEN_PASTE_LIST);
+
+    ReadyText(BOOL_SUPPORT_ACCESSIBILITY);
+    $("#accountCPFAndCNPJLabel input:radio").live("click", PCS.BPRadioClick);
+    PCS.Views.putBankPayViews();
+    //for dropdown list styele in view page as same as BAM
+    DropdownListClickForBAM();
+
+    PCS.Views.putAllViews();
+
+    $("#PageContainer").css("display","block");
+    $("#btnSave").attr('disabled', false);
+
+    $("input[name='pcs_spiid'][category!='purchasesv']:radio").click(PCS.RadioClick).each(PCS.EachEvent);
+    //for pobo cvv
+    $("#btnCVVSave").live('click', CVVValidateClick);
+    //set input hint
+    InputHint.HintInit(INPUT_HINT_LIST);
+
+    //Set ViewMode
+    ViewMode.Init(ViewMode.ModeType);
+    //Set DefaultSelectedPIId
+    var defaultPIID = unescape("%24fvo");
+
+    switch(defaultPIID) {
+        case "$newlwp":
+            // first LWP, used for piid=11(select LWP)
+            $("input[name=pcs_spiid][cardtype=lwp]:radio").first().trigger("click");
+            $("input[name=pcs_spiid][cardtype=lwp]:radio").first().attr('checked','checked');
+            break;
+        case "$fvo":
+            $("input[name=pcs_spiid]:radio").first().trigger("click");
+            $("input[name=pcs_spiid]:radio").first().attr('checked','checked');
+            break;
+        case "$fepi":
+            if ($("input[name=pcs_spiid][category='ed']:radio").length > 0) {
+                $("input[name=pcs_spiid][category='ed']:radio").first().trigger("click");
+                $("input[name=pcs_spiid][category='ed']:radio").first().attr('checked','checked');
+            }
+            else {
+                $("input[name=pcs_spiid]:radio").first().trigger("click");
+                $("input[name=pcs_spiid]:radio").first().attr('checked','checked');
+            }
+            break;
+        // Should not use default since there may be radio button checked already.
+    }
+
+    if(NeedPostMessageSubmit)
+    {
+       $("#confirmationConfirm").click(PCS.PostMessage.NotifyOnSubmit);
+    }
+
+    //Select submit item 
+    if(PCS.RequestForm && PCS.RequestForm.pcs_svstype != null && PCS.RequestForm.pcs_svstype != "") {
+        $("#"+PCS.RequestForm.pcs_svstype).click().change();
+    }
+
+    //show pop for agent flow
+    var needShowNormalConsent = false;
+    //from agent account page needn't show agent pop up again
+    if(false)
+    {
+        //first show agent pop
+         Popup.CancelUrl = unescape("https%3a%2f%2faccount.windowsazure.com%2fsignup%2fPcsCancel%3ferrorCode%3d11");
+         Popup.CookieName = "PCSContsentAgreeDupm";
+         Popup.NeedShowNormalConsent = needShowNormalConsent;
+         if(Popup.IsAgree("dupm") && needShowNormalConsent)
+         {
+            Popup.CookieName = "PCSContsentAgreeMkt";
+            if(!Popup.IsAgree("mkt"))
+            {
+                Popup.Show("PopupConsent", "ShadeDiv", "mkt");
+                $("#PopupConsentOK").bind("click", function() { Popup.OKClick("mkt")});
+            }
+         } else {
+            Popup.Show("PopupConsent", "ShadeDiv", "dupm");
+            $("#PopupConsentOK").bind("click", function() { Popup.OKClick("dupm");});
+        }
+
+        $("#PopupConsentCancel").click(Popup.CancelClick);
+
+        setTimeout("$('#PopupConsent').scrollablePanel();", 200);
+    }//Show Consent for normal
+    else if(needShowNormalConsent){
+        //set cancel url
+        Popup.CancelUrl = unescape("https%3a%2f%2faccount.windowsazure.com%2fsignup%2fPcsCancel%3ferrorCode%3d11");
+        Popup.CookieName = "PCSContsentAgreeMkt";
+        Popup.Show("PopupConsent", "ShadeDiv", "mkt");
+        $("#PopupConsentOK").bind("click", function() { Popup.OKClick("mkt");});
+        $("#PopupConsentCancel").click(Popup.CancelClick);
+
+        setTimeout("$('#PopupConsent').scrollablePanel();", 200);
+    }
+
+        SubscriptionAgreement(false);
+        if(isACH)
+        {
+            ACHAuthAgreement(true);
+        }
+
+    //MSPASUI
+    if(typeof(MAPSUI) != "undefined"){
+        MAPSUI.PageReady();
+    }
+    if(typeof(WPApollo) != "undefined"){
+        WPApollo.PageReady();
+    }
+
+    //Handle apply Win10 CSS class name in PCS page
+    if(isDynamicCSS2Win10)
+    {
+        ApplyWin10ClassName();
+    }
+});
+
+function CVVValidateClick() {
+    if (!$("#cvm").valid()) {
+        return;
+    }
+
+    //use click button once
+    $("#btnCVVSave").attr('disabled','disabled');
+    $("#PageContainer").css("display","block");
+    //ajax call cvvresume action
+    $.ajax({
+        type: "POST",
+        url: '/PCSV2/azurev2/liverps/pcs/CVVValidate',
+        data: { piid: $("#piid").val(), __RequestVerificationToken: $("input[name='__RequestVerificationToken']").val(), cvm: $("#cvm").val(), accountid: ACCOUNT_ID },
+        dataType: "json",
+        error: function (json) {
+            //use can do cvv again
+            $("#btnCVVSave").attr('disabled', false);
+            $("#cvvresult").html(CVVFaile).addClass("color-red");
+        },
+        success: function (json) {
+            //reload page
+            FormSubmit("post", "");
+            //enable next button   
+            if ($("#btnSave").is(":disabled")) {
+                $("#btnSave").attr('disabled', false);
+            }
+        }
+    });
+}
+
+function FormSubmit(method, action) {
+            var frm = $("#PCSBodyForm")[0];
+            frm.method = method;
+            frm.action = action;
+            frm.submit();
+        }
+       
+$(document).ready(function () {
+    $("#btnReset").click(function () {
+        if (typeof LogEvent != 'undefined') {
+            LogEvent("managepi", "PageCancel", "", $('#sessionGuid').val());
+        }
+        location.href='/PCSV2/azurev2/liverps/pcs/DoCancel';
+    }); 
+
+    // TODO: this is a hotfix for BAM-MSA. 
+    // 1) code should be refactored; 
+    // 2) should make the logic work in all PCS page.
+    if(PARTNER == "bam-msa") {
+        $(window).bind('resize', function(e){
+            PageHeightChangeNotice();
+        });
+    }
+})
+
+</script>
+
+        <div class="clear"></div>
+    </div>
+
+
+</body></html>

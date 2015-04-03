@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sign Up - Microsoft Azure</title>
+    <link href="https://account.windowsazure.com/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="Sign%20Up%20-%20Microsoft%20Azure_pliki/UxFxCss_B1E8332D.css">
+<script>
+(function(
+    global,
+    disableCdnQueryStringParameter,
+    disableCdnFuncName,
+    errorUrl,
+    navigateToErrorUrlFuncName,
+    undefined) {
+    "use strict";
+
+    function getUrlWithQueryStringParameter(url, key, value) {
+        url = url || "";
+
+        var regEx = new RegExp("([?&])" + key + "=.*?(&|$)", "i"),
+        hashPosition = url.indexOf("#"),
+        urlWithoutHash = hashPosition >= 0 ? url.substr(0, hashPosition) : url,
+        hash = hashPosition >= 0 ? url.substr(hashPosition) : "",
+        separator;
+
+        // If the url is missing a slash after the domain name, we add it 
+        if (urlWithoutHash.split("/").length === 3) {
+            urlWithoutHash += "/";
+        }
+
+        key = global.encodeURIComponent(key);
+        value = global.encodeURIComponent(value);
+
+        if (urlWithoutHash) {
+            separator = urlWithoutHash.indexOf("?") !== -1 ? "&" : "?";
+
+            if (urlWithoutHash.match(regEx)) {
+                urlWithoutHash = urlWithoutHash.replace(regEx, "$1" + key + "=" + value + "$2");
+            } else {
+                urlWithoutHash = urlWithoutHash + separator + key + "=" + value;
+            }
+
+            return urlWithoutHash + hash;
+        }
+
+        return null;
+    }
+
+    function disableCdn(ev) {
+        if (disableCdnQueryStringParameter) {
+            var url = getUrlWithQueryStringParameter(
+                global.location.href,
+                disableCdnQueryStringParameter,
+                true);
+
+            global.location.href = url;
+        }
+    }
+
+    function navigateToErrorUrl(ev) {
+        if (errorUrl) {
+            var url = errorUrl;
+
+            if (ev) {
+                url = getUrlWithQueryStringParameter(
+                    url,
+                    "src",
+                    ev.target.getAttribute("src"));
+            }
+
+            global.location.href = url;
+        }
+    }
+
+    global.fx = global.fx || {};
+    global.fx[disableCdnFuncName] = global.fx[disableCdnFuncName] || disableCdn;
+    global.fx[navigateToErrorUrlFuncName] = global.fx[navigateToErrorUrlFuncName] || navigateToErrorUrl;
+})(this,"nocdn","disableCdn","","navigateToErrorPage");
+</script>
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/modernizr-2.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+<script>(function(global, env) {
+    "use strict";
+
+    if (!global.fx) {
+        global.fx = {};
+    }
+
+    global.fx.environment = env;
+})(window, {"contentUrlBasePath":"/","contentVersionToken":"5.1.0.63-.559.150325-1703","fragmentQueryStringParameterName":"fragment","locale":"pl-pl","desiredLocale":"pl-pl","localeQueryStringParameterName":"l","supportedLocales":["en-us","en-us","da-dk","de-de","es-es","fr-fr","it-it","nl-nl","nb-no","pl-pl","pt-br","sv-se","tr-tr","ru-ru","ja-jp","ko-kr","zh-cn","zh-tw"],"uxFxImageRoot":"/Content/5.1.0.63-.559.150325-1703/Images","versionedContentRoots":["/content","/scripts"],"isRtl":false});</script>
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/jquery-1.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/jquery-ui.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/knockout-2.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/UxFxScriptResources_A6E144CA.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/UxFxScriptCultureFormats_6DB90A0C.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+
+<script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/UxFxScript_F19057EB.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+    <link rel="stylesheet" type="text/css" href="Sign%20Up%20-%20Microsoft%20Azure_pliki/CoreCss_D9B55DC3.css">
+
+    <link rel="stylesheet" type="text/css" href="Sign%20Up%20-%20Microsoft%20Azure_pliki/jquery-ui.css">
+
+    <script type="text/javascript">
+        var _QS_OFFER = "offer";
+        var _QS_OFFER_GUID = "offerGuid";
+        var _QS_FID = "fid";
+        var _QS_COUNTRY_CODE = "countryCode";
+        var _QS_COMMITMENT_AMOUNT = "commitmentAmount";
+        var _QS_LOCALE = "l";
+        var _QS_PIID = "piid";
+        var _QS_INSTANCE_COUNT = "instanceCount";
+        var _QS_RETURN_URL = "returnUrl";
+        var _QS_PROMOCODE = "promoCode";
+        var _MSG_AJAX_ERROR = "Niestety wystąpił błąd w trakcie łączenia się z serwerem.";
+        var _MSG_AJAX_ERROR_SESSION_EXPIRED = "Operacja nie została wykonana, ponieważ sesja wygasła. Zaloguj się i spróbuj ponownie.";
+    </script>
+    <script type="text/javascript">        (function(w) { w.gTrackEvents = 0; w.gDomain = "m.webtrends.com"; w.gDcsId = "dcsjwb9vb00000c932fd0rjc7_5p3t"; })(window);</script>
+    
+
+    <meta name="ms.loc" content="PL">
+    <meta name="ms.lang" content="pl">
+    <meta name="ms.prod" content="azure">    
+    <meta name="ms.sitever" content="5.1.0.63 (AD-CAB:prev.5daa59b.150325-1703)">
+    <meta name="ms.pageType" content="page-single-signup">
+    <meta name="ms.title" content="Sign Up - Microsoft Azure">
+        <meta name="ms.UriDomain" content="account.windowsazure.com">
+        <meta name="ms.UriPath" content="/signup">
+        <meta name="ms.UriQuery" content="?offer=ms-azr-0003p">
+</head>
+<body>
+    <form id="__AjaxAntiForgeryForm" action="#" method="post"><input name="__RequestVerificationToken" value="qIk5UjVSrjYGhskGEwUK9tCqMxu/0IkuN14eWxj7q09K1ccMvEzlzV+Aa1L2Iffu16v0603NoCagr2MUAdkHHOdJyMl48wOGVkV9tlYg+qxZVeNsmsa3R7jAk81md1EK0st0Ng==" type="hidden"></form>
+    <script type="text/javascript">(function($){var a=$("input[name=__RequestVerificationToken]").val();if(a){$.ajaxPrefilter(function(b,c,d){d.setRequestHeader("x-ms-client-antiforgery-id",a);});}})(jQuery)</script>
+
+    <div id="page" class="page-single-signup">
+        <div id="main-container">
+            <div id="main">
+                <section id="content-container">
+                    <div id="notification-container" class="summary-message" style="display: none"></div>
+                    <div id="content" class="clearfix">
+                        
+
+
+
+<div class="single-signup">
+    <div class="signup-background">
+        <div class="getstarted">
+            <div class="offer-name">
+                    <span class="offer-name-signup">Zakup</span>
+
+                <span class="offer-name-signup-azure">Płatność zgodnie z rzeczywistym użyciem</span>
+            </div>
+            
+            <a class="offer-info-container dropDownMenu" id="offer-info-container"><a class="dropDownMenu-tray clearfix" href="https://go.microsoft.com/fwLink/p/?LinkID=299416&amp;clcid=0x415&amp;offer=MS-AZR-0003P"><span class="dropDownMenu-tray-link link-text-white">Dowiedz się więcej</span><div class="dropDownMenu-icon-wrapper"><img alt="Dowiedz się więcej" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/dropdown-arrow-white.png" class="dropDownMenu-icon"></div></a><div class="dropDownMenu-dropDown dropDown-gray no-pointer no-pointer-corner dropDownMenu-inactive"><div class="pointer"></div>
+    <div class="offer-details-marketing">
+
+        <h3 class="offer-title-marketing">Płatność zgodnie z rzeczywistym użyciem</h3>
+        <div class="benefit-details">
+            <div class="offer-benefit ">
+                <div class="offer-benefit-description">
+                    <div class="offer-benefit-title">
+                        Elastyczność i niskie koszty
+                    </div>
+                    <div class="offer-benefit-details">
+                        Płacisz zgodnie z rzeczywistym użyciem. Ta opcja
+ cennika jest niezwykle elastyczna. Nie wiążą się z nią ponoszone z góry
+ koszty ani długoterminowe zobowiązania. Płacisz tylko za zasoby, 
+których używasz.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div></a>
+            <div class="offer-info-container-content"></div>
+        </div>
+    </div>
+
+    <div class="logo clearfix">
+        <div class="two-column-row">
+            <div class="left">
+                <img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/ms-azure-logo.png" alt="Microsoft Azure">
+            </div>
+            <div class="right right-justified email">
+                <div class="clearfix">
+
+                    <div class="email-details dropDownMenu" id="email-details"><a class="dropDownMenu-tray clearfix" href="#"><span class="dropDownMenu-tray-link link-text-blue">janusz.bialek@gazeta.pl</span><div class="dropDownMenu-icon-wrapper"><img alt="janusz.bialek@gazeta.pl" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/dropdown-arrow-blue.png" class="dropDownMenu-icon"></div></a><div class="dropDownMenu-dropDown dropDown-blue pointer-top-right pointer-top-right-corner dropDownMenu-inactive"><div class="pointer"></div><ul><li><a href="https://login.microsoftonline.com/logout.srf?ct=1427465649&amp;rver=6.1.6206.0&amp;lc=1045&amp;id=500867&amp;ru=https:%2F%2Faccount.windowsazure.com%2F">Wyloguj</a></li></ul></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error error-message hide"></div>
+
+    <div id="offer-error" class="offer-error-message-section hide">
+        <div class="title">
+            <h2>Niestety!</h2>
+        </div>
+        <div class="content">
+            <div class="two-column-row">
+                <div id="offer-error-title">
+                </div>
+                <div id="offer-error-why">
+                </div>
+
+                <ul id="offer-error-what" class="offer-error-what">
+                    <li class="what-can-do">CO MOGĘ ZROBIĆ?</li>
+                    <li id="fix-suggestion" class="hide"></li>
+                    <li id="fix-suggestion-with-action" class="hide"></li>
+                    <li id="contact-support" class="hide"><a href="https://go.microsoft.com/fwLink/p/?LinkID=396968&amp;clcid=0x415">Skontaktuj
+ się z pomocą techniczną, jeśli aktywowanie oferty Azure w ramach 
+programu licencjonowania Open przy użyciu nowego konta okaże się 
+niemożliwe.</a></li>
+                    <li id="verify-membership-suggestion"></li>
+                    <li id="alternate-offer" class="hide"></li>
+                    <li id="selected-offer" class="hide"></li>
+                    <li id="subscriptions-link" class="hide"><a href="https://account.windowsazure.com/Subscriptions">Wyświetl swoje istniejące subskrypcje</a></li>
+                </ul>
+            </div>
+
+            <div class="two-column-row country hide">
+                <div class="balloon">
+                    <div class="ballon-label"><label for="CountryCode">Wybierz inny kraj/region</label></div>
+                    <div id="__fx-balloonicon0" class="countryCodeBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                </div>
+                <select id="CountryCodeOnErrorMessage" name="CountryCode"><option value="TT">&amp;Trynidad i Tobago</option>
+<option value="AF">Afganistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algieria</option>
+<option value="AO">Angola</option>
+<option value="SA">Arabia Saudyjska</option>
+<option value="AR">Argentyna</option>
+<option value="AM">Armenia</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="PS">Autonomia Palestyńska</option>
+<option value="AZ">Azerbejdżan</option>
+<option value="BS">Bahamy</option>
+<option value="BH">Bahrajn</option>
+<option value="BD">Bangladesz</option>
+<option value="BB">Barbados</option>
+<option value="BE">Belgia</option>
+<option value="BZ">Belize</option>
+<option value="BM">Bermudy</option>
+<option value="BY">Białoruś</option>
+<option value="BO">Boliwia</option>
+<option value="BA">Bośnia i Hercegowina</option>
+<option value="BW">Botswana</option>
+<option value="BR">Brazylia</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bułgaria</option>
+<option value="CV">Cabo Verde</option>
+<option value="CL">Chile</option>
+<option value="HR">Chorwacja</option>
+<option value="CW">Curaçao</option>
+<option value="CY">Cypr</option>
+<option value="ME">Czarnogóra</option>
+<option value="DK">Dania</option>
+<option value="DO">Dominikana</option>
+<option value="EG">Egipt</option>
+<option value="EC">Ekwador</option>
+<option value="EE">Estonia</option>
+<option value="ET">Etiopia</option>
+<option value="FJ">Fidżi</option>
+<option value="PH">Filipiny</option>
+<option value="FI">Finlandia</option>
+<option value="FR">Francja</option>
+<option value="GH">Ghana</option>
+<option value="GR">Grecja</option>
+<option value="GE">Gruzja</option>
+<option value="GT">Gwatemala</option>
+<option value="ES">Hiszpania</option>
+<option value="NL">Holandia</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hongkong</option>
+<option value="IN">Indie</option>
+<option value="ID">Indonezja</option>
+<option value="IQ">Irak</option>
+<option value="IE">Irlandia</option>
+<option value="IS">Islandia</option>
+<option value="IL">Izrael</option>
+<option value="JM">Jamajka</option>
+<option value="JP">Japonia</option>
+<option value="YE">Jemen</option>
+<option value="JO">Jordania</option>
+<option value="KY">Kajmany</option>
+<option value="CM">Kamerun</option>
+<option value="CA">Kanada</option>
+<option value="QA">Katar</option>
+<option value="KZ">Kazachstan</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirgistan</option>
+<option value="CO">Kolumbia</option>
+<option value="KR">Korea</option>
+<option value="CR">Kostaryka</option>
+<option value="KW">Kuwejt</option>
+<option value="LB">Liban</option>
+<option value="LY">Libia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Litwa</option>
+<option value="LU">Luksemburg</option>
+<option value="LV">Łotwa</option>
+<option value="MK">Macedonia (Była Jugosłowiańska Republika)</option>
+<option value="MO">Makau</option>
+<option value="MY">Malezja</option>
+<option value="MT">Malta</option>
+<option value="MA">Maroko</option>
+<option value="MU">Mauritius</option>
+<option value="MX">Meksyk</option>
+<option value="MD">Mołdawia</option>
+<option value="MC">Monako</option>
+<option value="MN">Mongolia</option>
+<option value="NA">Namibia</option>
+<option value="NP">Nepal</option>
+<option value="DE">Niemcy</option>
+<option value="NG">Nigeria</option>
+<option value="NI">Nikaragua</option>
+<option value="NO">Norwegia</option>
+<option value="NZ">Nowa Zelandia</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PA">Panama</option>
+<option value="PY">Paragwaj</option>
+<option value="PE">Peru</option>
+<option selected="selected" value="PL">Polska</option>
+<option value="PR">Portoryko</option>
+<option value="PT">Portugalia</option>
+<option value="CZ">Republika Czeska</option>
+<option value="ZA">Republika Południowej Afryki</option>
+<option value="RU">Rosja</option>
+<option value="RO">Rumunia</option>
+<option value="RW">Rwanda</option>
+<option value="KN">Saint Christopher (St Kitts) i Nevis</option>
+<option value="SV">Salwador</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SG">Singapur</option>
+<option value="SK">Słowacja</option>
+<option value="SI">Słowenia</option>
+<option value="LK">Sri Lanka</option>
+<option value="US">Stany Zjednoczone</option>
+<option value="CH">Szwajcaria</option>
+<option value="SE">Szwecja</option>
+<option value="TJ">Tadżykistan</option>
+<option value="TH">Tajlandia</option>
+<option value="TW">Tajwan</option>
+<option value="TZ">Tanzania</option>
+<option value="TN">Tunezja</option>
+<option value="TR">Turcja</option>
+<option value="TM">Turkmenistan</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraina</option>
+<option value="UY">Urugwaj</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VE">Wenezuela</option>
+<option value="HU">Węgry</option>
+<option value="VN">Wietnam</option>
+<option value="IT">Włochy</option>
+<option value="CI">Wybrzeże Kości Słoniowej </option>
+<option value="VI">Wyspy Dziewicze Stanów Zjednoczonych</option>
+<option value="FO">Wyspy Owcze</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+<option value="AE">Zjednoczone Emiraty Arabskie</option>
+<option value="GB">Zjednoczone Królestwo</option>
+</select>
+            </div>
+        </div>
+    </div>
+
+    <input data-val="true" data-val-required="The ShowCatalog field is required." id="ShowCatalog" name="ShowCatalog" value="False" type="hidden">
+    <div class="select-offer-container section hide">
+        <div class="select-offer content-container">
+            <div class="title">
+                <h2>Wybierz ofertę</h2>
+            </div>
+            <div class="content">
+                <div class="select-offer">
+                    <div class="viewport offers-scroll-region aux-scrollbar"><div style="width: 100%; height: 100%;" class="aux-scrollbar-container">
+                        <ul class="offerings">
+                        </ul>
+                    <div style="height: 0px; clear: both;"></div></div><div style="width: 17px;" class="aux-scrollbar-trackcontainer"><div style="display: none;" class="aux-scrollbar-track"><div class="aux-scrollbar-handle"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-page hide"></div>
+    <div class="single-signup-form">
+<form action="/signup?offer=ms-azr-0003p" method="post">            <div class="about-you-container section hide">
+                <div class="item-number">1 </div>
+                <div class="about-you content-container">
+                    <div class="title">
+                        <h2>Informacje o użytkowniku</h2>
+                    </div>
+                    <div class="content three-column-row clearfix">
+                        <div class="left">
+                            <label for="CustomerInfo_FirstName">Imię</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-regex="To pole nie może zawierać znaków &lt; &gt; ;" data-val-regex-pattern="^[^&lt;&gt;;]*" data-val-required="Pole jest wymagane." id="CustomerInfo_FirstName" name="CustomerInfo.FirstName" type="text">
+                        </div>
+                        <div class="left">
+                            <label for="CustomerInfo_LastName">Nazwisko</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-regex="To pole nie może zawierać znaków &lt; &gt; ;" data-val-regex-pattern="^[^&lt;&gt;;]*" data-val-required="Pole jest wymagane." id="CustomerInfo_LastName" name="CustomerInfo.LastName" type="text">
+                        </div>
+                        <div class="left">
+                            <div class="balloon">
+                                <div class="ballon-label"><label for="CountryCode">Kraj/region </label></div>
+                                <div id="__fx-balloonicon1" class="countryCodeBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                            </div>
+<select id="CountryCode" name="CountryCode"><option value="TT">&amp;Trynidad i Tobago</option>
+<option value="AF">Afganistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algieria</option>
+<option value="AO">Angola</option>
+<option value="SA">Arabia Saudyjska</option>
+<option value="AR">Argentyna</option>
+<option value="AM">Armenia</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="PS">Autonomia Palestyńska</option>
+<option value="AZ">Azerbejdżan</option>
+<option value="BS">Bahamy</option>
+<option value="BH">Bahrajn</option>
+<option value="BD">Bangladesz</option>
+<option value="BB">Barbados</option>
+<option value="BE">Belgia</option>
+<option value="BZ">Belize</option>
+<option value="BM">Bermudy</option>
+<option value="BY">Białoruś</option>
+<option value="BO">Boliwia</option>
+<option value="BA">Bośnia i Hercegowina</option>
+<option value="BW">Botswana</option>
+<option value="BR">Brazylia</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bułgaria</option>
+<option value="CV">Cabo Verde</option>
+<option value="CL">Chile</option>
+<option value="HR">Chorwacja</option>
+<option value="CW">Curaçao</option>
+<option value="CY">Cypr</option>
+<option value="ME">Czarnogóra</option>
+<option value="DK">Dania</option>
+<option value="DO">Dominikana</option>
+<option value="EG">Egipt</option>
+<option value="EC">Ekwador</option>
+<option value="EE">Estonia</option>
+<option value="ET">Etiopia</option>
+<option value="FJ">Fidżi</option>
+<option value="PH">Filipiny</option>
+<option value="FI">Finlandia</option>
+<option value="FR">Francja</option>
+<option value="GH">Ghana</option>
+<option value="GR">Grecja</option>
+<option value="GE">Gruzja</option>
+<option value="GT">Gwatemala</option>
+<option value="ES">Hiszpania</option>
+<option value="NL">Holandia</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hongkong</option>
+<option value="IN">Indie</option>
+<option value="ID">Indonezja</option>
+<option value="IQ">Irak</option>
+<option value="IE">Irlandia</option>
+<option value="IS">Islandia</option>
+<option value="IL">Izrael</option>
+<option value="JM">Jamajka</option>
+<option value="JP">Japonia</option>
+<option value="YE">Jemen</option>
+<option value="JO">Jordania</option>
+<option value="KY">Kajmany</option>
+<option value="CM">Kamerun</option>
+<option value="CA">Kanada</option>
+<option value="QA">Katar</option>
+<option value="KZ">Kazachstan</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirgistan</option>
+<option value="CO">Kolumbia</option>
+<option value="KR">Korea</option>
+<option value="CR">Kostaryka</option>
+<option value="KW">Kuwejt</option>
+<option value="LB">Liban</option>
+<option value="LY">Libia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Litwa</option>
+<option value="LU">Luksemburg</option>
+<option value="LV">Łotwa</option>
+<option value="MK">Macedonia (Była Jugosłowiańska Republika)</option>
+<option value="MO">Makau</option>
+<option value="MY">Malezja</option>
+<option value="MT">Malta</option>
+<option value="MA">Maroko</option>
+<option value="MU">Mauritius</option>
+<option value="MX">Meksyk</option>
+<option value="MD">Mołdawia</option>
+<option value="MC">Monako</option>
+<option value="MN">Mongolia</option>
+<option value="NA">Namibia</option>
+<option value="NP">Nepal</option>
+<option value="DE">Niemcy</option>
+<option value="NG">Nigeria</option>
+<option value="NI">Nikaragua</option>
+<option value="NO">Norwegia</option>
+<option value="NZ">Nowa Zelandia</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PA">Panama</option>
+<option value="PY">Paragwaj</option>
+<option value="PE">Peru</option>
+<option selected="selected" value="PL">Polska</option>
+<option value="PR">Portoryko</option>
+<option value="PT">Portugalia</option>
+<option value="CZ">Republika Czeska</option>
+<option value="ZA">Republika Południowej Afryki</option>
+<option value="RU">Rosja</option>
+<option value="RO">Rumunia</option>
+<option value="RW">Rwanda</option>
+<option value="KN">Saint Christopher (St Kitts) i Nevis</option>
+<option value="SV">Salwador</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SG">Singapur</option>
+<option value="SK">Słowacja</option>
+<option value="SI">Słowenia</option>
+<option value="LK">Sri Lanka</option>
+<option value="US">Stany Zjednoczone</option>
+<option value="CH">Szwajcaria</option>
+<option value="SE">Szwecja</option>
+<option value="TJ">Tadżykistan</option>
+<option value="TH">Tajlandia</option>
+<option value="TW">Tajwan</option>
+<option value="TZ">Tanzania</option>
+<option value="TN">Tunezja</option>
+<option value="TR">Turcja</option>
+<option value="TM">Turkmenistan</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraina</option>
+<option value="UY">Urugwaj</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VE">Wenezuela</option>
+<option value="HU">Węgry</option>
+<option value="VN">Wietnam</option>
+<option value="IT">Włochy</option>
+<option value="CI">Wybrzeże Kości Słoniowej </option>
+<option value="VI">Wyspy Dziewicze Stanów Zjednoczonych</option>
+<option value="FO">Wyspy Owcze</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+<option value="AE">Zjednoczone Emiraty Arabskie</option>
+<option value="GB">Zjednoczone Królestwo</option>
+</select>                        </div>
+                        <div class="left vatId hide special-fields optional-container">
+                            <label for="CustomerInfo_VatId">Identyfikator płatnika VAT</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="20" id="CustomerInfo_VatId" name="CustomerInfo.VatId" type="text">
+                            <div class="optional-hint"> - Opcjonalnie - </div>
+                        </div>
+                        <div class="left first-name-pronunciation hide special-fields">
+                            <label for="CustomerInfo_FirstNamePronunciation">Wymowa imienia</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-required="Pole jest wymagane." id="CustomerInfo_FirstNamePronunciation" name="CustomerInfo.FirstNamePronunciation" type="text">
+                        </div>
+                        <div class="left last-name-pronunciation hide special-fields">
+                            <label for="CustomerInfo_LastNamePronunciation">Wymowa nazwiska</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-required="Pole jest wymagane." id="CustomerInfo_LastNamePronunciation" name="CustomerInfo.LastNamePronunciation" type="text">
+                        </div>
+                        <div class="left taxId hide special-fields">
+                            <div class="balloon">
+                                <div class="ballon-label"><label for="CustomerInfo_TaxId">NIP</label></div>
+                                <div id="__fx-balloonicon7" class="taxIdBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                            </div>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-required="Pole jest wymagane." id="CustomerInfo_TaxId" name="CustomerInfo.TaxId" type="text">
+                        </div>
+                        <div class="left hide special-fields cnpjCpfSelector">
+                            <label for="CustomerInfo_CnpjCpfSelector">Typ numeru NIP</label>
+                            <select data-val="true" data-val-required="The CnpjCpfSelector field is required." id="CustomerInfo_CnpjCpfSelector" name="CustomerInfo.CnpjCpfSelector"><option selected="selected">CNPJ</option>
+<option>CPF</option>
+</select>
+                        </div>
+                        <div class="left cnpj hide special-fields">
+                            <label for="CustomerInfo_Cnpj">Numer CNPJ</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" data-val-required="Pole jest wymagane." id="CustomerInfo_Cnpj" name="CustomerInfo.Cnpj" type="text">
+                        </div>
+                        <div class="left cpf hide special-fields optional-container">
+                            <label for="CustomerInfo_Cpf">Numer CPF</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" id="CustomerInfo_Cpf" name="CustomerInfo.Cpf" type="text">
+                            <div class="optional-hint"> - Opcjonalnie - </div>
+                        </div>
+                        <div class="left ccm hide special-fields optional-container">
+                            <label for="CustomerInfo_Ccm">Numer CCM</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" id="CustomerInfo_Ccm" name="CustomerInfo.Ccm" type="text">
+                            <div class="optional-hint"> - Opcjonalnie - </div>
+                        </div>
+                        <div class="left">
+                            <div class="balloon">
+                                <div class="ballon-label"><label for="CustomerInfo_ContactEmail">Adres e-mail kontaktu</label></div>
+                                <div id="__fx-balloonicon6" class="contactEmailBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                            </div>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="129" data-val-regex="Adres e-mail musi być prawidłowy." data-val-regex-pattern="^[a-zA-Z0-9._%+-]+@(?!.*\.\..*)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" data-val-required="Pole jest wymagane." id="CustomerInfo_ContactEmail" name="CustomerInfo.ContactEmail" type="text">
+                        </div>
+                        <div class="left company-name">
+                            <label for="CustomerInfo_CompanyName">Nazwa firmy</label>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="256" id="CustomerInfo_CompanyName" name="CustomerInfo.CompanyName" type="text">
+                            <div class="optional-hint"> - Opcjonalnie - </div>
+                        </div>
+                        <div class="left hide workphoneContainer" id="workphoneContainer">
+                            <label for="CustomerInfo_WorkPhone">Telefon służbowy</label>
+                            <div class="left work-phone">
+                                <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-required="Pole jest wymagane." id="work-phone-no-text" maxlength="20" name="CustomerInfo.WorkPhone" type="text">
+                                <div id="workphone-no-hint">XXX XXX XXX</div>
+                            </div>
+                        </div>
+                        <div class="left businessRegistrationNumber hide special-fields">
+                            <div class="balloon">
+                                <div class="ballon-label"><label for="CustomerInfo_BusinessRegistrationNumber">REGON</label></div>
+                                <div id="__fx-balloonicon8" class="businessRegistrationNumberBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                            </div>
+                            <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="W tym polu nie można przekroczyć maksymalnej dozwolonej liczby znaków." data-val-length-max="64" id="CustomerInfo_BusinessRegistrationNumber" name="CustomerInfo.BusinessRegistrationNumber" type="text">
+                            <div class="optional-hint"> - Opcjonalnie - </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-info-container section hide">
+                <div class="item-number">2 </div>
+                <div class="mobile content-container">
+                    <div class="title">
+
+                        <h2 class="ballon-label">Weryfikacja telefonu komórkowego</h2>
+                        <div id="__fx-balloonicon2" class="mobileVerificationBalloon hide fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                        <div id="__fx-balloonicon3" class="PhoneNumberBalloon hide fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+
+                        <div class="complete-step right hide">
+                            COMPLETE
+                            <img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/icon-success-ok-16.png">
+                        </div>
+                    </div>
+                    <div class="mobile-content content">
+                        <div class="sms-challenge hide">
+                            
+<div class="showMultipleCountryContainer" id="smsChallengeForm">
+    <fieldset style="margin-bottom: 5px;">
+        <div id="beginSmsChallengeStatus" style="display: none;">
+            <span id="beginSmsChallengeStatusText"></span>
+        </div>
+        <div id="mobilePhoneNumber" class="clearfix">
+            <div id="deliveryTypeContainer" style="">
+                 <input checked="checked" id="sendTextRadio" class="textRadio" name="deliveryType" onclick="Signup.BotChallenge.setSendTextDeliveryType()" type="radio">
+                <label for="sendTextRadio" class="textRadio">Wyślij SMS</label>
+                <input id="callMeRadio" class="callRadio" name="deliveryType" onclick="Signup.BotChallenge.setCallMeDeliveryType()" type="radio">
+                <label for="callMeRadio" class="callRadio">Zadzwoń</label>
+            </div>
+            
+            <div class="hasMultipleCountryContainer countryContainer">
+                <select id="countrySelector" name="PhoneNumberCountryCode" class="countrySelector">
+                <option value="TT">&amp;Trynidad i Tobago (+868)</option><option value="AF">Afganistan (+93)</option><option value="AL">Albania (+355)</option><option value="DZ">Algieria (+213)</option><option value="AO">Angola (+244)</option><option value="SA">Arabia Saudyjska (+966)</option><option value="AR">Argentyna (+54)</option><option value="AM">Armenia (+374)</option><option value="AU">Australia (+61)</option><option value="AT">Austria (+43)</option><option value="PS">Autonomia Palestyńska (+970)</option><option value="AZ">Azerbejdżan (+994)</option><option value="BS">Bahamy (+1)</option><option value="BH">Bahrajn (+973)</option><option value="BD">Bangladesz (+880)</option><option value="BB">Barbados (+1)</option><option value="BE">Belgia (+32)</option><option value="BZ">Belize (+501)</option><option value="BM">Bermudy (+441)</option><option value="BY">Białoruś (+375)</option><option value="BO">Boliwia (+591)</option><option value="BA">Bośnia i Hercegowina (+387)</option><option value="BW">Botswana (+267)</option><option value="BR">Brazylia (+55)</option><option value="BN">Brunei Darussalam (+673)</option><option value="BG">Bułgaria (+359)</option><option value="CV">Cabo Verde (+238)</option><option value="CL">Chile (+56)</option><option value="HR">Chorwacja (+385)</option><option value="CW">Curaçao (+599)</option><option value="CY">Cypr (+357)</option><option value="ME">Czarnogóra (+382)</option><option value="DK">Dania (+45)</option><option value="DO">Dominikana (+1)</option><option value="EG">Egipt (+20)</option><option value="EC">Ekwador (+593)</option><option value="EE">Estonia (+372)</option><option value="ET">Etiopia (+251)</option><option value="FJ">Fidżi (+679)</option><option value="PH">Filipiny (+63)</option><option value="FI">Finlandia (+358)</option><option value="FR">Francja (+33)</option><option value="GH">Ghana (+233)</option><option value="GR">Grecja (+30)</option><option value="GE">Gruzja (+995)</option><option value="GT">Gwatemala (+502)</option><option value="ES">Hiszpania (+34)</option><option value="NL">Holandia (+31)</option><option value="HN">Honduras (+504)</option><option value="HK">Hongkong (+852)</option><option value="IN">Indie (+91)</option><option value="ID">Indonezja (+62)</option><option value="IQ">Irak (+964)</option><option value="IE">Irlandia (+353)</option><option value="IS">Islandia (+354)</option><option value="IL">Izrael (+972)</option><option value="JM">Jamajka (+1)</option><option value="JP">Japonia (+81)</option><option value="YE">Jemen (+967)</option><option value="JO">Jordania (+962)</option><option value="KY">Kajmany (+1345)</option><option value="CM">Kamerun (+237)</option><option value="CA">Kanada (+1)</option><option value="QA">Katar (+974)</option><option value="KZ">Kazachstan (+7)</option><option value="KE">Kenia (+254)</option><option value="KG">Kirgistan (+996)</option><option value="CO">Kolumbia (+57)</option><option value="KR">Korea (+82)</option><option value="CR">Kostaryka (+506)</option><option value="KW">Kuwejt (+965)</option><option value="LB">Liban (+961)</option><option value="LY">Libia (+218)</option><option value="LI">Liechtenstein (+423)</option><option value="LT">Litwa (+370)</option><option value="LU">Luksemburg (+352)</option><option value="LV">Łotwa (+371)</option><option value="MK">Macedonia (Była Jugosłowiańska Republika) (+389)</option><option value="MO">Makau (+853)</option><option value="MY">Malezja (+60)</option><option value="MT">Malta (+356)</option><option value="MA">Maroko (+212)</option><option value="MU">Mauritius (+230)</option><option value="MX">Meksyk (+52)</option><option value="MD">Mołdawia (+373)</option><option value="MC">Monako (+377)</option><option value="MN">Mongolia (+976)</option><option value="NA">Namibia (+264)</option><option value="NP">Nepal (+977)</option><option value="DE">Niemcy (+49)</option><option value="NG">Nigeria (+234)</option><option value="NI">Nikaragua (+505)</option><option value="NO">Norwegia (+47)</option><option value="NZ">Nowa Zelandia (+64)</option><option value="OM">Oman (+968)</option><option value="PK">Pakistan (+92)</option><option value="PA">Panama (+507)</option><option value="PY">Paragwaj (+595)</option><option value="PE">Peru (+51)</option><option selected="selected" value="PL">Polska (+48)</option><option value="PR">Portoryko (+1)</option><option value="PT">Portugalia (+351)</option><option value="CZ">Republika Czeska (+420)</option><option value="ZA">Republika Południowej Afryki (+27)</option><option value="RU">Rosja (+7)</option><option value="RO">Rumunia (+40)</option><option value="RW">Rwanda (+250)</option><option value="KN">Saint Christopher (St Kitts) i Nevis (+1869)</option><option value="SV">Salwador (+503)</option><option value="SN">Senegal (+221)</option><option value="RS">Serbia (+381)</option><option value="SG">Singapur (+65)</option><option value="SK">Słowacja (+421)</option><option value="SI">Słowenia (+386)</option><option value="LK">Sri Lanka (+94)</option><option value="US">Stany Zjednoczone (+1)</option><option value="CH">Szwajcaria (+41)</option><option value="SE">Szwecja (+46)</option><option value="TJ">Tadżykistan (+992)</option><option value="TH">Tajlandia (+66)</option><option value="TW">Tajwan (+886)</option><option value="TZ">Tanzania (+255)</option><option value="TN">Tunezja (+216)</option><option value="TR">Turcja (+90)</option><option value="TM">Turkmenistan (+993)</option><option value="UG">Uganda (+256)</option><option value="UA">Ukraina (+380)</option><option value="UY">Urugwaj (+598)</option><option value="UZ">Uzbekistan (+998)</option><option value="VE">Wenezuela (+58)</option><option value="HU">Węgry (+36)</option><option value="VN">Wietnam (+84)</option><option value="IT">Włochy (+39)</option><option value="CI">Wybrzeże Kości Słoniowej  (+225)</option><option value="VI">Wyspy Dziewicze Stanów Zjednoczonych (+1340)</option><option value="FO">Wyspy Owcze (+298)</option><option value="ZM">Zambia (+260)</option><option value="ZW">Zimbabwe (+263)</option><option value="AE">Zjednoczone Emiraty Arabskie (+971)</option><option value="GB">Zjednoczone Królestwo (+44)</option></select>
+            </div>
+            <div class="hasSingleCountryContainer countryContainer">
+                <p class="countrySelector"></p>
+            </div>
+
+            <div id="phoneContainer" style="position: relative;">
+                <input id="phoneNumberText" maxlength="20" name="PhoneNumber" type="text">
+                <div id="phoneNumberHint">XXX XXX XXX</div>
+                <button id="sendChallenge" class="task-link task">
+                    <img id="sendMessageImg" class="icon" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/icon-sendtextmessage-24-g-idl.png">
+                    <span class="description" id="sendChallengeText">Wyślij SMS</span>
+                </button>
+            </div>
+        </div>
+        <div id="confirmCodeDiv" style="display: none;">
+            <div id="confirmCodeContainer" style="position: relative; float: left;">
+                <label for="confirmationText" style="display: none;">Kod weryfikacyjny</label>
+                <input id="confirmationText" maxlength="20" type="text">
+                <button class="task-link" id="confirmChallenge" title="Zweryfikuj kod">
+                    <img class="icon" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/icon-remotedesktop-24-g-idl.png" alt="Zweryfikuj kod">
+                    <span class="description" id="confirmChallengeText">Zweryfikuj kod</span>
+                </button>
+            </div>
+        </div>
+        <div id="errorCallSupport" style="display: none">
+            <p style="margin-bottom: 0px;"></p>
+        </div>
+        <input data-val="true" data-val-required="The ConfirmationGuid field is required." id="ConfirmationGuid" name="ConfirmationGuid" value="7e88ed85-76c2-4416-9f90-a2d2a2412623" type="hidden">
+    </fieldset>
+</div>
+<div id="smsChallengeFormDisabled" style="display: none">
+    <p>Nie można sprawdzić poprawności konta. <a href="https://go.microsoft.com/fwLink/p/?LinkID=519297&amp;clcid=0x415" target="_blank">Skontaktuj się z pomocą techniczną</a>.</p>
+</div>
+<div id="contactSupportForm" style="display: none; margin-top: 5px">
+    <p id="contact-support-form-text">
+    </p>
+</div>
+<script type="text/javascript">
+
+    function beginSmsChallenge() {
+        Signup.BotChallenge.beginSmsChallenge();
+        jQuery.auxAnalytics.track.verifySmsSend("ms-azr-0003p");
+    }
+
+    function completeSmsChallenge() {
+        Signup.BotChallenge.completeSmsChallenge();
+        jQuery.auxAnalytics.track.verifySmsCode("ms-azr-0003p");
+    }
+
+    function showContactSupportInNotificationBar() {
+        Signup.BotChallenge.showContactSupportInNotificationBar();
+    };
+
+    (function ($) {
+        $(function () {
+
+            Signup.SmsChallengeDeliveryType =
+            {
+                TextMessage: 0,
+                VoicePin: 1
+            };
+
+            var config = {
+                countryInfo: {"AE":{"Name":"Zjednoczone Emiraty Arabskie","DropDownText":"Zjednoczone Emiraty Arabskie (+971)","PhoneNumberExample":"55 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"971","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"AR":{"Name":"Argentyna","DropDownText":"Argentyna (+54)","PhoneNumberExample":"9 343 555 1212","PhoneRegEx":"^[1-9]{1}[0-9]{10}$","PhoneCountryCode":"54","PhoneFormat":" =1, =4, =7","MarketingPreferences":2,"DeliveryType":0},"AT":{"Name":"Austria","DropDownText":"Austria (+43)","PhoneNumberExample":"65012345678","PhoneRegEx":"^[1-9]{1}[0-9]{9,11}$","PhoneCountryCode":"43","PhoneFormat":"","MarketingPreferences":2,"DeliveryType":0},"AU":{"Name":"Australia","DropDownText":"Australia (+61)","PhoneNumberExample":"499 123 456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"61","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"AZ":{"Name":"Azerbejdżan","DropDownText":"Azerbejdżan (+994)","PhoneNumberExample":"(12) 312 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"994","PhoneFormat":"(=0,) =2, =5","MarketingPreferences":2,"DeliveryType":0},"BE":{"Name":"Belgia","DropDownText":"Belgia (+32)","PhoneNumberExample":"499 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"32","PhoneFormat":" =3, =5, =7","MarketingPreferences":2,"DeliveryType":0},"BG":{"Name":"Bułgaria","DropDownText":"Bułgaria (+359)","PhoneNumberExample":"2/123 456","PhoneRegEx":"^[0-9]{7,8}$","PhoneCountryCode":"359","PhoneFormat":"/=1, =4","MarketingPreferences":1,"DeliveryType":0},"BH":{"Name":"Bahrajn","DropDownText":"Bahrajn (+973)","PhoneNumberExample":"3555 1212","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"973","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"BR":{"Name":"Brazylia","DropDownText":"Brazylia (+55)","PhoneNumberExample":"(11) 12345-6789","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"55","PhoneFormat":"(=0,) =2,-=6","MarketingPreferences":2,"DeliveryType":0},"BY":{"Name":"Białoruś","DropDownText":"Białoruś (+375)","PhoneNumberExample":"15 245 0911","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"375","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"CA":{"Name":"Kanada","DropDownText":"Kanada (+1)","PhoneNumberExample":"(604) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"CH":{"Name":"Szwajcaria","DropDownText":"Szwajcaria (+41)","PhoneNumberExample":"79 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"41","PhoneFormat":" =2, =5, =7","MarketingPreferences":1,"DeliveryType":0},"CL":{"Name":"Chile","DropDownText":"Chile (+56)","PhoneNumberExample":"9 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"56","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"CO":{"Name":"Kolumbia","DropDownText":"Kolumbia (+57)","PhoneNumberExample":"3 315 012345","PhoneRegEx":"^([1-9]{1}([0-9]{7}|[0-9]{9})|1[0-9]{10})$","PhoneCountryCode":"57","PhoneFormat":" =1, =4","MarketingPreferences":2,"DeliveryType":0},"CR":{"Name":"Kostaryka","DropDownText":"Kostaryka (+506)","PhoneNumberExample":"8XXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"506","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"CY":{"Name":"Cypr","DropDownText":"Cypr (+357)","PhoneNumberExample":"9912 3456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"357","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"CZ":{"Name":"Republika Czeska","DropDownText":"Republika Czeska (+420)","PhoneNumberExample":"7XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"420","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"DE":{"Name":"Niemcy","DropDownText":"Niemcy (+49)","PhoneNumberExample":"(1 70) 1 23 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{6,10}$","PhoneCountryCode":"49","PhoneFormat":"(=0, =1,) =3, =4, =6, =8","MarketingPreferences":2,"DeliveryType":0},"DK":{"Name":"Dania","DropDownText":"Dania (+45)","PhoneNumberExample":"20 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"45","PhoneFormat":" =2, =4, =6","MarketingPreferences":2,"DeliveryType":0},"DO":{"Name":"Dominikana","DropDownText":"Dominikana (+1)","PhoneNumberExample":"(829) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"DZ":{"Name":"Algieria","DropDownText":"Algieria (+213)","PhoneNumberExample":"4 2123 456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"213","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"EC":{"Name":"Ekwador","DropDownText":"Ekwador (+593)","PhoneNumberExample":"9 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"593","PhoneFormat":" =1, =4","MarketingPreferences":0,"DeliveryType":0},"EE":{"Name":"Estonia","DropDownText":"Estonia (+372)","PhoneNumberExample":"321 2345","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"372","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"EG":{"Name":"Egipt","DropDownText":"Egipt (+20)","PhoneNumberExample":"12 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"20","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"ES":{"Name":"Hiszpania","DropDownText":"Hiszpania (+34)","PhoneNumberExample":"609 XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{5,10}$","PhoneCountryCode":"34","PhoneFormat":" =3, =6","MarketingPreferences":1,"DeliveryType":0},"FI":{"Name":"Finlandia","DropDownText":"Finlandia (+358)","PhoneNumberExample":"50 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{3,8}$","PhoneCountryCode":"358","PhoneFormat":" =2, =5, =7","MarketingPreferences":1,"DeliveryType":0},"FR":{"Name":"Francja","DropDownText":"Francja (+33)","PhoneNumberExample":"4 17 91 23 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{5,11}$","PhoneCountryCode":"33","PhoneFormat":" =1, =3, =5, =7, =9","MarketingPreferences":1,"DeliveryType":0},"GB":{"Name":"Zjednoczone Królestwo","DropDownText":"Zjednoczone Królestwo (+44)","PhoneNumberExample":"1632 456789","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"44","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"GR":{"Name":"Grecja","DropDownText":"Grecja (+30)","PhoneNumberExample":"612 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"30","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"GT":{"Name":"Gwatemala","DropDownText":"Gwatemala (+502)","PhoneNumberExample":"5123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"502","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"HK":{"Name":"Hongkong","DropDownText":"Hongkong (+852)","PhoneNumberExample":"6123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"852","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"HR":{"Name":"Chorwacja","DropDownText":"Chorwacja (+385)","PhoneNumberExample":"91 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"385","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"HU":{"Name":"Węgry","DropDownText":"Węgry (+36)","PhoneNumberExample":"20 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"36","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"ID":{"Name":"Indonezja","DropDownText":"Indonezja (+62)","PhoneNumberExample":"(61) 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"62","PhoneFormat":"(=0,) =2","MarketingPreferences":2,"DeliveryType":0},"IE":{"Name":"Irlandia","DropDownText":"Irlandia (+353)","PhoneNumberExample":"81 234567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"353","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"IL":{"Name":"Izrael","DropDownText":"Izrael (+972)","PhoneNumberExample":"50 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"972","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"IN":{"Name":"Indie","DropDownText":"Indie (+91)","PhoneNumberExample":"81234-56789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"91","PhoneFormat":"-=5","MarketingPreferences":1,"DeliveryType":0},"IS":{"Name":"Islandia","DropDownText":"Islandia (+354)","PhoneNumberExample":"312 345 678","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"354","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"IT":{"Name":"Włochy","DropDownText":"Włochy (+39)","PhoneNumberExample":"123 456 7890","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"39","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"JO":{"Name":"Jordania","DropDownText":"Jordania (+962)","PhoneNumberExample":"7 7123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"962","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"JP":{"Name":"Japonia","DropDownText":"Japonia (+81)","PhoneNumberExample":"90 XXXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"81","PhoneFormat":" =2, =6","MarketingPreferences":2,"DeliveryType":0},"KE":{"Name":"Kenia","DropDownText":"Kenia (+254)","PhoneNumberExample":"20 2012345","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"254","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"KR":{"Name":"Korea","DropDownText":"Korea (+82)","PhoneNumberExample":"1 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"82","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"KW":{"Name":"Kuwejt","DropDownText":"Kuwejt (+965)","PhoneNumberExample":"6123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"965","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"KZ":{"Name":"Kazachstan","DropDownText":"Kazachstan (+7)","PhoneNumberExample":"(712) 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"7","PhoneFormat":"(=0,) =3, =6","MarketingPreferences":2,"DeliveryType":0},"LI":{"Name":"Liechtenstein","DropDownText":"Liechtenstein (+423)","PhoneNumberExample":"324 4556","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"423","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"LT":{"Name":"Litwa","DropDownText":"Litwa (+370)","PhoneNumberExample":"(312) 34567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"370","PhoneFormat":"(=0,) =3","MarketingPreferences":2,"DeliveryType":0},"LK":{"Name":"Sri Lanka","DropDownText":"Sri Lanka (+94)","PhoneNumberExample":"11 2 345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"94","PhoneFormat":" =2, =3","MarketingPreferences":2,"DeliveryType":0},"LU":{"Name":"Luksemburg","DropDownText":"Luksemburg (+352)","PhoneNumberExample":"6 XXXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"352","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"LV":{"Name":"Łotwa","DropDownText":"Łotwa (+371)","PhoneNumberExample":"63 123 456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"371","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"MA":{"Name":"Maroko","DropDownText":"Maroko (+212)","PhoneNumberExample":"5201-23456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"212","PhoneFormat":"-=4","MarketingPreferences":2,"DeliveryType":0},"ME":{"Name":"Czarnogóra","DropDownText":"Czarnogóra (+382)","PhoneNumberExample":"30 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"382","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"MK":{"Name":"Macedonia (Była Jugosłowiańska Republika)","DropDownText":"Macedonia (Była Jugosłowiańska Republika) (+389)","PhoneNumberExample":"2 221 2345","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"389","PhoneFormat":" =1, =4","MarketingPreferences":1,"DeliveryType":0},"MT":{"Name":"Malta","DropDownText":"Malta (+356)","PhoneNumberExample":"2100 1234","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"356","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"MX":{"Name":"Meksyk","DropDownText":"Meksyk (+52)","PhoneNumberExample":"(425) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"52","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":1,"DeliveryType":0},"MY":{"Name":"Malezja","DropDownText":"Malezja (+60)","PhoneNumberExample":"1-42345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"60","PhoneFormat":"-=1","MarketingPreferences":2,"DeliveryType":0},"NG":{"Name":"Nigeria","DropDownText":"Nigeria (+234)","PhoneNumberExample":"1 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{7,9}$","PhoneCountryCode":"234","PhoneFormat":" =1, =1","MarketingPreferences":1,"DeliveryType":0},"NL":{"Name":"Holandia","DropDownText":"Holandia (+31)","PhoneNumberExample":"6 123 45678","PhoneRegEx":"^[1-9]{1}[0-9]{5,11}$","PhoneCountryCode":"31","PhoneFormat":" =1, =4","MarketingPreferences":1,"DeliveryType":0},"NO":{"Name":"Norwegia","DropDownText":"Norwegia (+47)","PhoneNumberExample":"412 34 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"47","PhoneFormat":" =3, =5","MarketingPreferences":2,"DeliveryType":0},"NZ":{"Name":"Nowa Zelandia","DropDownText":"Nowa Zelandia (+64)","PhoneNumberExample":"21 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7,9}$","PhoneCountryCode":"64","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"OM":{"Name":"Oman","DropDownText":"Oman (+968)","PhoneNumberExample":"23 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"968","PhoneFormat":" =2","MarketingPreferences":0,"DeliveryType":0},"PA":{"Name":"Panama","DropDownText":"Panama (+507)","PhoneNumberExample":"200-1234","PhoneRegEx":"^[1-9]{1}[0-9]{6,7}$","PhoneCountryCode":"507","PhoneFormat":"-=3","MarketingPreferences":1,"DeliveryType":0},"PE":{"Name":"Peru","DropDownText":"Peru (+51)","PhoneNumberExample":"912 345 678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"51","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PH":{"Name":"Filipiny","DropDownText":"Filipiny (+63)","PhoneNumberExample":"9XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"63","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PK":{"Name":"Pakistan","DropDownText":"Pakistan (+92)","PhoneNumberExample":"342-1234567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"92","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"PL":{"Name":"Polska","DropDownText":"Polska (+48)","PhoneNumberExample":"XXX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"48","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PR":{"Name":"Portoryko","DropDownText":"Portoryko (+1)","PhoneNumberExample":"(939) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"PT":{"Name":"Portugalia","DropDownText":"Portugalia (+351)","PhoneNumberExample":"91 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"351","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"PY":{"Name":"Paragwaj","DropDownText":"Paragwaj (+595)","PhoneNumberExample":"(21) 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"595","PhoneFormat":"(=0,) =2","MarketingPreferences":0,"DeliveryType":0},"QA":{"Name":"Katar","DropDownText":"Katar (+974)","PhoneNumberExample":"4412 3456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"974","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"RO":{"Name":"Rumunia","DropDownText":"Rumunia (+40)","PhoneNumberExample":"7XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"40","PhoneFormat":"=3, =6","MarketingPreferences":1,"DeliveryType":0},"RS":{"Name":"Serbia","DropDownText":"Serbia (+381)","PhoneNumberExample":"10 234567","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"381","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"RU":{"Name":"Rosja","DropDownText":"Rosja (+7)","PhoneNumberExample":"(945) 123-45-67","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"7","PhoneFormat":"(=0,) =3,-=6,-=8","MarketingPreferences":2,"DeliveryType":0},"SA":{"Name":"Arabia Saudyjska","DropDownText":"Arabia Saudyjska (+966)","PhoneNumberExample":"54 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"966","PhoneFormat":" =2","MarketingPreferences":0,"DeliveryType":0},"SE":{"Name":"Szwecja","DropDownText":"Szwecja (+46)","PhoneNumberExample":"71 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"46","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"SG":{"Name":"Singapur","DropDownText":"Singapur (+65)","PhoneNumberExample":"9123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"65","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"SI":{"Name":"Słowenia","DropDownText":"Słowenia (+386)","PhoneNumberExample":"(1) 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"386","PhoneFormat":"(=0,) =1, =4, =6","MarketingPreferences":2,"DeliveryType":0},"SK":{"Name":"Słowacja","DropDownText":"Słowacja (+421)","PhoneNumberExample":"907 123456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"421","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"SV":{"Name":"Salwador","DropDownText":"Salwador (+503)","PhoneNumberExample":"2123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"503","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"TH":{"Name":"Tajlandia","DropDownText":"Tajlandia (+66)","PhoneNumberExample":"8 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"66","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"TN":{"Name":"Tunezja","DropDownText":"Tunezja (+216)","PhoneNumberExample":"71 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"216","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"TR":{"Name":"Turcja","DropDownText":"Turcja (+90)","PhoneNumberExample":"5XX 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"90","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"TT":{"Name":"\u0026Trynidad i Tobago","DropDownText":"\u0026Trynidad i Tobago (+868)","PhoneNumberExample":"XXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"868","PhoneFormat":" =3","MarketingPreferences":0,"DeliveryType":0},"TW":{"Name":"Tajwan","DropDownText":"Tajwan (+886)","PhoneNumberExample":"912-345-678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"886","PhoneFormat":"-=3,-=6","MarketingPreferences":1,"DeliveryType":0},"UA":{"Name":"Ukraina","DropDownText":"Ukraina (+380)","PhoneNumberExample":"3112 34567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"380","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"US":{"Name":"Stany Zjednoczone","DropDownText":"Stany Zjednoczone (+1)","PhoneNumberExample":"(425) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"UY":{"Name":"Urugwaj","DropDownText":"Urugwaj (+598)","PhoneNumberExample":"95 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"598","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"VE":{"Name":"Wenezuela","DropDownText":"Wenezuela (+58)","PhoneNumberExample":"412 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"58","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"ZA":{"Name":"Republika Południowej Afryki","DropDownText":"Republika Południowej Afryki (+27)","PhoneNumberExample":"10 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"27","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"AL":{"Name":"Albania","DropDownText":"Albania (+355)","PhoneNumberExample":"41 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"355","PhoneFormat":" =2, =4, =6","MarketingPreferences":2,"DeliveryType":0},"AO":{"Name":"Angola","DropDownText":"Angola (+244)","PhoneNumberExample":"91 2345 678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"244","PhoneFormat":" =2, =6","MarketingPreferences":2,"DeliveryType":0},"AM":{"Name":"Armenia","DropDownText":"Armenia (+374)","PhoneNumberExample":"91 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"374","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"BS":{"Name":"Bahamy","DropDownText":"Bahamy (+1)","PhoneNumberExample":"(242) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"BB":{"Name":"Barbados","DropDownText":"Barbados (+1)","PhoneNumberExample":"(246) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"BO":{"Name":"Boliwia","DropDownText":"Boliwia (+591)","PhoneNumberExample":"7 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"591","PhoneFormat":" =1, =4","MarketingPreferences":0,"DeliveryType":0},"JM":{"Name":"Jamajka","DropDownText":"Jamajka (+1)","PhoneNumberExample":"(876) 712-3456","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"LB":{"Name":"Liban","DropDownText":"Liban (+961)","PhoneNumberExample":"70 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"961","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"RW":{"Name":"Rwanda","DropDownText":"Rwanda (+250)","PhoneNumberExample":"783 123456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"250","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"YE":{"Name":"Jemen","DropDownText":"Jemen (+967)","PhoneNumberExample":"71 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"967","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"AF":{"Name":"Afganistan","DropDownText":"Afganistan (+93)","PhoneNumberExample":"70 108 8001","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"93","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BD":{"Name":"Bangladesz","DropDownText":"Bangladesz (+880)","PhoneNumberExample":"1 729 901555","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"880","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"BZ":{"Name":"Belize","DropDownText":"Belize (+501)","PhoneNumberExample":"624 0011","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"501","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"BM":{"Name":"Bermudy","DropDownText":"Bermudy (+441)","PhoneNumberExample":"295 1170","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"441","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"BA":{"Name":"Bośnia i Hercegowina","DropDownText":"Bośnia i Hercegowina (+387)","PhoneNumberExample":"60 873 271","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"387","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BW":{"Name":"Botswana","DropDownText":"Botswana (+267)","PhoneNumberExample":"79 332 953","PhoneRegEx":"^([1-9]{1}([0-9]{7}|[0-9]{8}))$","PhoneCountryCode":"267","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BN":{"Name":"Brunei Darussalam","DropDownText":"Brunei Darussalam (+673)","PhoneNumberExample":"793 1482","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"673","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"CM":{"Name":"Kamerun","DropDownText":"Kamerun (+237)","PhoneNumberExample":"9439 8327","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"237","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"CV":{"Name":"Cabo Verde","DropDownText":"Cabo Verde (+238)","PhoneNumberExample":"983 1165","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"238","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"KY":{"Name":"Kajmany","DropDownText":"Kajmany (+1345)","PhoneNumberExample":"983 1165","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"1345","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"CI":{"Name":"Wybrzeże Kości Słoniowej ","DropDownText":"Wybrzeże Kości Słoniowej  (+225)","PhoneNumberExample":"48 98 56 24","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"225","PhoneFormat":"=2,=4,=6","MarketingPreferences":2,"DeliveryType":0},"CW":{"Name":"Curaçao","DropDownText":"Curaçao (+599)","PhoneNumberExample":"9 623 9852","PhoneRegEx":"^9[1-9]{7}$","PhoneCountryCode":"599","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"ET":{"Name":"Etiopia","DropDownText":"Etiopia (+251)","PhoneNumberExample":"91 487 2438","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"251","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"FO":{"Name":"Wyspy Owcze","DropDownText":"Wyspy Owcze (+298)","PhoneNumberExample":"718 725","PhoneRegEx":"^[1-9]{1}[0-9]{5}$","PhoneCountryCode":"298","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"FJ":{"Name":"Fidżi","DropDownText":"Fidżi (+679)","PhoneNumberExample":"924 8620","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"679","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"GE":{"Name":"Gruzja","DropDownText":"Gruzja (+995)","PhoneNumberExample":"571 87 26 91","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"995","PhoneFormat":"=3,=5,=7","MarketingPreferences":2,"DeliveryType":0},"GH":{"Name":"Ghana","DropDownText":"Ghana (+233)","PhoneNumberExample":"26 274 1000","PhoneRegEx":"^0[1-9]{9$","PhoneCountryCode":"233","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"HN":{"Name":"Honduras","DropDownText":"Honduras (+504)","PhoneNumberExample":"9200 8214","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"504","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"IQ":{"Name":"Irak","DropDownText":"Irak (+964)","PhoneNumberExample":"790 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"964","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"KG":{"Name":"Kirgistan","DropDownText":"Kirgistan (+996)","PhoneNumberExample":"549 823 761","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"996","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"LY":{"Name":"Libia","DropDownText":"Libia (+218)","PhoneNumberExample":"98 782 1872","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"218","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"MO":{"Name":"Makau","DropDownText":"Makau (+853)","PhoneNumberExample":"6812 9827","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"853","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"MU":{"Name":"Mauritius","DropDownText":"Mauritius (+230)","PhoneNumberExample":"5 923 8134","PhoneRegEx":"^5[1-9]{1}[0-9]{6}$","PhoneCountryCode":"230","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"MD":{"Name":"Mołdawia","DropDownText":"Mołdawia (+373)","PhoneNumberExample":"78 872 381","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"373","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"MC":{"Name":"Monako","DropDownText":"Monako (+377)","PhoneNumberExample":"4983 8128 / 6231 98431","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"377","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"MN":{"Name":"Mongolia","DropDownText":"Mongolia (+976)","PhoneNumberExample":"9 911 2222","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"976","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"NA":{"Name":"Namibia","DropDownText":"Namibia (+264)","PhoneNumberExample":"81 873 1698","PhoneRegEx":"^61[1-9]{1}[0-9]{5}$","PhoneCountryCode":"264","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"NP":{"Name":"Nepal","DropDownText":"Nepal (+977)","PhoneNumberExample":"98 2832 1873","PhoneRegEx":"^[1-9]{1}[0-9]{1}[4,5,6]{1}[1-9]{5}$","PhoneCountryCode":"977","PhoneFormat":"=2, =5","MarketingPreferences":2,"DeliveryType":0},"NI":{"Name":"Nikaragua","DropDownText":"Nikaragua (+505)","PhoneNumberExample":"8761 7676","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"505","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"PS":{"Name":"Autonomia Palestyńska","DropDownText":"Autonomia Palestyńska (+970)","PhoneNumberExample":"59 982 7619","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"970","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"KN":{"Name":"Saint Christopher (St Kitts) i Nevis","DropDownText":"Saint Christopher (St Kitts) i Nevis (+1869)","PhoneNumberExample":"662-2512","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"1869","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"SN":{"Name":"Senegal","DropDownText":"Senegal (+221)","PhoneNumberExample":"76 127 8914","PhoneRegEx":"^(8([1-9]{7})|9([1-9]))$","PhoneCountryCode":"221","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"TJ":{"Name":"Tadżykistan","DropDownText":"Tadżykistan (+992)","PhoneNumberExample":"919 202 455","PhoneRegEx":"^3[1-9]{1}[0-9]{7}$","PhoneCountryCode":"992","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"TZ":{"Name":"Tanzania","DropDownText":"Tanzania (+255)","PhoneNumberExample":"764 813 8713","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"255","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"TM":{"Name":"Turkmenistan","DropDownText":"Turkmenistan (+993)","PhoneNumberExample":"60 209 281","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"993","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"UG":{"Name":"Uganda","DropDownText":"Uganda (+256)","PhoneNumberExample":"71 22 00400","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"256","PhoneFormat":"=2,=4","MarketingPreferences":2,"DeliveryType":0},"UZ":{"Name":"Uzbekistan","DropDownText":"Uzbekistan (+998)","PhoneNumberExample":"93 736 5497","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"998","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"VN":{"Name":"Wietnam","DropDownText":"Wietnam (+84)","PhoneNumberExample":"93 563-2153","PhoneRegEx":"^([1-9]{1}([0-9]{8}|[0-9]{9}))$","PhoneCountryCode":"84","PhoneFormat":"=2,-=5","MarketingPreferences":2,"DeliveryType":0},"VI":{"Name":"Wyspy Dziewicze Stanów Zjednoczonych","DropDownText":"Wyspy Dziewicze Stanów Zjednoczonych (+1340)","PhoneNumberExample":"214-9234","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"1340","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"ZM":{"Name":"Zambia","DropDownText":"Zambia (+260)","PhoneNumberExample":"95 984 2123","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"260","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"ZW":{"Name":"Zimbabwe","DropDownText":"Zimbabwe (+263)","PhoneNumberExample":"71 347 7675","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"263","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0}},
+                offer: "ms-azr-0003p",
+                countryCode:"PL",
+                dropDownList: ["TT","AF","AL","DZ","AO","SA","AR","AM","AU","AT","PS","AZ","BS","BH","BD","BB","BE","BZ","BM","BY","BO","BA","BW","BR","BN","BG","CV","CL","HR","CW","CY","ME","DK","DO","EG","EC","EE","ET","FJ","PH","FI","FR","GH","GR","GE","GT","ES","NL","HN","HK","IN","ID","IQ","IE","IS","IL","JM","JP","YE","JO","KY","CM","CA","QA","KZ","KE","KG","CO","KR","CR","KW","LB","LY","LI","LT","LU","LV","MK","MO","MY","MT","MA","MU","MX","MD","MC","MN","NA","NP","DE","NG","NI","NO","NZ","OM","PK","PA","PY","PE","PL","PR","PT","CZ","ZA","RU","RO","RW","KN","SV","SN","RS","SG","SK","SI","LK","US","CH","SE","TJ","TH","TW","TZ","TN","TR","TM","UG","UA","UY","UZ","VE","HU","VN","IT","CI","VI","FO","ZM","ZW","AE","GB"],
+                dropDownListDefaultItem: "PL",
+                GetCssPhoneNumberURL: "/SignUp/GetCssPhoneNumber?countryCode=",
+                ContactLocalSupportFormat: "Poprawność tego konta można sprawdzić, dzwoniąc pod lokalny numer pomocy technicznej ({0}) lub klikając tutaj w celu skontaktowania się z pomocą techniczną.",
+                GetCountryCodeByIpAddressURL: "/SignUp/GetCountryCodeByUserIpAddress",
+                SmsMessageSuccessfullySent: "Wiadomość SMS została wysłana.",
+                PhoneCallSuccessfullyMade: "Nawiązano połączenie telefoniczne. Usłyszysz wiadomość w języku angielskim.",
+                MobileContactNotValidButSmsSentAnyway: "Wiadomość SMS została wysłana, chociaż ten numer telefonu komórkowego prawdopodobnie jest niepoprawny.",
+                MobileContactNotValidButPhoneCallMadeAnyway: "Nawiązano połączenie telefoniczne w języku angielskim, chociaż ten numer telefonu komórkowego prawdopodobnie jest niepoprawny.",
+                BeginSmsChallengeURL: "/SignUp/BeginSmsChallenge",
+                CompleteSmsChallengeURL: "/SignUp/CompleteSmsChallenge",
+                SendText: "Wyślij SMS",
+                CallMe: "Zadzwoń",
+                Verified: "Brawo! Można kontynuować.",
+                NotVerified: "Wprowadzony kod weryfikacyjny jest niepoprawny.",
+                InvalidVerificationCode: "Wprowadzony kod weryfikacyjny może zawierać tylko cyfry.",
+                SupportPageURL:"https://go.microsoft.com/fwLink/p/?LinkID=519297\u0026clcid=0x415",
+                SeeSupportPageText: "Kliknij tutaj, aby uzyskać dostęp do najbliższego centrum pomocy technicznej.",
+                DeliveryType: {
+                    SmsAndVoice: 0,
+                    Voice: 1,
+                    Sms: 2
+                }
+            };
+            //
+            $.extend(Signup.BotChallenge, config);
+
+            Signup.BotChallenge.init(); 
+
+            $('#needHelpAccVerify').click(function()
+            {
+               showContactSupportInNotificationBar();
+                   return false;
+            });
+        });
+    })(jQuery);
+</script>
+
+                        </div>
+                        
+                        <div class="phone-number-save clearfix hide">
+                            <div>
+                                <div class="hasMultipleCountryContainer countryContainer">
+                                    <select id="phone-no-countrySelector" name="PhoneCountryCode" class="phone-no-countrySelector">
+                                    <option value="TT">&amp;Trynidad i Tobago (+868)</option><option value="AF">Afganistan (+93)</option><option value="AL">Albania (+355)</option><option value="DZ">Algieria (+213)</option><option value="AO">Angola (+244)</option><option value="SA">Arabia Saudyjska (+966)</option><option value="AR">Argentyna (+54)</option><option value="AM">Armenia (+374)</option><option value="AU">Australia (+61)</option><option value="AT">Austria (+43)</option><option value="PS">Autonomia Palestyńska (+970)</option><option value="AZ">Azerbejdżan (+994)</option><option value="BS">Bahamy (+1)</option><option value="BH">Bahrajn (+973)</option><option value="BD">Bangladesz (+880)</option><option value="BB">Barbados (+1)</option><option value="BE">Belgia (+32)</option><option value="BZ">Belize (+501)</option><option value="BM">Bermudy (+441)</option><option value="BY">Białoruś (+375)</option><option value="BO">Boliwia (+591)</option><option value="BA">Bośnia i Hercegowina (+387)</option><option value="BW">Botswana (+267)</option><option value="BR">Brazylia (+55)</option><option value="BN">Brunei Darussalam (+673)</option><option value="BG">Bułgaria (+359)</option><option value="CV">Cabo Verde (+238)</option><option value="CL">Chile (+56)</option><option value="HR">Chorwacja (+385)</option><option value="CW">Curaçao (+599)</option><option value="CY">Cypr (+357)</option><option value="ME">Czarnogóra (+382)</option><option value="DK">Dania (+45)</option><option value="DO">Dominikana (+1)</option><option value="EG">Egipt (+20)</option><option value="EC">Ekwador (+593)</option><option value="EE">Estonia (+372)</option><option value="ET">Etiopia (+251)</option><option value="FJ">Fidżi (+679)</option><option value="PH">Filipiny (+63)</option><option value="FI">Finlandia (+358)</option><option value="FR">Francja (+33)</option><option value="GH">Ghana (+233)</option><option value="GR">Grecja (+30)</option><option value="GE">Gruzja (+995)</option><option value="GT">Gwatemala (+502)</option><option value="ES">Hiszpania (+34)</option><option value="NL">Holandia (+31)</option><option value="HN">Honduras (+504)</option><option value="HK">Hongkong (+852)</option><option value="IN">Indie (+91)</option><option value="ID">Indonezja (+62)</option><option value="IQ">Irak (+964)</option><option value="IE">Irlandia (+353)</option><option value="IS">Islandia (+354)</option><option value="IL">Izrael (+972)</option><option value="JM">Jamajka (+1)</option><option value="JP">Japonia (+81)</option><option value="YE">Jemen (+967)</option><option value="JO">Jordania (+962)</option><option value="KY">Kajmany (+1345)</option><option value="CM">Kamerun (+237)</option><option value="CA">Kanada (+1)</option><option value="QA">Katar (+974)</option><option value="KZ">Kazachstan (+7)</option><option value="KE">Kenia (+254)</option><option value="KG">Kirgistan (+996)</option><option value="CO">Kolumbia (+57)</option><option value="KR">Korea (+82)</option><option value="CR">Kostaryka (+506)</option><option value="KW">Kuwejt (+965)</option><option value="LB">Liban (+961)</option><option value="LY">Libia (+218)</option><option value="LI">Liechtenstein (+423)</option><option value="LT">Litwa (+370)</option><option value="LU">Luksemburg (+352)</option><option value="LV">Łotwa (+371)</option><option value="MK">Macedonia (Była Jugosłowiańska Republika) (+389)</option><option value="MO">Makau (+853)</option><option value="MY">Malezja (+60)</option><option value="MT">Malta (+356)</option><option value="MA">Maroko (+212)</option><option value="MU">Mauritius (+230)</option><option value="MX">Meksyk (+52)</option><option value="MD">Mołdawia (+373)</option><option value="MC">Monako (+377)</option><option value="MN">Mongolia (+976)</option><option value="NA">Namibia (+264)</option><option value="NP">Nepal (+977)</option><option value="DE">Niemcy (+49)</option><option value="NG">Nigeria (+234)</option><option value="NI">Nikaragua (+505)</option><option value="NO">Norwegia (+47)</option><option value="NZ">Nowa Zelandia (+64)</option><option value="OM">Oman (+968)</option><option value="PK">Pakistan (+92)</option><option value="PA">Panama (+507)</option><option value="PY">Paragwaj (+595)</option><option value="PE">Peru (+51)</option><option value="PL">Polska (+48)</option><option value="PR">Portoryko (+1)</option><option value="PT">Portugalia (+351)</option><option value="CZ">Republika Czeska (+420)</option><option value="ZA">Republika Południowej Afryki (+27)</option><option value="RU">Rosja (+7)</option><option value="RO">Rumunia (+40)</option><option value="RW">Rwanda (+250)</option><option value="KN">Saint Christopher (St Kitts) i Nevis (+1869)</option><option value="SV">Salwador (+503)</option><option value="SN">Senegal (+221)</option><option value="RS">Serbia (+381)</option><option value="SG">Singapur (+65)</option><option value="SK">Słowacja (+421)</option><option value="SI">Słowenia (+386)</option><option value="LK">Sri Lanka (+94)</option><option value="US">Stany Zjednoczone (+1)</option><option value="CH">Szwajcaria (+41)</option><option value="SE">Szwecja (+46)</option><option value="TJ">Tadżykistan (+992)</option><option value="TH">Tajlandia (+66)</option><option value="TW">Tajwan (+886)</option><option value="TZ">Tanzania (+255)</option><option value="TN">Tunezja (+216)</option><option value="TR">Turcja (+90)</option><option value="TM">Turkmenistan (+993)</option><option value="UG">Uganda (+256)</option><option value="UA">Ukraina (+380)</option><option value="UY">Urugwaj (+598)</option><option value="UZ">Uzbekistan (+998)</option><option value="VE">Wenezuela (+58)</option><option value="HU">Węgry (+36)</option><option value="VN">Wietnam (+84)</option><option value="IT">Włochy (+39)</option><option value="CI">Wybrzeże Kości Słoniowej  (+225)</option><option value="VI">Wyspy Dziewicze Stanów Zjednoczonych (+1340)</option><option value="FO">Wyspy Owcze (+298)</option><option value="ZM">Zambia (+260)</option><option value="ZW">Zimbabwe (+263)</option><option value="AE">Zjednoczone Emiraty Arabskie (+971)</option><option value="GB">Zjednoczone Królestwo (+44)</option><option value="TT">&amp;Trynidad i Tobago (+868)</option><option value="AF">Afganistan (+93)</option><option value="AL">Albania (+355)</option><option value="DZ">Algieria (+213)</option><option value="AO">Angola (+244)</option><option value="SA">Arabia Saudyjska (+966)</option><option value="AR">Argentyna (+54)</option><option value="AM">Armenia (+374)</option><option value="AU">Australia (+61)</option><option value="AT">Austria (+43)</option><option value="PS">Autonomia Palestyńska (+970)</option><option value="AZ">Azerbejdżan (+994)</option><option value="BS">Bahamy (+1)</option><option value="BH">Bahrajn (+973)</option><option value="BD">Bangladesz (+880)</option><option value="BB">Barbados (+1)</option><option value="BE">Belgia (+32)</option><option value="BZ">Belize (+501)</option><option value="BM">Bermudy (+441)</option><option value="BY">Białoruś (+375)</option><option value="BO">Boliwia (+591)</option><option value="BA">Bośnia i Hercegowina (+387)</option><option value="BW">Botswana (+267)</option><option value="BR">Brazylia (+55)</option><option value="BN">Brunei Darussalam (+673)</option><option value="BG">Bułgaria (+359)</option><option value="CV">Cabo Verde (+238)</option><option value="CL">Chile (+56)</option><option value="HR">Chorwacja (+385)</option><option value="CW">Curaçao (+599)</option><option value="CY">Cypr (+357)</option><option value="ME">Czarnogóra (+382)</option><option value="DK">Dania (+45)</option><option value="DO">Dominikana (+1)</option><option value="EG">Egipt (+20)</option><option value="EC">Ekwador (+593)</option><option value="EE">Estonia (+372)</option><option value="ET">Etiopia (+251)</option><option value="FJ">Fidżi (+679)</option><option value="PH">Filipiny (+63)</option><option value="FI">Finlandia (+358)</option><option value="FR">Francja (+33)</option><option value="GH">Ghana (+233)</option><option value="GR">Grecja (+30)</option><option value="GE">Gruzja (+995)</option><option value="GT">Gwatemala (+502)</option><option value="ES">Hiszpania (+34)</option><option value="NL">Holandia (+31)</option><option value="HN">Honduras (+504)</option><option value="HK">Hongkong (+852)</option><option value="IN">Indie (+91)</option><option value="ID">Indonezja (+62)</option><option value="IQ">Irak (+964)</option><option value="IE">Irlandia (+353)</option><option value="IS">Islandia (+354)</option><option value="IL">Izrael (+972)</option><option value="JM">Jamajka (+1)</option><option value="JP">Japonia (+81)</option><option value="YE">Jemen (+967)</option><option value="JO">Jordania (+962)</option><option value="KY">Kajmany (+1345)</option><option value="CM">Kamerun (+237)</option><option value="CA">Kanada (+1)</option><option value="QA">Katar (+974)</option><option value="KZ">Kazachstan (+7)</option><option value="KE">Kenia (+254)</option><option value="KG">Kirgistan (+996)</option><option value="CO">Kolumbia (+57)</option><option value="KR">Korea (+82)</option><option value="CR">Kostaryka (+506)</option><option value="KW">Kuwejt (+965)</option><option value="LB">Liban (+961)</option><option value="LY">Libia (+218)</option><option value="LI">Liechtenstein (+423)</option><option value="LT">Litwa (+370)</option><option value="LU">Luksemburg (+352)</option><option value="LV">Łotwa (+371)</option><option value="MK">Macedonia (Była Jugosłowiańska Republika) (+389)</option><option value="MO">Makau (+853)</option><option value="MY">Malezja (+60)</option><option value="MT">Malta (+356)</option><option value="MA">Maroko (+212)</option><option value="MU">Mauritius (+230)</option><option value="MX">Meksyk (+52)</option><option value="MD">Mołdawia (+373)</option><option value="MC">Monako (+377)</option><option value="MN">Mongolia (+976)</option><option value="NA">Namibia (+264)</option><option value="NP">Nepal (+977)</option><option value="DE">Niemcy (+49)</option><option value="NG">Nigeria (+234)</option><option value="NI">Nikaragua (+505)</option><option value="NO">Norwegia (+47)</option><option value="NZ">Nowa Zelandia (+64)</option><option value="OM">Oman (+968)</option><option value="PK">Pakistan (+92)</option><option value="PA">Panama (+507)</option><option value="PY">Paragwaj (+595)</option><option value="PE">Peru (+51)</option><option selected="selected" value="PL">Polska (+48)</option><option value="PR">Portoryko (+1)</option><option value="PT">Portugalia (+351)</option><option value="CZ">Republika Czeska (+420)</option><option value="ZA">Republika Południowej Afryki (+27)</option><option value="RU">Rosja (+7)</option><option value="RO">Rumunia (+40)</option><option value="RW">Rwanda (+250)</option><option value="KN">Saint Christopher (St Kitts) i Nevis (+1869)</option><option value="SV">Salwador (+503)</option><option value="SN">Senegal (+221)</option><option value="RS">Serbia (+381)</option><option value="SG">Singapur (+65)</option><option value="SK">Słowacja (+421)</option><option value="SI">Słowenia (+386)</option><option value="LK">Sri Lanka (+94)</option><option value="US">Stany Zjednoczone (+1)</option><option value="CH">Szwajcaria (+41)</option><option value="SE">Szwecja (+46)</option><option value="TJ">Tadżykistan (+992)</option><option value="TH">Tajlandia (+66)</option><option value="TW">Tajwan (+886)</option><option value="TZ">Tanzania (+255)</option><option value="TN">Tunezja (+216)</option><option value="TR">Turcja (+90)</option><option value="TM">Turkmenistan (+993)</option><option value="UG">Uganda (+256)</option><option value="UA">Ukraina (+380)</option><option value="UY">Urugwaj (+598)</option><option value="UZ">Uzbekistan (+998)</option><option value="VE">Wenezuela (+58)</option><option value="HU">Węgry (+36)</option><option value="VN">Wietnam (+84)</option><option value="IT">Włochy (+39)</option><option value="CI">Wybrzeże Kości Słoniowej  (+225)</option><option value="VI">Wyspy Dziewicze Stanów Zjednoczonych (+1340)</option><option value="FO">Wyspy Owcze (+298)</option><option value="ZM">Zambia (+260)</option><option value="ZW">Zimbabwe (+263)</option><option value="AE">Zjednoczone Emiraty Arabskie (+971)</option><option value="GB">Zjednoczone Królestwo (+44)</option></select>
+                                </div>
+
+                                <div class="hasSingleCountryContainer countryContainer hide">
+                                    <p class="phone-no-countrySelector"></p>
+                                </div>
+                                <div class="left phoneContainer" id="phoneContainer">
+                                    <input style="" class="fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-length="Numer telefonu musi zawierać od 5 do 20 znaków." data-val-length-max="20" data-val-length-min="5" data-val-required="Pole jest wymagane." id="phone-no-text" maxlength="20" name="Phone" type="text">
+                                    <div id="phone-no-hint">XXX XXX XXX</div>
+                                </div>
+                                <div class="left-justified">
+                                    <button class="saveAndCreateAccount task-link task" type="button" disabled="disabled" title="Zapisz">
+                                        <span class="description">Zapisz</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <img class="phone-number-spinner hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.gif" alt="Czekaj...">
+                        </div>
+                        <div class="retry-message hide"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="prepaid-token-container section hide">
+                <div class="item-number">3 </div>
+                <div class="prepaid-token content-container">
+                    <div class="title">
+                        <h2 class="ballon-label">Klucz produktu</h2>
+                        <div id="__fx-balloonicon9" class="prepaidTokenInformationBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                    </div>
+                    <div class="prepaid-token-content hide">
+                        <div> <label for="PrepaidToken">Wprowadź klucz produktu</label> </div>
+                        <div class="validate-prepaid-token">
+                            <input class="prepaid-token-text-value fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-required="Pole jest wymagane." id="prepaid-token-text" maxlength="40" name="PrepaidToken" type="text">
+                            <button class="validate-prepaid-token-button task-link task" type="button" disabled="disabled" title="Weryfikuj">
+                                <span class="description">Weryfikuj</span>
+                            </button>
+                        </div>
+                        <div class="token-validation-message hide"></div>
+                        <div class="token-validation-error-message hide"></div>
+                        <div class="partner-contact-email">
+                            <div class="balloon">
+                                <div class="ballon-label"><label for="PartnerContactEmail">Kontaktowy adres e-mail partnera</label></div>
+                                <div id="__fx-balloonicon10" class="partnerContactEmailBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                            </div>
+                            <input style="" class="partner-contact-email-value fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-regex="Adres e-mail musi być prawidłowy." data-val-regex-pattern="($|^[a-zA-Z0-9._%+-]+@(?!.*\.\..*)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$)" id="partner-contact-email" name="PartnerContactEmail" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-info-container section">
+                <div class="item-number">1</div>
+                <div class="payment-info content-container">
+                    <div class="title">
+
+                        <h2 class="ballon-label">Dane o płatności</h2>
+                        <div id="__fx-balloonicon4" class="paymentInformationBalloon fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+                        <div id="__fx-balloonicon5" class="paymentInformationForMonetaryCreditBalloon hide fx-balloonicon"><button class="fx-balloonicon-button" type="button" aria-label="Help"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.png" alt="Help"></button></div>
+
+                        <div class="complete-step right hide">
+                            COMPLETE
+                            <img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/icon-success-ok-16.png">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="prepaid-amount-container hide">
+                            <label for="PrepaidAmount">Kwota przedpłaty (z podatkiem)</label>
+<input value="0" class="prepaid-amount-value fx-textbox fx-validation fx-editablecontrol" data-val="true" data-val-number="The field PrepaidAmount must be a number." data-val-required="Pole jest wymagane." id="prepaid-amount" name="PrepaidAmount" type="text"> €
+                        </div>
+                        <div class="existing-pi-container">
+                        </div>
+                        <div class="pcs-iframe-container aux-pcsv2"><div style="height: 354px;" class="aux-pcsv2-content"><img class="aux-pcsv2-loading hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/progress.gif" alt="Czekaj..."><iframe style="visibility: visible;" class="aux-pcsv2-iframe-loaded" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/managepi.htm" data-bind="attr: { src: data.pcsUrl }" frameborder="0"></iframe></div></div>
+                        <div class="payment-info-changePI">
+                            <img class="progress hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/progress.gif" alt="Czekaj...">
+                            <div class="saveChangePI hide left">
+                                <button class="save task" type="button" value="Zapisz">
+                                    <span class="description">Zapisz</span>
+                                </button>
+                                <img class="saveChangePI-spinner hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.gif" alt="Czekaj...">
+                            </div>
+                        </div>
+                        <button class="savePI hide task" type="button" value="Zapisz">
+                            <span class="description">Zapisz</span>
+                        </button>
+                        <img class="savePI-spinner hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.gif" alt="Czekaj...">
+                    </div>
+                </div>
+            </div>
+            <div class="commitment-detail-container section hide">
+                <div class="item-number">5 </div>
+                <div class="commitment-detail content-container">
+                    <div class="title">
+                        <h2 class="left">Szczegóły dotyczące zobowiązania</h2>
+                        <div class="complete-step right hide">
+                            COMPLETE
+                            <img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/icon-success-ok-16.png">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img class="commitment-container-spinner hide" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/progress.gif" alt="Czekaj...">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="agreement-container section">
+                <div class="item-number">2</div>
+                <div class="agreement content-container">
+                    <div class="title">
+                        <h2>Umowa</h2>
+                    </div>
+                    <div class="content">
+                        <div class="consent-items">
+                            <div>
+                                <label id="rate-plan"><input data-val="true" data-val-required="The AgreeRatePlan field is required." id="checkbox-rateplan" name="AgreeRatePlan" value="true" type="checkbox"><input name="AgreeRatePlan" value="false" type="hidden">
+                                    <span>Akceptuję <a href="https://go.microsoft.com/fwLink/p/?LinkID=304146&amp;clcid=0x415&amp;country=PL" target="_blank">umowę dotyczącą subskrypcji</a>, <a href="https://go.microsoft.com/fwLink/p/?LinkID=299416&amp;clcid=0x415&amp;offer=MS-AZR-0003P" target="_blank">szczegóły oferty</a> oraz <a href="https://go.microsoft.com/fwLink/p/?LinkID=131004&amp;clcid=0x415" target="_blank">zasady zachowania poufności informacji</a>.</span>
+                                </label>
+                            </div>
+                            <div class="marketing-phone-container hide">
+                                <label id="marketing-phone"><input data-val="true" data-val-required="The EmailPreference field is required." id="checkbox-marketing-phone" name="EmailPreference" value="true" type="checkbox"><input name="EmailPreference" value="false" type="hidden">
+                                    <span>Wyrażam zgodę na otrzymywanie 
+od firmy Microsoft ofert specjalnych dotyczących platformy Microsoft 
+Azure na mój adres e-mail oraz za pośrednictwem telefonu.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-button-section">
+                <button class="purchase task" type="button" title="Przed zakupem wypełnij wszystkie powyższe punkty" disabled="disabled">
+                    <span class="description">Zakup</span>
+                    <img class="icon" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/home-welcome-arrowwhite.png">
+                </button>
+                
+                <div class="signup-spinner hide">
+                    <img class="spinner-container" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/fx.gif" alt="Czekaj...">
+                    <span class="progress-notification">Jesteśmy w trakcie tworzenia Twojej subskrypcji. Nie zamykaj ani nie odświeżaj przeglądarki.</span>
+                </div>
+                <div class="token-activation-error-message hide"></div>
+            </div>
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var config = {
+                Model: {
+                    ReturnUrl: "https://account.windowsazure.com/Subscriptions",
+                    PreviewFeaturesUrl: "/PreviewFeatures"
+                },
+                PurchaseStatus: {
+                    Success: 106,
+                    PurchaseFailed: 101,
+                    ProvisionFailed: 102,
+                    Started: 1,
+                    Provisioning: 4,
+                    Purchasing: 2,
+                    StillRunning: 100,
+                    WaitingForFeatureActivation : 103,
+                    CannotConfirmFeatureActivation: 104,
+                    FeatureActivationFailed: 105,
+                    Purchased: 3,
+                    None: 0,
+                    },
+                Resources: {
+                    SubscriptionPurchaseFailed: "Niestety nie można zrealizować transakcji przy użyciu tej formy płatności. Skontaktuj się z pomocą techniczną.",
+                    SubscriptionProvisioningFailed: "Niestety nie można skonfigurować tej subskrypcji. Skontaktuj się z pomocą techniczną.",
+                    PreviewFeatureSignupNotification: "Otrzymasz wiadomość e-mail, gdy ta funkcja zostanie włączona dla Twojej subskrypcji.",
+                    FeatureActivationFailed: "Niestety nie można aktywować tej funkcji. Skontaktuj się z pomocą techniczną.",
+                    PayBill: "Płatność natychmiastowa"
+                },
+                FwLinks : {
+                    SupportLink: "https://go.microsoft.com/fwLink/p/?LinkID=396968\u0026clcid=0x415"
+                }
+            };
+            $.extend(Signup2.SubscriptionPurchaseTracker, config);
+        });
+    })(jQuery);
+</script>
+<input id="ReturnUrl" name="ReturnUrl" value="https://account.windowsazure.com/Subscriptions" type="hidden"></form>    </div>
+</div>
+<iframe style="color: rgba(0,0,0,0); float: left; position: absolute; top: -5000px;
+    left: -5000px; border: 0px" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/tags.htm">
+</iframe>
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var config = {
+                Url: {
+                    SignUp: "https://account.windowsazure.com/signup",
+                    GetSignUpMarketingContent: "https://account.windowsazure.com/signup/GetSignUpMarketingContent?locale=pl-PL",
+                    GetCustomerDataUrl: "https://account.windowsazure.com/signup/GetCustomerData",
+                    CreateOrUpdateAccountUrl: "https://account.windowsazure.com/signup/CreateOrUpdateAccount",
+                    PurchaseUrl: "https://account.windowsazure.com/signup/Purchase",
+                    RatePlanFwUrl: "https://go.microsoft.com/fwLink/p/?LinkID=299416&clcid=0x415",
+                    SubscriptionAgreementFwUrl: "https://go.microsoft.com/fwLink/p/?LinkID=304146&clcid=0x415",
+                    RetrieveCommitmentDetailsUrl: "https://account.windowsazure.com/signup/RetrieveMonetaryCommitmentDetails",
+                    GetPaymentInstrumentBriefUrl: "https://account.windowsazure.com/signup/GetPaymentInstrumentBrief",
+                    BetaFeatures: "/PreviewFeatures",
+                    PrivacyStatementFwUrl: "https://go.microsoft.com/fwLink/p/?LinkID=131004&clcid=0x415",
+                    SignupDefaultReturnUrl:"https://account.windowsazure.com/Subscriptions",
+                    RioTrackingUrl: "https://account.windowsazure.com/signup/RioTracking",
+                    RiskChallengeStatusUrl: "https://account.windowsazure.com/signup/VerifyRiskChallengeStatus",
+                    RegisterSmsShownKpiUrl: "https://account.windowsazure.com/signup/RegisterSmsShownKpi",
+                    ValidatePrepaidTokenUrl: "https://account.windowsazure.com/signup/ValidateAndGetMonetaryValueOfPrepaidTokenKey",
+                    RedeemAzureInOpenTokenFwUrl: "https://go.microsoft.com/fwLink/p/?LinkID=299416&clcid=0x415",
+                    SignupFailureSupportFwUrl: "https://go.microsoft.com/fwLink/p/?LinkID=519297&clcid=0x415"
+                },
+                Model: {
+                    CountryInfoJson: {"AE":{"Name":"Zjednoczone Emiraty Arabskie","DropDownText":"Zjednoczone Emiraty Arabskie (+971)","PhoneNumberExample":"55 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"971","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"AR":{"Name":"Argentyna","DropDownText":"Argentyna (+54)","PhoneNumberExample":"9 343 555 1212","PhoneRegEx":"^[1-9]{1}[0-9]{10}$","PhoneCountryCode":"54","PhoneFormat":" =1, =4, =7","MarketingPreferences":2,"DeliveryType":0},"AT":{"Name":"Austria","DropDownText":"Austria (+43)","PhoneNumberExample":"65012345678","PhoneRegEx":"^[1-9]{1}[0-9]{9,11}$","PhoneCountryCode":"43","PhoneFormat":"","MarketingPreferences":2,"DeliveryType":0},"AU":{"Name":"Australia","DropDownText":"Australia (+61)","PhoneNumberExample":"499 123 456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"61","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"AZ":{"Name":"Azerbejdżan","DropDownText":"Azerbejdżan (+994)","PhoneNumberExample":"(12) 312 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"994","PhoneFormat":"(=0,) =2, =5","MarketingPreferences":2,"DeliveryType":0},"BE":{"Name":"Belgia","DropDownText":"Belgia (+32)","PhoneNumberExample":"499 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"32","PhoneFormat":" =3, =5, =7","MarketingPreferences":2,"DeliveryType":0},"BG":{"Name":"Bułgaria","DropDownText":"Bułgaria (+359)","PhoneNumberExample":"2/123 456","PhoneRegEx":"^[0-9]{7,8}$","PhoneCountryCode":"359","PhoneFormat":"/=1, =4","MarketingPreferences":1,"DeliveryType":0},"BH":{"Name":"Bahrajn","DropDownText":"Bahrajn (+973)","PhoneNumberExample":"3555 1212","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"973","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"BR":{"Name":"Brazylia","DropDownText":"Brazylia (+55)","PhoneNumberExample":"(11) 12345-6789","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"55","PhoneFormat":"(=0,) =2,-=6","MarketingPreferences":2,"DeliveryType":0},"BY":{"Name":"Białoruś","DropDownText":"Białoruś (+375)","PhoneNumberExample":"15 245 0911","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"375","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"CA":{"Name":"Kanada","DropDownText":"Kanada (+1)","PhoneNumberExample":"(604) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"CH":{"Name":"Szwajcaria","DropDownText":"Szwajcaria (+41)","PhoneNumberExample":"79 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"41","PhoneFormat":" =2, =5, =7","MarketingPreferences":1,"DeliveryType":0},"CL":{"Name":"Chile","DropDownText":"Chile (+56)","PhoneNumberExample":"9 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"56","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"CO":{"Name":"Kolumbia","DropDownText":"Kolumbia (+57)","PhoneNumberExample":"3 315 012345","PhoneRegEx":"^([1-9]{1}([0-9]{7}|[0-9]{9})|1[0-9]{10})$","PhoneCountryCode":"57","PhoneFormat":" =1, =4","MarketingPreferences":2,"DeliveryType":0},"CR":{"Name":"Kostaryka","DropDownText":"Kostaryka (+506)","PhoneNumberExample":"8XXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"506","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"CY":{"Name":"Cypr","DropDownText":"Cypr (+357)","PhoneNumberExample":"9912 3456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"357","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"CZ":{"Name":"Republika Czeska","DropDownText":"Republika Czeska (+420)","PhoneNumberExample":"7XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"420","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"DE":{"Name":"Niemcy","DropDownText":"Niemcy (+49)","PhoneNumberExample":"(1 70) 1 23 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{6,10}$","PhoneCountryCode":"49","PhoneFormat":"(=0, =1,) =3, =4, =6, =8","MarketingPreferences":2,"DeliveryType":0},"DK":{"Name":"Dania","DropDownText":"Dania (+45)","PhoneNumberExample":"20 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"45","PhoneFormat":" =2, =4, =6","MarketingPreferences":2,"DeliveryType":0},"DO":{"Name":"Dominikana","DropDownText":"Dominikana (+1)","PhoneNumberExample":"(829) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"DZ":{"Name":"Algieria","DropDownText":"Algieria (+213)","PhoneNumberExample":"4 2123 456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"213","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"EC":{"Name":"Ekwador","DropDownText":"Ekwador (+593)","PhoneNumberExample":"9 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"593","PhoneFormat":" =1, =4","MarketingPreferences":0,"DeliveryType":0},"EE":{"Name":"Estonia","DropDownText":"Estonia (+372)","PhoneNumberExample":"321 2345","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"372","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"EG":{"Name":"Egipt","DropDownText":"Egipt (+20)","PhoneNumberExample":"12 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"20","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"ES":{"Name":"Hiszpania","DropDownText":"Hiszpania (+34)","PhoneNumberExample":"609 XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{5,10}$","PhoneCountryCode":"34","PhoneFormat":" =3, =6","MarketingPreferences":1,"DeliveryType":0},"FI":{"Name":"Finlandia","DropDownText":"Finlandia (+358)","PhoneNumberExample":"50 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{3,8}$","PhoneCountryCode":"358","PhoneFormat":" =2, =5, =7","MarketingPreferences":1,"DeliveryType":0},"FR":{"Name":"Francja","DropDownText":"Francja (+33)","PhoneNumberExample":"4 17 91 23 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{5,11}$","PhoneCountryCode":"33","PhoneFormat":" =1, =3, =5, =7, =9","MarketingPreferences":1,"DeliveryType":0},"GB":{"Name":"Zjednoczone Królestwo","DropDownText":"Zjednoczone Królestwo (+44)","PhoneNumberExample":"1632 456789","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"44","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"GR":{"Name":"Grecja","DropDownText":"Grecja (+30)","PhoneNumberExample":"612 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"30","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"GT":{"Name":"Gwatemala","DropDownText":"Gwatemala (+502)","PhoneNumberExample":"5123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"502","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"HK":{"Name":"Hongkong","DropDownText":"Hongkong (+852)","PhoneNumberExample":"6123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"852","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"HR":{"Name":"Chorwacja","DropDownText":"Chorwacja (+385)","PhoneNumberExample":"91 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"385","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"HU":{"Name":"Węgry","DropDownText":"Węgry (+36)","PhoneNumberExample":"20 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"36","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"ID":{"Name":"Indonezja","DropDownText":"Indonezja (+62)","PhoneNumberExample":"(61) 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"62","PhoneFormat":"(=0,) =2","MarketingPreferences":2,"DeliveryType":0},"IE":{"Name":"Irlandia","DropDownText":"Irlandia (+353)","PhoneNumberExample":"81 234567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"353","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"IL":{"Name":"Izrael","DropDownText":"Izrael (+972)","PhoneNumberExample":"50 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"972","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"IN":{"Name":"Indie","DropDownText":"Indie (+91)","PhoneNumberExample":"81234-56789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"91","PhoneFormat":"-=5","MarketingPreferences":1,"DeliveryType":0},"IS":{"Name":"Islandia","DropDownText":"Islandia (+354)","PhoneNumberExample":"312 345 678","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"354","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"IT":{"Name":"Włochy","DropDownText":"Włochy (+39)","PhoneNumberExample":"123 456 7890","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"39","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"JO":{"Name":"Jordania","DropDownText":"Jordania (+962)","PhoneNumberExample":"7 7123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"962","PhoneFormat":" =1, =5","MarketingPreferences":1,"DeliveryType":0},"JP":{"Name":"Japonia","DropDownText":"Japonia (+81)","PhoneNumberExample":"90 XXXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"81","PhoneFormat":" =2, =6","MarketingPreferences":2,"DeliveryType":0},"KE":{"Name":"Kenia","DropDownText":"Kenia (+254)","PhoneNumberExample":"20 2012345","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"254","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"KR":{"Name":"Korea","DropDownText":"Korea (+82)","PhoneNumberExample":"1 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"82","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"KW":{"Name":"Kuwejt","DropDownText":"Kuwejt (+965)","PhoneNumberExample":"6123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"965","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"KZ":{"Name":"Kazachstan","DropDownText":"Kazachstan (+7)","PhoneNumberExample":"(712) 345 6789","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"7","PhoneFormat":"(=0,) =3, =6","MarketingPreferences":2,"DeliveryType":0},"LI":{"Name":"Liechtenstein","DropDownText":"Liechtenstein (+423)","PhoneNumberExample":"324 4556","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"423","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"LT":{"Name":"Litwa","DropDownText":"Litwa (+370)","PhoneNumberExample":"(312) 34567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"370","PhoneFormat":"(=0,) =3","MarketingPreferences":2,"DeliveryType":0},"LK":{"Name":"Sri Lanka","DropDownText":"Sri Lanka (+94)","PhoneNumberExample":"11 2 345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"94","PhoneFormat":" =2, =3","MarketingPreferences":2,"DeliveryType":0},"LU":{"Name":"Luksemburg","DropDownText":"Luksemburg (+352)","PhoneNumberExample":"6 XXXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"352","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"LV":{"Name":"Łotwa","DropDownText":"Łotwa (+371)","PhoneNumberExample":"63 123 456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"371","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"MA":{"Name":"Maroko","DropDownText":"Maroko (+212)","PhoneNumberExample":"5201-23456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"212","PhoneFormat":"-=4","MarketingPreferences":2,"DeliveryType":0},"ME":{"Name":"Czarnogóra","DropDownText":"Czarnogóra (+382)","PhoneNumberExample":"30 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"382","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"MK":{"Name":"Macedonia (Była Jugosłowiańska Republika)","DropDownText":"Macedonia (Była Jugosłowiańska Republika) (+389)","PhoneNumberExample":"2 221 2345","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"389","PhoneFormat":" =1, =4","MarketingPreferences":1,"DeliveryType":0},"MT":{"Name":"Malta","DropDownText":"Malta (+356)","PhoneNumberExample":"2100 1234","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"356","PhoneFormat":" =4","MarketingPreferences":1,"DeliveryType":0},"MX":{"Name":"Meksyk","DropDownText":"Meksyk (+52)","PhoneNumberExample":"(425) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"52","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":1,"DeliveryType":0},"MY":{"Name":"Malezja","DropDownText":"Malezja (+60)","PhoneNumberExample":"1-42345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"60","PhoneFormat":"-=1","MarketingPreferences":2,"DeliveryType":0},"NG":{"Name":"Nigeria","DropDownText":"Nigeria (+234)","PhoneNumberExample":"1 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{7,9}$","PhoneCountryCode":"234","PhoneFormat":" =1, =1","MarketingPreferences":1,"DeliveryType":0},"NL":{"Name":"Holandia","DropDownText":"Holandia (+31)","PhoneNumberExample":"6 123 45678","PhoneRegEx":"^[1-9]{1}[0-9]{5,11}$","PhoneCountryCode":"31","PhoneFormat":" =1, =4","MarketingPreferences":1,"DeliveryType":0},"NO":{"Name":"Norwegia","DropDownText":"Norwegia (+47)","PhoneNumberExample":"412 34 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"47","PhoneFormat":" =3, =5","MarketingPreferences":2,"DeliveryType":0},"NZ":{"Name":"Nowa Zelandia","DropDownText":"Nowa Zelandia (+64)","PhoneNumberExample":"21 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7,9}$","PhoneCountryCode":"64","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"OM":{"Name":"Oman","DropDownText":"Oman (+968)","PhoneNumberExample":"23 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"968","PhoneFormat":" =2","MarketingPreferences":0,"DeliveryType":0},"PA":{"Name":"Panama","DropDownText":"Panama (+507)","PhoneNumberExample":"200-1234","PhoneRegEx":"^[1-9]{1}[0-9]{6,7}$","PhoneCountryCode":"507","PhoneFormat":"-=3","MarketingPreferences":1,"DeliveryType":0},"PE":{"Name":"Peru","DropDownText":"Peru (+51)","PhoneNumberExample":"912 345 678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"51","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PH":{"Name":"Filipiny","DropDownText":"Filipiny (+63)","PhoneNumberExample":"9XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"63","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PK":{"Name":"Pakistan","DropDownText":"Pakistan (+92)","PhoneNumberExample":"342-1234567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"92","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"PL":{"Name":"Polska","DropDownText":"Polska (+48)","PhoneNumberExample":"XXX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"48","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"PR":{"Name":"Portoryko","DropDownText":"Portoryko (+1)","PhoneNumberExample":"(939) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"PT":{"Name":"Portugalia","DropDownText":"Portugalia (+351)","PhoneNumberExample":"91 234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"351","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"PY":{"Name":"Paragwaj","DropDownText":"Paragwaj (+595)","PhoneNumberExample":"(21) 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"595","PhoneFormat":"(=0,) =2","MarketingPreferences":0,"DeliveryType":0},"QA":{"Name":"Katar","DropDownText":"Katar (+974)","PhoneNumberExample":"4412 3456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"974","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"RO":{"Name":"Rumunia","DropDownText":"Rumunia (+40)","PhoneNumberExample":"7XX XXX XXX","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"40","PhoneFormat":"=3, =6","MarketingPreferences":1,"DeliveryType":0},"RS":{"Name":"Serbia","DropDownText":"Serbia (+381)","PhoneNumberExample":"10 234567","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"381","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"RU":{"Name":"Rosja","DropDownText":"Rosja (+7)","PhoneNumberExample":"(945) 123-45-67","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"7","PhoneFormat":"(=0,) =3,-=6,-=8","MarketingPreferences":2,"DeliveryType":0},"SA":{"Name":"Arabia Saudyjska","DropDownText":"Arabia Saudyjska (+966)","PhoneNumberExample":"54 1234567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"966","PhoneFormat":" =2","MarketingPreferences":0,"DeliveryType":0},"SE":{"Name":"Szwecja","DropDownText":"Szwecja (+46)","PhoneNumberExample":"71 2345678","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"46","PhoneFormat":" =2","MarketingPreferences":1,"DeliveryType":0},"SG":{"Name":"Singapur","DropDownText":"Singapur (+65)","PhoneNumberExample":"9123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"65","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"SI":{"Name":"Słowenia","DropDownText":"Słowenia (+386)","PhoneNumberExample":"(1) 123 45 67","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"386","PhoneFormat":"(=0,) =1, =4, =6","MarketingPreferences":2,"DeliveryType":0},"SK":{"Name":"Słowacja","DropDownText":"Słowacja (+421)","PhoneNumberExample":"907 123456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"421","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"SV":{"Name":"Salwador","DropDownText":"Salwador (+503)","PhoneNumberExample":"2123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"503","PhoneFormat":" =4","MarketingPreferences":0,"DeliveryType":0},"TH":{"Name":"Tajlandia","DropDownText":"Tajlandia (+66)","PhoneNumberExample":"8 1234 5678","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"66","PhoneFormat":" =1, =5","MarketingPreferences":2,"DeliveryType":0},"TN":{"Name":"Tunezja","DropDownText":"Tunezja (+216)","PhoneNumberExample":"71 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"216","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"TR":{"Name":"Turcja","DropDownText":"Turcja (+90)","PhoneNumberExample":"5XX 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"90","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"TT":{"Name":"\u0026Trynidad i Tobago","DropDownText":"\u0026Trynidad i Tobago (+868)","PhoneNumberExample":"XXX XXXX","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"868","PhoneFormat":" =3","MarketingPreferences":0,"DeliveryType":0},"TW":{"Name":"Tajwan","DropDownText":"Tajwan (+886)","PhoneNumberExample":"912-345-678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"886","PhoneFormat":"-=3,-=6","MarketingPreferences":1,"DeliveryType":0},"UA":{"Name":"Ukraina","DropDownText":"Ukraina (+380)","PhoneNumberExample":"3112 34567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"380","PhoneFormat":" =4","MarketingPreferences":2,"DeliveryType":0},"US":{"Name":"Stany Zjednoczone","DropDownText":"Stany Zjednoczone (+1)","PhoneNumberExample":"(425) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"UY":{"Name":"Urugwaj","DropDownText":"Urugwaj (+598)","PhoneNumberExample":"95 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"598","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"VE":{"Name":"Wenezuela","DropDownText":"Wenezuela (+58)","PhoneNumberExample":"412 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"58","PhoneFormat":" =3, =6","MarketingPreferences":2,"DeliveryType":0},"ZA":{"Name":"Republika Południowej Afryki","DropDownText":"Republika Południowej Afryki (+27)","PhoneNumberExample":"10 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"27","PhoneFormat":" =2, =5","MarketingPreferences":1,"DeliveryType":0},"AL":{"Name":"Albania","DropDownText":"Albania (+355)","PhoneNumberExample":"41 12 34 56","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"355","PhoneFormat":" =2, =4, =6","MarketingPreferences":2,"DeliveryType":0},"AO":{"Name":"Angola","DropDownText":"Angola (+244)","PhoneNumberExample":"91 2345 678","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"244","PhoneFormat":" =2, =6","MarketingPreferences":2,"DeliveryType":0},"AM":{"Name":"Armenia","DropDownText":"Armenia (+374)","PhoneNumberExample":"91 234 567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"374","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"BS":{"Name":"Bahamy","DropDownText":"Bahamy (+1)","PhoneNumberExample":"(242) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"BB":{"Name":"Barbados","DropDownText":"Barbados (+1)","PhoneNumberExample":"(246) 555-0100","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":2,"DeliveryType":0},"BO":{"Name":"Boliwia","DropDownText":"Boliwia (+591)","PhoneNumberExample":"7 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"591","PhoneFormat":" =1, =4","MarketingPreferences":0,"DeliveryType":0},"JM":{"Name":"Jamajka","DropDownText":"Jamajka (+1)","PhoneNumberExample":"(876) 712-3456","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"1","PhoneFormat":"(=0,) =3,-=6","MarketingPreferences":0,"DeliveryType":0},"LB":{"Name":"Liban","DropDownText":"Liban (+961)","PhoneNumberExample":"70 123456","PhoneRegEx":"^[1-9]{1}[0-9]{7,8}$","PhoneCountryCode":"961","PhoneFormat":" =2","MarketingPreferences":2,"DeliveryType":0},"RW":{"Name":"Rwanda","DropDownText":"Rwanda (+250)","PhoneNumberExample":"783 123456","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"250","PhoneFormat":" =3","MarketingPreferences":2,"DeliveryType":0},"YE":{"Name":"Jemen","DropDownText":"Jemen (+967)","PhoneNumberExample":"71 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{8,9}$","PhoneCountryCode":"967","PhoneFormat":" =2, =5","MarketingPreferences":2,"DeliveryType":0},"AF":{"Name":"Afganistan","DropDownText":"Afganistan (+93)","PhoneNumberExample":"70 108 8001","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"93","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BD":{"Name":"Bangladesz","DropDownText":"Bangladesz (+880)","PhoneNumberExample":"1 729 901555","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"880","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"BZ":{"Name":"Belize","DropDownText":"Belize (+501)","PhoneNumberExample":"624 0011","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"501","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"BM":{"Name":"Bermudy","DropDownText":"Bermudy (+441)","PhoneNumberExample":"295 1170","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"441","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"BA":{"Name":"Bośnia i Hercegowina","DropDownText":"Bośnia i Hercegowina (+387)","PhoneNumberExample":"60 873 271","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"387","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BW":{"Name":"Botswana","DropDownText":"Botswana (+267)","PhoneNumberExample":"79 332 953","PhoneRegEx":"^([1-9]{1}([0-9]{7}|[0-9]{8}))$","PhoneCountryCode":"267","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"BN":{"Name":"Brunei Darussalam","DropDownText":"Brunei Darussalam (+673)","PhoneNumberExample":"793 1482","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"673","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"CM":{"Name":"Kamerun","DropDownText":"Kamerun (+237)","PhoneNumberExample":"9439 8327","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"237","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"CV":{"Name":"Cabo Verde","DropDownText":"Cabo Verde (+238)","PhoneNumberExample":"983 1165","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"238","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"KY":{"Name":"Kajmany","DropDownText":"Kajmany (+1345)","PhoneNumberExample":"983 1165","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"1345","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"CI":{"Name":"Wybrzeże Kości Słoniowej ","DropDownText":"Wybrzeże Kości Słoniowej  (+225)","PhoneNumberExample":"48 98 56 24","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"225","PhoneFormat":"=2,=4,=6","MarketingPreferences":2,"DeliveryType":0},"CW":{"Name":"Curaçao","DropDownText":"Curaçao (+599)","PhoneNumberExample":"9 623 9852","PhoneRegEx":"^9[1-9]{7}$","PhoneCountryCode":"599","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"ET":{"Name":"Etiopia","DropDownText":"Etiopia (+251)","PhoneNumberExample":"91 487 2438","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"251","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"FO":{"Name":"Wyspy Owcze","DropDownText":"Wyspy Owcze (+298)","PhoneNumberExample":"718 725","PhoneRegEx":"^[1-9]{1}[0-9]{5}$","PhoneCountryCode":"298","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"FJ":{"Name":"Fidżi","DropDownText":"Fidżi (+679)","PhoneNumberExample":"924 8620","PhoneRegEx":"^[1-9]{1}[0-9]{6}$","PhoneCountryCode":"679","PhoneFormat":"=3","MarketingPreferences":2,"DeliveryType":0},"GE":{"Name":"Gruzja","DropDownText":"Gruzja (+995)","PhoneNumberExample":"571 87 26 91","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"995","PhoneFormat":"=3,=5,=7","MarketingPreferences":2,"DeliveryType":0},"GH":{"Name":"Ghana","DropDownText":"Ghana (+233)","PhoneNumberExample":"26 274 1000","PhoneRegEx":"^0[1-9]{9$","PhoneCountryCode":"233","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"HN":{"Name":"Honduras","DropDownText":"Honduras (+504)","PhoneNumberExample":"9200 8214","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"504","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"IQ":{"Name":"Irak","DropDownText":"Irak (+964)","PhoneNumberExample":"790 123 4567","PhoneRegEx":"^[1-9]{1}[0-9]{9}$","PhoneCountryCode":"964","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"KG":{"Name":"Kirgistan","DropDownText":"Kirgistan (+996)","PhoneNumberExample":"549 823 761","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"996","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"LY":{"Name":"Libia","DropDownText":"Libia (+218)","PhoneNumberExample":"98 782 1872","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"218","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"MO":{"Name":"Makau","DropDownText":"Makau (+853)","PhoneNumberExample":"6812 9827","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"853","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"MU":{"Name":"Mauritius","DropDownText":"Mauritius (+230)","PhoneNumberExample":"5 923 8134","PhoneRegEx":"^5[1-9]{1}[0-9]{6}$","PhoneCountryCode":"230","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"MD":{"Name":"Mołdawia","DropDownText":"Mołdawia (+373)","PhoneNumberExample":"78 872 381","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"373","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"MC":{"Name":"Monako","DropDownText":"Monako (+377)","PhoneNumberExample":"4983 8128 / 6231 98431","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"377","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"MN":{"Name":"Mongolia","DropDownText":"Mongolia (+976)","PhoneNumberExample":"9 911 2222","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"976","PhoneFormat":"=1,=4","MarketingPreferences":2,"DeliveryType":0},"NA":{"Name":"Namibia","DropDownText":"Namibia (+264)","PhoneNumberExample":"81 873 1698","PhoneRegEx":"^61[1-9]{1}[0-9]{5}$","PhoneCountryCode":"264","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"NP":{"Name":"Nepal","DropDownText":"Nepal (+977)","PhoneNumberExample":"98 2832 1873","PhoneRegEx":"^[1-9]{1}[0-9]{1}[4,5,6]{1}[1-9]{5}$","PhoneCountryCode":"977","PhoneFormat":"=2, =5","MarketingPreferences":2,"DeliveryType":0},"NI":{"Name":"Nikaragua","DropDownText":"Nikaragua (+505)","PhoneNumberExample":"8761 7676","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"505","PhoneFormat":"=4","MarketingPreferences":2,"DeliveryType":0},"PS":{"Name":"Autonomia Palestyńska","DropDownText":"Autonomia Palestyńska (+970)","PhoneNumberExample":"59 982 7619","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"970","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"KN":{"Name":"Saint Christopher (St Kitts) i Nevis","DropDownText":"Saint Christopher (St Kitts) i Nevis (+1869)","PhoneNumberExample":"662-2512","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"1869","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"SN":{"Name":"Senegal","DropDownText":"Senegal (+221)","PhoneNumberExample":"76 127 8914","PhoneRegEx":"^(8([1-9]{7})|9([1-9]))$","PhoneCountryCode":"221","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"TJ":{"Name":"Tadżykistan","DropDownText":"Tadżykistan (+992)","PhoneNumberExample":"919 202 455","PhoneRegEx":"^3[1-9]{1}[0-9]{7}$","PhoneCountryCode":"992","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"TZ":{"Name":"Tanzania","DropDownText":"Tanzania (+255)","PhoneNumberExample":"764 813 8713","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"255","PhoneFormat":"=3,=6","MarketingPreferences":2,"DeliveryType":0},"TM":{"Name":"Turkmenistan","DropDownText":"Turkmenistan (+993)","PhoneNumberExample":"60 209 281","PhoneRegEx":"^[1-9]{1}[0-9]{7}$","PhoneCountryCode":"993","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"UG":{"Name":"Uganda","DropDownText":"Uganda (+256)","PhoneNumberExample":"71 22 00400","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"256","PhoneFormat":"=2,=4","MarketingPreferences":2,"DeliveryType":0},"UZ":{"Name":"Uzbekistan","DropDownText":"Uzbekistan (+998)","PhoneNumberExample":"93 736 5497","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"998","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"VN":{"Name":"Wietnam","DropDownText":"Wietnam (+84)","PhoneNumberExample":"93 563-2153","PhoneRegEx":"^([1-9]{1}([0-9]{8}|[0-9]{9}))$","PhoneCountryCode":"84","PhoneFormat":"=2,-=5","MarketingPreferences":2,"DeliveryType":0},"VI":{"Name":"Wyspy Dziewicze Stanów Zjednoczonych","DropDownText":"Wyspy Dziewicze Stanów Zjednoczonych (+1340)","PhoneNumberExample":"214-9234","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"1340","PhoneFormat":"-=3","MarketingPreferences":2,"DeliveryType":0},"ZM":{"Name":"Zambia","DropDownText":"Zambia (+260)","PhoneNumberExample":"95 984 2123","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"260","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0},"ZW":{"Name":"Zimbabwe","DropDownText":"Zimbabwe (+263)","PhoneNumberExample":"71 347 7675","PhoneRegEx":"^[1-9]{1}[0-9]{8}$","PhoneCountryCode":"263","PhoneFormat":"=2,=5","MarketingPreferences":2,"DeliveryType":0}},
+                    CountryDropDownListItemsJson: ["TT","AF","AL","DZ","AO","SA","AR","AM","AU","AT","PS","AZ","BS","BH","BD","BB","BE","BZ","BM","BY","BO","BA","BW","BR","BN","BG","CV","CL","HR","CW","CY","ME","DK","DO","EG","EC","EE","ET","FJ","PH","FI","FR","GH","GR","GE","GT","ES","NL","HN","HK","IN","ID","IQ","IE","IS","IL","JM","JP","YE","JO","KY","CM","CA","QA","KZ","KE","KG","CO","KR","CR","KW","LB","LY","LI","LT","LU","LV","MK","MO","MY","MT","MA","MU","MX","MD","MC","MN","NA","NP","DE","NG","NI","NO","NZ","OM","PK","PA","PY","PE","PL","PR","PT","CZ","ZA","RU","RO","RW","KN","SV","SN","RS","SG","SK","SI","LK","US","CH","SE","TJ","TH","TW","TZ","TN","TR","TM","UG","UA","UY","UZ","VE","HU","VN","IT","CI","VI","FO","ZM","ZW","AE","GB"],
+                    CountryCode: "PL",
+                    Offer: "ms-azr-0003p",
+                    ReturnUrl:"https://account.windowsazure.com/Subscriptions",
+                    DropDownListDefaultItem: "PL",
+                    DesiredBasFid: "",
+                    CommitmentAmount: "",
+                    ShowCatalog: "false",
+                    PromoCode: "",
+                    CnpjCpfSelector: "CNPJ",
+                    offerCategory: "",
+                    DefaultContactEmail: "True",
+                    MaximumPrepaidReloadAmount: "2147483647"
+                },
+                OfferingInfoAvailabilityState: {
+                    UnableToDetermineEntitlementEligibility: 2,
+                    NotEntitled: 3,
+                    NotAvailable: 9,
+                    Available: 10,
+                    FreeTrialNotAvailable:  7,
+                    FreeTrialNotEligible: 8,
+                    Redeemed: 6,
+                    Unknown: 0,
+                    NotEligible: 4,
+                    NotMemberOffer: 5,
+                    RedirectToNewOffer: 11,
+                    NotAvailableForThisAccountType: 12,
+                    DreamSparkOfferNotAvailable: 13
+                    },
+                OfferingInfoEnglishAvailability: {
+                    Yes: 2
+                    },
+                OfferResources: {
+                    OfferNotAvailable: "Ta oferta jest niedostępna.",
+                    ClickHereToGetSuggestedAlternateOffer: "Gratulacje! Przysługuje Ci uaktualnienie. Kliknij tutaj, aby je zobaczyć.",
+                    ClickHereToReturnToMainOffer: "Wróć do poprzedniej oferty.",
+                    OfferNotAvailableWithOfferText: "{0} - niedostępne.",
+                    FreeTrialOfferNotAvailableTitle: "Bezpłatna wersja próbna jest niedostępna.",
+                    SignupForAlternateOffer: "Zapisz się do innej oferty ({0})",
+                    SignupForOfferInEnglish: "Zapisz się do tej oferty w języku angielskim",
+                    UnableToDetermineMsdnSubscription: "Ta oferta jest przeznaczona jedynie dla subskrybentów MSDN. Nie można zweryfikować, że jesteś subskrybentem MSDN.",
+                    MsdnRedeemed: "Korzyści MSDN do subskrypcji platformy Microsoft Azure zostały już wykorzystane. Do każdej subskrypcji MSDN przysługuje tylko jedna odpowiadająca jej bezpłatna subskrypcja platformy Microsoft Azure.",
+                    NotEligibleForAAD: 'Automatic access to Azure Active Directory is limited to customers with paid services. To access your Azure Active Directory you will need to activate an \u003ca href=\"https://account.windowsazure.com/signup\"\u003eAzure subscription\u003c/a\u003e.', 
+                    NotEligibleForMsdn: "Oferta nie jest dostępna jedynie dla subskrybentów MSDN.",
+                    VerifyMSDNSubscription: "Zweryfikuj usługi przysługujące w związku z subskrypcją MSDN",
+                    VerifyMembership: "Zweryfikuj swoje członkostwo i korzyści przysługujące w: {0}",
+                    RefreshPageToVerify: "Jeśli uważasz, że nie mamy racji, odśwież tę stronę za kilka sekund",
+                    VerifyCountry: "Jeśli został błędnie wykryty region/kraj, wybierz poprawny region/kraj",
+                    OfferNotAvailableInGivenCountryLocale: "Ta oferta jest niedostępna w {0} w {1}.",
+                    EASupportMessage: "Aby uzyskać szczegółowe instrukcje dotyczące zakupu dostępu do pomocy technicznej, przejdź do witryny \u003ca href=\"{0}\"\u003eEnterprise Portal\u003c/a\u003e.",
+                    UpgradeTitle:  "Świetne wieści",
+                    EligibleForUpgrade: "Przysługuje Ci uaktualnienie.",
+                    ChooseUpgradeOffer: "Wybierz uaktualnioną ofertę ({0})",
+                    ChooseCurrentOffer: "Przedłuż bieżącą ofertę ({0})",
+                    OfferNotAvailableForThisAccount: 'Oferta {0} nie jest dostępna dla tego konta.', 
+                    AzureInOpenOfferNotAvailableForThisAccount: "To konto zostało już zarejestrowane w systemie Microsoft Azure poza ofertą Azure w ramach programu licencjonowania Open. Nie stanowi to jednak problemu. Możesz łatwo utworzyć nowe konto, aby zrealizować tokeny oferty Azure w ramach programu licencjonowania Open.",
+                    RedeemAzureInOpenTokenMessage: "Wykorzystaj klucz produktu oferty Azure w ramach programu licencjonowania Open, korzystając z nowego konta. Kliknij tutaj, aby rozpocząć.",
+                    DreamSparkOfferNotAvailableTitle: "Program DreamSpark jest niedostępny."
+                },
+                Resources: {
+                    GenericError: "Niestety nie można ukończyć tej operacji.",
+                    PhoneNumberTitle: "Numer telefonu kontaktowego",
+                    MobileVerificationTitle: "Weryfikacja telefonu komórkowego",
+                    CountryHelp: "Wybierz podstawowy kraj lub region, w którym Ty lub Twoja organizacja będziecie korzystać z platformy Microsoft Azure. Nie będzie można później zmienić tego kraju. Ustawienie to określa centrum danych znajdujące się najbliżej Ciebie.",
+                    MobileVerificationHelp: "Twój numer telefonu komórkowego będzie używany do przekazywania Ci informacji dla nowych subskrybentów oraz informacji dotyczących rozliczeń i Twojej subskrypcji. Numery VOIP są niedozwolone. Mogą być naliczane standardowe opłaty. Więcej informacji znajduje się w zasadach zachowania poufności informacji dotyczących platformy Microsoft Azure.",
+                    PhoneNumberHelp: "Twój numer telefonu komórkowego będzie używany do przekazywania Ci informacji dla nowych subskrybentów oraz informacji dotyczących rozliczeń i Twojej subskrypcji. Mogą być naliczane standardowe opłaty. Więcej informacji znajduje się w zasadach zachowania poufności informacji dotyczących platformy Microsoft Azure.",
+                    PaymentInformationHelp: "Wprowadź dane o płatności w cely weryfikacji. Twój adres e-mail i numer telefonu mogą zostać użyte do przekazywania wiadomości dla nowych abonentów oraz informacji dotyczących rozliczeń i subskrypcji.",
+                    PaymentInformationForMonetaryCreditHelp: "Wprowadź dane ważnej karty kredytowej. Zostaną one użyte wyłącznie w celu zweryfikowania Twojej tożsamości. Twoja karta kredytowa nie zostanie obciążona w związku z tą ofertą, o ile nie usuniesz limitu wydatków.",
+                    AddNewSubscription: "Dodaj subskrypcję",
+                    SignUpFor: "Utwórz konto",
+                    NoOffersAvailable: "Obecnie w tym regionie lub kraju nie są dostępne żadne oferty.",
+                    LearnMore:  "Dowiedz się więcej",
+                    MicrosoftAzure: "Microsoft Azure",
+                    SignUpGenericError: "Niestety nie można ukończyć operacji. Spróbuj ponownie później lub ponownie załaduj stronę.",
+                    SignUpUnauthorizeGenericError: "Nie możemy autoryzować Cię do zakupu usług Azure. Skontaktuj się z pomocą techniczną. Kod błędu: SMS401",
+                    LoginSessionHasExpired: "Twoja sesja wygasła. Kliknij \u003ca href=\"https://login.microsoftonline.com/logout.srf?ct=1427465649\u0026rver=6.1.6206.0\u0026lc=1045\u0026id=500867\u0026ru=https:%2F%2Faccount.windowsazure.com%2Fsignup%3Foffer%3Dms-azr-0003p\"\u003etutaj\u003c/a\u003e, aby ponownie się zalogować.",
+                    MicrosoftAzureAgreementMessage: "Akceptuję \u003ca href=\"{0}\" target=\"_blank\"\u003eumowę dotyczącą subskrypcji\u003c/a\u003e, \u003ca href=\"{1}\" target=\"_blank\"\u003eszczegóły oferty\u003c/a\u003e oraz \u003ca href=\"{2}\" target=\"_blank\"\u003ezasady zachowania poufności informacji\u003c/a\u003e.",
+                    MicrosoftAzureAgreementMessageForEA: "Niniejsza subskrypcja podlega warunkom umowy Enterprise Agreement.",
+                    InvalidVatId: "Identyfikator płatnika VAT jest nieprawidłowy.",
+                    InvalidTaxId: "NIP jest nieprawidłowy.",
+                    InvalidCnpj: "Numer CNPJ jest nieprawidłowy.",
+                    InvalidCcm: "Dokument Cloud Control Matrix (CCM) jest nieważny.",
+                    InvalidBusinessRegistrationNumber: "Numer REGON jest nieprawidłowy.",
+                    Purchase:"Zakup",
+                    PurchaseToolTipOnDisable:"Przed zakupem wypełnij wszystkie powyższe punkty",
+                    SignUp:"Utwórz konto",
+                    SignupToolTipOnDisable:"Przed zarejestrowaniem się wypełnij wszystkie powyższe punkty",
+                    CreateAccountValidationErrorSaveButton: "Rozwiąż powyższe problemy i kliknij przycisk \"Zapisz\", aby kontynuować",
+                    CreateAccountValidationErrorVerifyButton: "Rozwiąż powyższe problemy i kliknij przycisk \"Zweryfikuj kod\", aby kontynuować",
+                    ThisFieldIsRequired: "Pole jest wymagane.",
+                    InvalidCpf: "Numer CPF jest nieprawidłowy.",
+                    ContactEmailHelp: "Ten adres e-mail będzie używany do kontaktowania się z Tobą w sprawie informacji dla nowych subskrybentów, rozliczeń i Twojej subskrypcji. Szczegółowe informacje na ten temat zawierają zasady zachowania poufności informacji dotyczące platformy Microsoft Azure.",
+                    WaitOperationCompleted: "Zaczekaj do zakończenia operacji",
+                    TaxIdHelp: "Jeśli masz NIP firmowy, wprowadź go. Jeśli nie masz numeru NIP, możesz wprowadzić 00000000, aby kontynuować.",
+                    BusinessRegistrationNumber: "REGON",
+                    BusinessRegistrationNumberHelp: "Numer identyfikacyjny REGON",
+                    MinimumPrepaidAmountInvalid: "Minimalna kwota przedpłaty wynosi {0}.",
+                    PrepaidAmountInvalid: "Kwota przedpłaty jest nieprawidłowa.",
+                    PrepaidTokenHelp: "Klucz produktu musi mieć format XXXXX-XXXXX-XXXXX-XXXXX-XXXXX.",
+                    Activate: "Aktywuj",
+                    PrepaidTokenActivationFailed: "Nie można ukończyć aktywacji systemu Azure przy użyciu podanego klucza produktu. Skontaktuj się z partnerem lub spróbuj ponownie, używając innego klucza produktu.",
+                    ActivateToolTipOnDisable: "Przed aktywowaniem wykonaj wszystkie czynności przedstawione w poprzednich sekcjach",
+                    PartnerContactEmail: "Kontaktowy adres e-mail partnera",
+                    PartnerContactEmailHelp: "Ten adres e-mail będzie używany do powiadamiania Twojego partnera o pozostałej liczbie kredytów dla danego klucza produktu.",
+                    AzureInOpenAgreement: "Przyjmuję do wiadomości, że korzystanie z tej usługi podlega postanowieniom umowy Open Program i \u003ca href=\"{0}\" target=\"_blank\"\u003ezasadom zachowania poufności informacji\u003c/a\u003e."
+                },
+                StateToResourceMap: {
+                    7: "Wykorzystano już możliwość użycia jednej bezpłatnej wersji próbnej lub nie masz uprawnienia do jej używania.",
+                    8: "Masz już subskrypcję platformy Microsoft Azure. Tylko nowy użytkownik może uzyskać bezpłatną wersję próbną.",
+                    2 : "Ta oferta jest przeznaczona jedynie dla członków: {0}. Nie można zweryfikować Twojego członkostwa {1}.",
+                    3 : "Nie przysługuje Ci ta oferta: {0}.",
+                    9 : "Nie znaleziono oferty \"{0}\".",
+                    6 : "Ta oferta dla członków dotycząca platformy Microsoft Azure została już wykorzystana.",
+                    4: "Oferta jest dostępna jedynie dla członków: {0}.",
+                    5: "Ta oferta nie jest dostępna dla członków: {0}. Użytkownicy {1} nie mogą zapisywać się do ofert niebędących częścią programu członkowskiego {2}.",
+                    12: "Nie znaleziono oferty \"{0}\".",
+                    13: "Przysługująca Ci jedna subskrypcja programu DreamSpark została już użyta lub nie kwalifikujesz się do korzystania z niej."
+                },
+                EntitlementToDescriptionMap: {
+                    // we do not need to localize these strings
+                    "MCP": "Microsoft Partner Network — Cloud Essentials",
+                    "AAD": "Azure Active Directory"
+                },
+                EntitlementToMembershipPageMap: {
+                    "MSDN": "https://go.microsoft.com/fwLink/p/?LinkID=263882\u0026clcid=0x415",
+                    "EA": "https://go.microsoft.com/fwLink/p/?LinkID=263879\u0026clcid=0x415",
+                    "AIRS": "https://go.microsoft.com/fwLink/p/?LinkID=263881\u0026clcid=0x415",
+                    "BizSpark": "https://go.microsoft.com/fwLink/p/?LinkID=263880\u0026clcid=0x415",
+                    "MCP": "https://go.microsoft.com/fwLink/p/?LinkID=294811\u0026clcid=0x415"
+                },
+                AccountFieldsType: {
+                    VatId: 0,
+                    FirstNamePronunciation: 1,
+                    LastNamePronunciation: 2,
+                    TaxId: 3,                    
+                    CnpjCpfCcm: 4,
+                    BusinessRegistrationNumber: 5,
+                },
+                MarketingPreferences: {
+                    Notice: 0,
+                    OptOut: 1,
+                    OptIn: 2
+                },
+                BrazilTaxFieldsType: {
+                    Cnpj: 0,
+                    Ccm: 1,
+                    Cpf: 2
+                    },
+                CreateAccountValidationError: {   
+                    None: 0,
+                    InvalidVatId: 60055,
+                    InvalidTaxId: 42730,
+                    InvalidCnpj: 40618,
+                    InvalidCcm: 40615,
+                    InvalidCpf: 40619,
+                    Unknown: 40620
+                    },
+                MSDNEntitlementCategory: "MSDN",
+                EAEntitlementCategory: "EA",
+                AADEntitlementCategory: "AAD",
+                Widget: {
+                    PcsV2: {
+                        GenericWait: "Czekaj...",
+                        LoadingImageUrl: "/Content/5.1.0.63-.559.150325-1703/images/progress.gif",
+                        ErrorCodes: {
+                            NotLoggedIn: "20",
+                            SessionExpired: "60010",
+                            UserCancelled:  "10",
+                            DisagreeWithConsent:  "11",
+                            GenericError:  "30"
+                        }
+                    },
+                    DropDownMenu: {
+                        AuthUrl: "https://login.microsoftonline.com/logout.srf?ct=1427465649\u0026rver=6.1.6206.0\u0026lc=1045\u0026id=500867\u0026ru=https:%2F%2Faccount.windowsazure.com%2F",
+                        AuthText: "Wyloguj",
+                        EmailId: "janusz.bialek@gazeta.pl"
+                    },
+                    DisplayPiBrief: {
+                        CreditCardText: "Ostatnie cyfry karty {0}: {1}",
+                        ChangePaymentMethodText: "Zmień formę płatności",
+                        CancelChangePaymentMethodText: "Kontynuuj używanie tej formy płatności"
+                    }
+                }
+            };
+            $.extend(Signup2.Index, config);
+            Signup2.Index.init();
+
+        });
+    })(jQuery);
+</script>
+
+                    </div>
+                </section>
+            </div>
+            <footer>
+                
+<div class="footer-bottom clearfix">
+    <ul class="footer-utility-nav">
+        <li class="footer-copyright"><a href="https://go.microsoft.com/fwLink/p/?LinkID=302106&amp;clcid=0x415" target="_blank"><img src="Sign%20Up%20-%20Microsoft%20Azure_pliki/microsoft.png" style="border: 0px;"></a></li>
+        <li class="loc-hide"><a class="feedback-link">Przekaż nam swoją opinię</a></li>
+        <li><a href="https://go.microsoft.com/fwLink/p/?LinkID=398029&amp;clcid=0x415">Skontaktuj się z nami</a></li>
+        <li><a href="https://go.microsoft.com/fwLink/p/?LinkID=233178&amp;clcid=0x415">Informacje prawne</a></li>
+        <li><a href="https://go.microsoft.com/fwLink/p/?LinkID=222682&amp;clcid=0x415">Znaki towarowe</a></li>
+        <li><a href="https://go.microsoft.com/fwLink/p/?LinkID=131004&amp;clcid=0x415">&amp;Prywatność i pliki cookie</a></li>
+        <li>© 2015 Microsoft</li>
+    </ul>
+    
+<div class="languages-selector">
+    <div style="position: relative;" class="locale-selector">
+        <a class="current-locale">polski</a>
+        <div class="locale-selection-panel site-flag site-flag-lang">
+            <div class="content">
+                <table class="all-locales" autogeneratecolumns="false" allowpaging="false" allowsorting="false" style="border-collapse:collapse;" cellspacing="0">
+                        <tbody><tr>
+                        <td><a title="English" class="locale-link " data-loc="en-us">English</a></td>
+                        <td><a title="dansk" class="locale-link " data-loc="da-dk">dansk</a></td>
+                        <td><a title="Deutsch" class="locale-link " data-loc="de-de">Deutsch</a></td>
+                        </tr>
+                        <tr>
+                        <td><a title="Español" class="locale-link " data-loc="es-es">Español</a></td>
+                        <td><a title="français" class="locale-link " data-loc="fr-fr">français</a></td>
+                        <td><a title="italiano" class="locale-link " data-loc="it-it">italiano</a></td>
+                        </tr>
+                        <tr>
+                        <td><a title="Nederlands" class="locale-link " data-loc="nl-nl">Nederlands</a></td>
+                        <td><a title="norsk" class="locale-link " data-loc="nb-no">norsk</a></td>
+                        <td><a title="polski" class="locale-link selected" data-loc="pl-pl">polski</a></td>
+                        </tr>
+                        <tr>
+                        <td><a title="Português" class="locale-link " data-loc="pt-br">Português</a></td>
+                        <td><a title="svenska" class="locale-link " data-loc="sv-se">svenska</a></td>
+                        <td><a title="Türkçe" class="locale-link " data-loc="tr-tr">Türkçe</a></td>
+                        </tr>
+                        <tr>
+                        <td><a title="русский" class="locale-link " data-loc="ru-ru">русский</a></td>
+                        <td><a title="日本語" class="locale-link " data-loc="ja-jp">日本語</a></td>
+                        <td><a title="한국어" class="locale-link " data-loc="ko-kr">한국어</a></td>
+                        </tr>
+                        <tr class="last">
+                        <td><a title="中文(简体)" class="locale-link " data-loc="zh-cn">中文(简体)</a></td>
+                        <td><a title="中文(繁體)" class="locale-link " data-loc="zh-tw">中文(繁體)</a></td>
+                        </tr>
+                </tbody></table>
+                <div class="arrow">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var config = {
+                LOCALE_VALUE : 'pl-PL'
+            };
+            $.extend(LocSelect, config);
+            LocSelect.init();
+        });
+    })(jQuery);
+</script>
+</div>
+
+            </footer>
+        </div>
+    </div>
+    <script id="template-wizard-step" type="text/x-jquery-tmpl"> 
+    <div class="wizard-step" role="dialog" data-url="${URL}" data-features="${Features}" data-wait-to-advance="${WaitToAdvance}" data-getfrom="data-dummy:$ctx.animateActive([State], this.target), aria-hidden:$ctx.ariaHidden([State])">
+        {{tmpl $data.Template}}
+        <img class="stepnumber" data-getfrom="src:$ctx.imgSrc($view[index])" />
+    </div>
+</script>
+<script id="template-wizard-progress" type="text/x-jquery-tmpl">
+    <div class="wizard-progress"><img src="/content/5.1.0.63-.559.150325-1703/images/progress.gif" /></div>
+</script>
+<script id="template-wizard-stepbar-completed" type="text/x-jquery-tmpl">
+    <span class="wizard-bar" data-getfrom="data-dummy:$ctx.animateCompleted([State], this.target), class:$ctx.setClass($view[index])" style="background-color:${Color}" />
+</script>
+<script id="template-wizard-stepbar-incomplete" type="text/x-jquery-tmpl"> 
+    <span class="wizard-bar" data-getfrom="data-dummy:$ctx.animateIncomplete([State], this.target), class:$ctx.setClass($view[index])" style="background-color:${Color}" />
+</script>
+<div id="overlay"></div>
+<div id="dialog">
+    <div class="wizard">
+        <div id="notification-bar-container">
+            <div id="notification-bar">
+                <div id="notification-bar-message">
+                </div>
+            </div>
+        </div>
+        <div id="wizard-left-shim">
+            <div id="wizard-bargroup-complete">
+            </div>
+        </div>
+        <div id="wizard-right-shim">
+            <div id="wizard-bargroup-incomplete">
+            </div>
+        </div>
+        <div id="wizard-content">
+            <div id="wizard-stepgroup">
+            </div>
+            
+            <div class="wizard-spinner">
+                <img id="wizard-spinner" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/spinner.gif" height="30" width="30">
+            </div>
+            <div id="wizard-buttons">
+                <button title="Zakończ" class="wizard-button" id="wizard-button-complete"><img alt="Zakończ" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-complete.png"></button>
+                <button title="Następny" class="wizard-button" id="wizard-button-next"><img alt="Następny" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-next.png"></button>
+                <button title="Poprzedni" class="wizard-button" id="wizard-button-back"><img alt="Poprzedni" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-back.png"></button>
+            </div>
+            <div id="wizard-buttons-secondary">
+                <button title="Anuluj" class="wizard-button" id="wizard-button-close"><img alt="Anuluj" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-cancel-20.png"></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="the-pcs-container">
+    <iframe src="" id="the-pcs" scrolling="no" frameborder="0"></iframe>
+</div>
+    
+
+<div id="customer-feedback-container">
+    <div class="customer-feedback-dialog">
+        <h1>Przekaż nam swoją opinię</h1>
+        <h2>Podziel się swoją opinią!</h2>
+        Potrzebujesz pomocy? Odwiedź naszą stronę <a href="https://go.microsoft.com/fwLink/p/?LinkID=398028&amp;clcid=0x415" target="_blank">Pomocy technicznej.</a>
+        <div class="feedback">
+            <textarea></textarea>
+        </div>
+
+        <div class="customer-feedback-complete">
+            <button>
+                <img alt="Zakończ" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-complete.png">
+            </button>
+        </div>
+
+        <div class="customer-feedback-close">
+            <button>
+                <img alt="Anuluj" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/button-cancel-20.png">
+            </button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var config = {
+                Url: {
+                    PostFeedbackUrl: "/CustomerFeedback",
+                }
+            };
+
+            $.extend(CustomerFeedback, config);
+            CustomerFeedback.init();
+        });
+    })(jQuery);
+</script>
+
+    <script src="Sign%20Up%20-%20Microsoft%20Azure_pliki/CoreScripts_9C91B369.js" onerror="fx.disableCdn.apply(this,arguments)"></script>
+
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                var container = $("#notification-container"),
+                    signInContainer = $("#site-login .sign-in"),
+                    errorPage = "/Error/ServerError";
+                container.hide();
+                if (window.location.href.toUpperCase().indexOf(errorPage.toUpperCase()) < 0) {
+                    auxQuerySiteStatus("pl-PL",
+                        function(statusData) {
+                            if (statusData) {
+                                if (statusData.status === false) {
+                                    errorPage = statusData.redirect || errorPage;
+                                    window.location.href = errorPage;
+                                } else if (statusData.notification) {
+                                    container
+                                        .empty()
+                                        .html(statusData.notification)
+                                        .show();
+                                    if (statusData.status !== true) {
+                                        signInContainer.hide();
+                                    }
+                                }
+                            }
+                        });
+                }
+                
+                startTimeoutCheckPolling("https://account.windowsazure.com/Heartbeat");
+            })
+        })(jQuery);
+    </script>
+    <!-- Begin WEDCS -->
+    <script type="text/JavaScript">
+        var varSegmentation = 0;
+        var varClickTracking = 1;
+        var varCustomerTracking = 1;
+        var Route = "LE238";
+        var Ctrl = "SD100";
+        document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
+    </script><script type="text/javascript" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/ms.js" '=""></script><iframe id="_msnFrame" src="Sign%20Up%20-%20Microsoft%20Azure_pliki/c.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;"></iframe>
+    <script>if(MscomSendPageView!==undefined&&MscomSendPageView){MscomSendPageView();}</script>
+    <noscript><img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/></noscript>
+    <!-- End WEDCS -->
+
+
+</body></html>

@@ -178,7 +178,7 @@
                      n.gDcsId = "dcsjwb9vb00000c932fd0rjc7_5p3t"
                      })(window)
                   </script> 
-                                  
+<!--                                  
                   <script type="text/javascript">$(document).ready(function () {
                      $(".site-flag a.locale-link").off("click");
                      $(".site-flag a.locale-link").click(function (n) {
@@ -200,12 +200,12 @@
                      })
                      })
                   </script>
-                  
+                  <!--
                   <script type="text/JavaScript">var varSegmentation=0,varClickTracking=1,varCustomerTracking=0,varAutoFirePV=1,Route="LE238",Ctrl="SD100";document.write("<script type='text/javascript' src='"+window.location.protocol+"//c.microsoft.com/ms.js'><\/script>")
                   </script> 
-                  <!--
+                 
                   <noscript> <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/> 
-                  </noscript> -->
+                  </noscript> 
                   
                   <script>$(function () {
                      (function (n, t, i, r, u, f, e) {
@@ -226,7 +226,7 @@
                      Acom.EventManager.GoogleEventRegion()
                      })
                   </script> 
-                  
+                  -->
                </form>
             </body>
          </html>

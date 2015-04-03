@@ -3,7 +3,7 @@
                      <div class="wa-carousel" data-control="carousel">
                         <ul class="slides">
                            <li>
-                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel1">
+                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel1"style="min-height: 350px;">
                                   <div class="wa-content wa-content-10up" background="url(<?php echo URL; ?>public/images/bg-home.jpg);">
                                     <div class="wa-homeSprite wa-homeSprite-banner">
                                        <div class="wa-banner">
@@ -22,7 +22,7 @@
                               </section>
                            </li>
                            <li>
-                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel2">
+                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel2"style="min-height: 350px;">
                                  <div class="wa-content wa-content-10up">
                                     <div class="wa-spacer wa-spacer-6down">
                                        <h2 class="wa-heading1">Wprowadzenie do usługi CRM</h2>
@@ -36,7 +36,7 @@
                               </section>
                            </li>
                            <li>
-                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel3">
+                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel3"style="min-height: 350px;">
                                  <div class="wa-content wa-content-10up">
                                     <div class="wa-spacer wa-spacer-8down">
                                        <h2 class="wa-heading1">Build web and mobile apps faster</h2>
@@ -50,7 +50,7 @@
                               </section>
                            </li>
                            <li>
-                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel4">
+                              <section class="wa-section wa-sectionHome wa-sectionHome-carousel4"style="min-height: 350px;">
                                  <div class="wa-content">
                                     <h2 class="wa-headingSuper">Webinarium</h2>
                                     <h3>Obejrzyj wideo z tego tygodnia:</h3>
